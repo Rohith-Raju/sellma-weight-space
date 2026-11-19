@@ -1,0 +1,315 @@
+{
+  "edited": "q4_test",
+  "baseline": "20261119T061642Z_gemma-4b-q4_test",
+  "control": null,
+  "split": "test",
+  "indicative_only": false,
+  "n_questions": 180,
+  "metric": "prob_correct",
+  "headline_sections": [
+    "LAS",
+    "MEK"
+  ],
+  "warnings": [],
+  "headline": {
+    "n": 120,
+    "accuracy": {
+      "edited": 0.65,
+      "baseline": 0.6583333333333333,
+      "change": -0.008333333333333333,
+      "ci": [
+        -0.05,
+        0.03333333333333333
+      ]
+    },
+    "metric": {
+      "name": "prob_correct",
+      "edited": 0.6538601629932393,
+      "baseline": 0.6582065129095374,
+      "change": -0.004346349916298049,
+      "ci": [
+        -0.04476916263370425,
+        0.03616605821202023
+      ]
+    },
+    "flips": {
+      "wrong_to_right": 3,
+      "right_to_wrong": 4
+    },
+    "chosen_letter_change": {
+      "A": {
+        "edited": 0.175,
+        "baseline": 0.16666666666666666,
+        "change": 0.008333333333333331
+      },
+      "B": {
+        "edited": 0.35,
+        "baseline": 0.3,
+        "change": 0.04999999999999999
+      },
+      "C": {
+        "edited": 0.2916666666666667,
+        "baseline": 0.26666666666666666,
+        "change": 0.025000000000000022
+      },
+      "D": {
+        "edited": 0.18333333333333332,
+        "baseline": 0.26666666666666666,
+        "change": -0.08333333333333334
+      },
+      "E": {
+        "edited": 0.0,
+        "baseline": 0.0,
+        "change": 0.0
+      }
+    }
+  },
+  "overall": {
+    "n": 180,
+    "accuracy": {
+      "edited": 0.7333333333333333,
+      "baseline": 0.7388888888888889,
+      "change": -0.005555555555555556,
+      "ci": [
+        -0.03333333333333333,
+        0.022222222222222223
+      ]
+    },
+    "metric": {
+      "name": "prob_correct",
+      "edited": 0.7361109640468068,
+      "baseline": 0.7389089491008608,
+      "change": -0.0027979850540539933,
+      "ci": [
+        -0.029819098063807427,
+        0.023941532578692654
+      ]
+    },
+    "flips": {
+      "wrong_to_right": 3,
+      "right_to_wrong": 4
+    },
+    "chosen_letter_change": {
+      "A": {
+        "edited": 0.16666666666666666,
+        "baseline": 0.16111111111111112,
+        "change": 0.005555555555555536
+      },
+      "B": {
+        "edited": 0.29444444444444445,
+        "baseline": 0.2611111111111111,
+        "change": 0.033333333333333326
+      },
+      "C": {
+        "edited": 0.25555555555555554,
+        "baseline": 0.23333333333333334,
+        "change": 0.0222222222222222
+      },
+      "D": {
+        "edited": 0.19444444444444445,
+        "baseline": 0.25,
+        "change": -0.05555555555555555
+      },
+      "E": {
+        "edited": 0.08888888888888889,
+        "baseline": 0.09444444444444444,
+        "change": -0.00555555555555555
+      }
+    }
+  },
+  "sections": {
+    "ORD": {
+      "n": 60,
+      "accuracy": {
+        "edited": 0.9,
+        "baseline": 0.9,
+        "change": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "metric": {
+        "name": "prob_correct",
+        "edited": 0.9006125661539416,
+        "baseline": 0.9003138214835075,
+        "change": 0.0002987446704341333,
+        "ci": [
+          -0.0005315193523485412,
+          0.0015345472106582652
+        ]
+      },
+      "flips": {
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      "chosen_letter_change": {
+        "A": {
+          "edited": 0.15,
+          "baseline": 0.15,
+          "change": 0.0
+        },
+        "B": {
+          "edited": 0.18333333333333332,
+          "baseline": 0.18333333333333332,
+          "change": 0.0
+        },
+        "C": {
+          "edited": 0.18333333333333332,
+          "baseline": 0.16666666666666666,
+          "change": 0.016666666666666663
+        },
+        "D": {
+          "edited": 0.21666666666666667,
+          "baseline": 0.21666666666666667,
+          "change": 0.0
+        },
+        "E": {
+          "edited": 0.26666666666666666,
+          "baseline": 0.2833333333333333,
+          "change": -0.016666666666666663
+        }
+      }
+    },
+    "LAS": {
+      "n": 60,
+      "accuracy": {
+        "edited": 0.6666666666666666,
+        "baseline": 0.6333333333333333,
+        "change": 0.03333333333333333,
+        "ci": [
+          0.0,
+          0.08333333333333333
+        ]
+      },
+      "metric": {
+        "name": "prob_correct",
+        "edited": 0.6664237869984716,
+        "baseline": 0.634616566011798,
+        "change": 0.031807220986673844,
+        "ci": [
+          -0.0010549442294146083,
+          0.08025100026407875
+        ]
+      },
+      "flips": {
+        "wrong_to_right": 2,
+        "right_to_wrong": 0
+      },
+      "chosen_letter_change": {
+        "A": {
+          "edited": 0.15,
+          "baseline": 0.13333333333333333,
+          "change": 0.016666666666666663
+        },
+        "B": {
+          "edited": 0.26666666666666666,
+          "baseline": 0.26666666666666666,
+          "change": 0.0
+        },
+        "C": {
+          "edited": 0.35,
+          "baseline": 0.31666666666666665,
+          "change": 0.033333333333333326
+        },
+        "D": {
+          "edited": 0.23333333333333334,
+          "baseline": 0.2833333333333333,
+          "change": -0.04999999999999999
+        },
+        "E": {
+          "edited": 0.0,
+          "baseline": 0.0,
+          "change": 0.0
+        }
+      }
+    },
+    "MEK": {
+      "n": 60,
+      "accuracy": {
+        "edited": 0.6333333333333333,
+        "baseline": 0.6833333333333333,
+        "change": -0.05,
+        "ci": [
+          -0.11666666666666667,
+          0.016666666666666666
+        ]
+      },
+      "metric": {
+        "name": "prob_correct",
+        "edited": 0.6412965389880071,
+        "baseline": 0.681796459807277,
+        "change": -0.04049992081926994,
+        "ci": [
+          -0.11024742504269194,
+          0.023407675627719296
+        ]
+      },
+      "flips": {
+        "wrong_to_right": 1,
+        "right_to_wrong": 4
+      },
+      "chosen_letter_change": {
+        "A": {
+          "edited": 0.2,
+          "baseline": 0.2,
+          "change": 0.0
+        },
+        "B": {
+          "edited": 0.43333333333333335,
+          "baseline": 0.3333333333333333,
+          "change": 0.10000000000000003
+        },
+        "C": {
+          "edited": 0.23333333333333334,
+          "baseline": 0.21666666666666667,
+          "change": 0.016666666666666663
+        },
+        "D": {
+          "edited": 0.13333333333333333,
+          "baseline": 0.25,
+          "change": -0.11666666666666667
+        },
+        "E": {
+          "edited": 0.0,
+          "baseline": 0.0,
+          "change": 0.0
+        }
+      }
+    }
+  },
+  "edited_minus_control_metric": null,
+  "damage": {
+    "n_perplexity_docs": 75,
+    "n_prompts": 50,
+    "perplexity": {
+      "edited": 15.0868,
+      "baseline": 15.1003,
+      "relative_change": -0.0008940219730734165
+    },
+    "loop_rate_percent": {
+      "edited": 18.0,
+      "baseline": 20.0,
+      "change_points": -2.0
+    }
+  },
+  "rules": {
+    "1_metric_improves": {
+      "passed": false,
+      "detail": "headline change in prob_correct -0.0043, 95% CI [-0.0448, +0.0362] (must be above zero)"
+    },
+    "2_beats_control": {
+      "passed": false,
+      "detail": "no control run given, so not checked (counts as failed)"
+    },
+    "3a_perplexity": {
+      "passed": true,
+      "detail": "perplexity change -0.09% (limit +5%)"
+    },
+    "3b_loop_rate": {
+      "passed": true,
+      "detail": "loop rate change -2.0 points (limit +2.0)"
+    }
+  },
+  "verdict": "NO IMPROVEMENT"
+}

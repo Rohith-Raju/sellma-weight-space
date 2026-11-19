@@ -1,0 +1,315 @@
+2026-11-19 06:22:54 UTC [qwen-9b-full] select-failures: 10 cases from 20261119T060703Z_qwen-9b-full_dev -> experiments/qwen-9b-full/failure_cases.jsonl
+2026-11-19 06:22:54 UTC [qwen-9b-full] select-failures: done already (experiments/qwen-9b-full/failure_cases.jsonl)
+2026-11-19 06:22:54 UTC [gemma-4b-full] select-failures: 10 cases from 20261119T060704Z_gemma-4b-full_dev -> experiments/gemma-4b-full/failure_cases.jsonl
+2026-11-19 06:22:54 UTC [qwen-9b-full] dev-subset: 300 questions -> experiments/dev_subset.json
+2026-11-19 06:22:54 UTC [qwen-9b-full] select-failures: done already (experiments/qwen-9b-full/failure_cases.jsonl)
+2026-11-19 06:22:54 UTC [qwen-9b-full] dev-subset: done already (experiments/dev_subset.json)
+2026-11-19 06:22:54 UTC [qwen-9b-full] loading qwen-9b-full (can take minutes)
+2026-11-19 06:23:04 UTC [qwen-9b-full] scoring qwen-9b-full on full_targets: 10 questions
+Running qwen-9b-full on dev: 10 questions -> /root/sellma/experiments/qwen-9b-full/baseline/full_targets
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+  10/10 questions, running accuracy 0.0%
+2026-11-19 06:23:07 UTC [qwen-9b-full] finished experiments/qwen-9b-full/baseline/full_targets: accuracy 0.0%
+2026-11-19 06:23:07 UTC [qwen-9b-full] scoring qwen-9b-full on full_test: 180 questions, with damage checks
+Running qwen-9b-full on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/baseline/full_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+2026-11-19 06:24:05 UTC [qwen-9b-full] finished experiments/qwen-9b-full/baseline/full_test: accuracy 91.7%
+2026-11-19 06:24:05 UTC [qwen-9b-full] scoring qwen-9b-full on full_dev_subset: 300 questions
+Running qwen-9b-full on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/baseline/full_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.3%
+2026-11-19 06:24:48 UTC [qwen-9b-full] finished experiments/qwen-9b-full/baseline/full_dev_subset: accuracy 89.3%
+2026-11-19 06:24:49 UTC [qwen-9b-full] searching the edit for 2019-04-06/p4/LAS/16 at layer 21
+2026-11-19 06:24:51 UTC [qwen-9b-full] 2019-04-06/p4/LAS/16: fixed at alpha fraction 0.1 after 4 ladder steps
+2026-11-19 06:24:51 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2019-04-06/p4/LAS/16] on targeted_target: 1 questions
+Running qwen-9b-full+edit[2019-04-06/p4/LAS/16] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:24:51 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/targeted_target: accuracy 100.0%
+2026-11-19 06:24:51 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2019-04-06/p4/LAS/16] on targeted_test: 180 questions, with damage checks
+Running qwen-9b-full+edit[2019-04-06/p4/LAS/16] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/targeted_test
+  50/180 questions, running accuracy 86.0%
+  100/180 questions, running accuracy 86.0%
+  150/180 questions, running accuracy 87.3%
+  180/180 questions, running accuracy 88.9%
+2026-11-19 06:25:49 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/targeted_test: accuracy 88.9%
+2026-11-19 06:25:49 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2019-04-06/p4/LAS/16] on targeted_dev_subset: 300 questions
+Running qwen-9b-full+edit[2019-04-06/p4/LAS/16] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/targeted_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 87.3%
+  200/300 questions, running accuracy 89.5%
+  250/300 questions, running accuracy 89.2%
+  300/300 questions, running accuracy 88.0%
+2026-11-19 06:26:32 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/targeted_dev_subset: accuracy 88.0%
+2026-11-19 06:26:32 UTC [qwen-9b-full] scoring qwen-9b-full+random[2019-04-06/p4/LAS/16] on control_target: 1 questions
+Running qwen-9b-full+random[2019-04-06/p4/LAS/16] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:26:33 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/control_target: accuracy 0.0%
+2026-11-19 06:26:33 UTC [qwen-9b-full] scoring qwen-9b-full+random[2019-04-06/p4/LAS/16] on control_test: 180 questions, with damage checks
+Running qwen-9b-full+random[2019-04-06/p4/LAS/16] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/control_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+2026-11-19 06:27:30 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/control_test: accuracy 91.7%
+2026-11-19 06:27:30 UTC [qwen-9b-full] scoring qwen-9b-full+random[2019-04-06/p4/LAS/16] on control_dev_subset: 300 questions
+Running qwen-9b-full+random[2019-04-06/p4/LAS/16] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/control_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.3%
+2026-11-19 06:28:13 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2019-04-06_p4_LAS_16/control_dev_subset: accuracy 89.3%
+2026-11-19 06:28:13 UTC [qwen-9b-full] searching the edit for 2016-10-29/p2/LAS/12 at layer 21
+2026-11-19 06:28:14 UTC [qwen-9b-full] 2016-10-29/p2/LAS/12: fixed at alpha fraction 0.05 after 3 ladder steps
+2026-11-19 06:28:14 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2016-10-29/p2/LAS/12] on targeted_target: 1 questions
+Running qwen-9b-full+edit[2016-10-29/p2/LAS/12] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:28:14 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/targeted_target: accuracy 100.0%
+2026-11-19 06:28:14 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2016-10-29/p2/LAS/12] on targeted_test: 180 questions, with damage checks
+Running qwen-9b-full+edit[2016-10-29/p2/LAS/12] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/targeted_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 89.3%
+  180/180 questions, running accuracy 90.6%
+2026-11-19 06:29:11 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/targeted_test: accuracy 90.6%
+2026-11-19 06:29:11 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2016-10-29/p2/LAS/12] on targeted_dev_subset: 300 questions
+Running qwen-9b-full+edit[2016-10-29/p2/LAS/12] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/targeted_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.4%
+  300/300 questions, running accuracy 89.0%
+2026-11-19 06:29:55 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/targeted_dev_subset: accuracy 89.0%
+2026-11-19 06:29:55 UTC [qwen-9b-full] scoring qwen-9b-full+random[2016-10-29/p2/LAS/12] on control_target: 1 questions
+Running qwen-9b-full+random[2016-10-29/p2/LAS/12] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:29:55 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/control_target: accuracy 0.0%
+2026-11-19 06:29:55 UTC [qwen-9b-full] scoring qwen-9b-full+random[2016-10-29/p2/LAS/12] on control_test: 180 questions, with damage checks
+Running qwen-9b-full+random[2016-10-29/p2/LAS/12] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/control_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+2026-11-19 06:30:48 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/control_test: accuracy 91.7%
+2026-11-19 06:30:48 UTC [qwen-9b-full] scoring qwen-9b-full+random[2016-10-29/p2/LAS/12] on control_dev_subset: 300 questions
+Running qwen-9b-full+random[2016-10-29/p2/LAS/12] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/control_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.3%
+2026-11-19 06:31:30 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p2_LAS_12/control_dev_subset: accuracy 89.3%
+2026-11-19 06:31:30 UTC [qwen-9b-full] searching the edit for 2023-03-25/p5/LAS/13 at layer 21
+2026-11-19 06:31:32 UTC [qwen-9b-full] 2023-03-25/p5/LAS/13: fixed at alpha fraction 0.05 after 3 ladder steps
+2026-11-19 06:31:32 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2023-03-25/p5/LAS/13] on targeted_target: 1 questions
+Running qwen-9b-full+edit[2023-03-25/p5/LAS/13] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:31:33 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/targeted_target: accuracy 100.0%
+2026-11-19 06:31:33 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2023-03-25/p5/LAS/13] on targeted_test: 180 questions, with damage checks
+Running qwen-9b-full+edit[2023-03-25/p5/LAS/13] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/targeted_test
+  50/180 questions, running accuracy 92.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.0%
+  180/180 questions, running accuracy 91.1%
+2026-11-19 06:32:29 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/targeted_test: accuracy 91.1%
+2026-11-19 06:32:29 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2023-03-25/p5/LAS/13] on targeted_dev_subset: 300 questions
+Running qwen-9b-full+edit[2023-03-25/p5/LAS/13] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/targeted_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 86.0%
+  150/300 questions, running accuracy 88.0%
+  200/300 questions, running accuracy 90.5%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.7%
+2026-11-19 06:33:12 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/targeted_dev_subset: accuracy 89.7%
+2026-11-19 06:33:12 UTC [qwen-9b-full] scoring qwen-9b-full+random[2023-03-25/p5/LAS/13] on control_target: 1 questions
+Running qwen-9b-full+random[2023-03-25/p5/LAS/13] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:33:13 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/control_target: accuracy 0.0%
+2026-11-19 06:33:13 UTC [qwen-9b-full] scoring qwen-9b-full+random[2023-03-25/p5/LAS/13] on control_test: 180 questions, with damage checks
+Running qwen-9b-full+random[2023-03-25/p5/LAS/13] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/control_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+2026-11-19 06:34:06 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/control_test: accuracy 91.7%
+2026-11-19 06:34:06 UTC [qwen-9b-full] scoring qwen-9b-full+random[2023-03-25/p5/LAS/13] on control_dev_subset: 300 questions
+Running qwen-9b-full+random[2023-03-25/p5/LAS/13] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/control_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.3%
+2026-11-19 06:34:47 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2023-03-25_p5_LAS_13/control_dev_subset: accuracy 89.3%
+2026-11-19 06:34:47 UTC [qwen-9b-full] searching the edit for 2016-10-29/p4/LAS/12 at layer 21
+2026-11-19 06:34:48 UTC [qwen-9b-full] 2016-10-29/p4/LAS/12: fixed at alpha fraction 0.05 after 3 ladder steps
+2026-11-19 06:34:48 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2016-10-29/p4/LAS/12] on targeted_target: 1 questions
+Running qwen-9b-full+edit[2016-10-29/p4/LAS/12] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:34:49 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/targeted_target: accuracy 100.0%
+2026-11-19 06:34:49 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2016-10-29/p4/LAS/12] on targeted_test: 180 questions, with damage checks
+Running qwen-9b-full+edit[2016-10-29/p4/LAS/12] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/targeted_test
+  50/180 questions, running accuracy 92.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+2026-11-19 06:35:43 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/targeted_test: accuracy 91.7%
+2026-11-19 06:35:43 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2016-10-29/p4/LAS/12] on targeted_dev_subset: 300 questions
+Running qwen-9b-full+edit[2016-10-29/p4/LAS/12] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/targeted_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.3%
+2026-11-19 06:36:26 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/targeted_dev_subset: accuracy 89.3%
+2026-11-19 06:36:26 UTC [qwen-9b-full] scoring qwen-9b-full+random[2016-10-29/p4/LAS/12] on control_target: 1 questions
+Running qwen-9b-full+random[2016-10-29/p4/LAS/12] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:36:27 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/control_target: accuracy 0.0%
+2026-11-19 06:36:27 UTC [qwen-9b-full] scoring qwen-9b-full+random[2016-10-29/p4/LAS/12] on control_test: 180 questions, with damage checks
+Running qwen-9b-full+random[2016-10-29/p4/LAS/12] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/control_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+2026-11-19 06:37:19 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/control_test: accuracy 91.7%
+2026-11-19 06:37:19 UTC [qwen-9b-full] scoring qwen-9b-full+random[2016-10-29/p4/LAS/12] on control_dev_subset: 300 questions
+Running qwen-9b-full+random[2016-10-29/p4/LAS/12] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/control_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.3%
+2026-11-19 06:38:00 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2016-10-29_p4_LAS_12/control_dev_subset: accuracy 89.3%
+2026-11-19 06:38:00 UTC [qwen-9b-full] searching the edit for 2017-04-01/p5/MEK/24 at layer 21
+2026-11-19 06:38:00 UTC [qwen-9b-full] 2017-04-01/p5/MEK/24: fixed at alpha fraction 0.02 after 2 ladder steps
+2026-11-19 06:38:00 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2017-04-01/p5/MEK/24] on targeted_target: 1 questions
+Running qwen-9b-full+edit[2017-04-01/p5/MEK/24] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:38:00 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/targeted_target: accuracy 100.0%
+2026-11-19 06:38:00 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2017-04-01/p5/MEK/24] on targeted_test: 180 questions, with damage checks
+Running qwen-9b-full+edit[2017-04-01/p5/MEK/24] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/targeted_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+2026-11-19 06:38:51 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/targeted_test: accuracy 91.7%
+2026-11-19 06:38:51 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2017-04-01/p5/MEK/24] on targeted_dev_subset: 300 questions
+Running qwen-9b-full+edit[2017-04-01/p5/MEK/24] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/targeted_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.3%
+2026-11-19 06:39:33 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/targeted_dev_subset: accuracy 89.3%
+2026-11-19 06:39:33 UTC [qwen-9b-full] scoring qwen-9b-full+random[2017-04-01/p5/MEK/24] on control_target: 1 questions
+Running qwen-9b-full+random[2017-04-01/p5/MEK/24] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:39:33 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/control_target: accuracy 0.0%
+2026-11-19 06:39:33 UTC [qwen-9b-full] scoring qwen-9b-full+random[2017-04-01/p5/MEK/24] on control_test: 180 questions, with damage checks
+Running qwen-9b-full+random[2017-04-01/p5/MEK/24] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/control_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+2026-11-19 06:40:29 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/control_test: accuracy 91.7%
+2026-11-19 06:40:29 UTC [qwen-9b-full] scoring qwen-9b-full+random[2017-04-01/p5/MEK/24] on control_dev_subset: 300 questions
+Running qwen-9b-full+random[2017-04-01/p5/MEK/24] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/control_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.3%
+2026-11-19 06:41:11 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2017-04-01_p5_MEK_24/control_dev_subset: accuracy 89.3%
+2026-11-19 06:41:11 UTC [qwen-9b-full] searching the edit for 2021-05-08/p4/MEK/25 at layer 21
+2026-11-19 06:41:11 UTC [qwen-9b-full] 2021-05-08/p4/MEK/25: fixed at alpha fraction 0.2 after 5 ladder steps
+2026-11-19 06:41:11 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2021-05-08/p4/MEK/25] on targeted_target: 1 questions
+Running qwen-9b-full+edit[2021-05-08/p4/MEK/25] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:41:12 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/targeted_target: accuracy 100.0%
+2026-11-19 06:41:12 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2021-05-08/p4/MEK/25] on targeted_test: 180 questions, with damage checks
+Running qwen-9b-full+edit[2021-05-08/p4/MEK/25] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/targeted_test
+  50/180 questions, running accuracy 86.0%
+  100/180 questions, running accuracy 83.0%
+  150/180 questions, running accuracy 80.7%
+  180/180 questions, running accuracy 82.2%
+2026-11-19 06:42:01 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/targeted_test: accuracy 82.2%
+2026-11-19 06:42:01 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2021-05-08/p4/MEK/25] on targeted_dev_subset: 300 questions
+Running qwen-9b-full+edit[2021-05-08/p4/MEK/25] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/targeted_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 85.0%
+  150/300 questions, running accuracy 85.3%
+  200/300 questions, running accuracy 86.5%
+  250/300 questions, running accuracy 84.4%
+  300/300 questions, running accuracy 84.0%
+2026-11-19 06:42:42 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/targeted_dev_subset: accuracy 84.0%
+2026-11-19 06:42:42 UTC [qwen-9b-full] scoring qwen-9b-full+random[2021-05-08/p4/MEK/25] on control_target: 1 questions
+Running qwen-9b-full+random[2021-05-08/p4/MEK/25] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:42:42 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/control_target: accuracy 0.0%
+2026-11-19 06:42:42 UTC [qwen-9b-full] scoring qwen-9b-full+random[2021-05-08/p4/MEK/25] on control_test: 180 questions, with damage checks
+Running qwen-9b-full+random[2021-05-08/p4/MEK/25] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/control_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%
+2026-11-19 06:43:37 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/control_test: accuracy 91.7%
+2026-11-19 06:43:37 UTC [qwen-9b-full] scoring qwen-9b-full+random[2021-05-08/p4/MEK/25] on control_dev_subset: 300 questions
+Running qwen-9b-full+random[2021-05-08/p4/MEK/25] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/control_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 90.8%
+  300/300 questions, running accuracy 89.7%
+2026-11-19 06:44:17 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2021-05-08_p4_MEK_25/control_dev_subset: accuracy 89.7%
+2026-11-19 06:44:17 UTC [qwen-9b-full] searching the edit for 2014-04-05/p3/MEK/24 at layer 21
+2026-11-19 06:44:18 UTC [qwen-9b-full] 2014-04-05/p3/MEK/24: fixed at alpha fraction 0.05 after 3 ladder steps
+2026-11-19 06:44:18 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2014-04-05/p3/MEK/24] on targeted_target: 1 questions
+Running qwen-9b-full+edit[2014-04-05/p3/MEK/24] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:44:18 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/targeted_target: accuracy 100.0%
+2026-11-19 06:44:18 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2014-04-05/p3/MEK/24] on targeted_test: 180 questions, with damage checks
+Running qwen-9b-full+edit[2014-04-05/p3/MEK/24] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/targeted_test
+  50/180 questions, running accuracy 92.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.0%
+  180/180 questions, running accuracy 91.1%
+2026-11-19 06:45:12 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/targeted_test: accuracy 91.1%
+2026-11-19 06:45:12 UTC [qwen-9b-full] scoring qwen-9b-full+edit[2014-04-05/p3/MEK/24] on targeted_dev_subset: 300 questions
+Running qwen-9b-full+edit[2014-04-05/p3/MEK/24] on dev: 300 questions -> /root/sellma/experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/targeted_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 87.0%
+  150/300 questions, running accuracy 88.7%
+  200/300 questions, running accuracy 91.0%
+  250/300 questions, running accuracy 91.2%
+  300/300 questions, running accuracy 89.7%
+2026-11-19 06:45:53 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/targeted_dev_subset: accuracy 89.7%
+2026-11-19 06:45:53 UTC [qwen-9b-full] scoring qwen-9b-full+random[2014-04-05/p3/MEK/24] on control_target: 1 questions
+Running qwen-9b-full+random[2014-04-05/p3/MEK/24] on dev: 1 questions -> /root/sellma/experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:45:53 UTC [qwen-9b-full] finished experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/control_target: accuracy 0.0%
+2026-11-19 06:45:53 UTC [qwen-9b-full] scoring qwen-9b-full+random[2014-04-05/p3/MEK/24] on control_test: 180 questions, with damage checks
+Running qwen-9b-full+random[2014-04-05/p3/MEK/24] on test: 180 questions -> /root/sellma/experiments/qwen-9b-full/edits/2014-04-05_p3_MEK_24/control_test
+  50/180 questions, running accuracy 90.0%
+  100/180 questions, running accuracy 89.0%
+  150/180 questions, running accuracy 90.7%
+  180/180 questions, running accuracy 91.7%

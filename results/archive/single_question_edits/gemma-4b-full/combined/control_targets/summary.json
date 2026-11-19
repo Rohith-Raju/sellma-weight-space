@@ -1,0 +1,186 @@
+{
+  "model": "gemma-4b-full+random[combined 5]",
+  "backend": "hf",
+  "split": "dev",
+  "n_questions": 5,
+  "overall": {
+    "n": 5,
+    "accuracy": 0.0,
+    "accuracy_ci95": [
+      2.7755575615628914e-17,
+      0.43448246478317465
+    ],
+    "mean_prob_correct": 0.002355583278417121,
+    "mean_prob_on_letters": 0.9999999622910408,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.2,
+      "B": 0.4,
+      "C": 0.2,
+      "D": 0.2,
+      "E": 0.0
+    }
+  },
+  "headline": {
+    "sections": [
+      "LAS",
+      "MEK"
+    ],
+    "n": 5,
+    "accuracy": 0.0,
+    "accuracy_ci95": [
+      2.7755575615628914e-17,
+      0.43448246478317465
+    ],
+    "mean_prob_correct": 0.002355583278417121,
+    "mean_prob_on_letters": 0.9999999622910408,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.2,
+      "B": 0.4,
+      "C": 0.2,
+      "D": 0.2,
+      "E": 0.0
+    }
+  },
+  "sections": {
+    "LAS": {
+      "n": 2,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.6576197724933468
+      ],
+      "mean_prob_correct": 1.383992592912212e-05,
+      "mean_prob_on_letters": 0.999999974114612,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.5,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.5,
+        "E": 0.0
+      }
+    },
+    "MEK": {
+      "n": 3,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.5614970317550454
+      ],
+      "mean_prob_correct": 0.00391674551340912,
+      "mean_prob_on_letters": 0.9999999544086601,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.6666666666666666,
+        "C": 0.3333333333333333,
+        "D": 0.0,
+        "E": 0.0
+      }
+    }
+  },
+  "exam_dates": {
+    "2015-03-28": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 2.753535388943224e-05,
+      "mean_prob_on_letters": 1.000000007386916,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 1.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2017-04-01": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 1.0129556051025061e-05,
+      "mean_prob_on_letters": 0.999999850747372,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 1.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2021-03-13": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 0.008567429413376805,
+      "mean_prob_on_letters": 0.9999999689853212,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 1.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2022-05-07": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 1.4449796881200045e-07,
+      "mean_prob_on_letters": 0.9999999408423079,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 1.0,
+        "E": 0.0
+      }
+    },
+    "2022-10-23": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 0.0031726775707995297,
+      "mean_prob_on_letters": 1.0000000434932872,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 1.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    }
+  },
+  "damage": null
+}

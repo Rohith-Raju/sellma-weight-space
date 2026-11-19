@@ -1,0 +1,345 @@
+2026-11-19 06:22:54 UTC [gemma-4b-full] select-failures: 10 cases from 20261119T060704Z_gemma-4b-full_dev -> experiments/gemma-4b-full/failure_cases.jsonl
+2026-11-19 06:22:54 UTC [qwen-9b-full] select-failures: done already (experiments/qwen-9b-full/failure_cases.jsonl)
+2026-11-19 06:22:54 UTC [gemma-4b-full] select-failures: done already (experiments/gemma-4b-full/failure_cases.jsonl)
+2026-11-19 06:22:54 UTC [gemma-4b-full] dev-subset: 300 questions -> experiments/dev_subset.json
+2026-11-19 06:22:54 UTC [gemma-4b-full] select-failures: done already (experiments/gemma-4b-full/failure_cases.jsonl)
+2026-11-19 06:22:54 UTC [gemma-4b-full] dev-subset: done already (experiments/dev_subset.json)
+2026-11-19 06:22:54 UTC [gemma-4b-full] loading gemma-4b-full (can take minutes)
+2026-11-19 06:23:03 UTC [gemma-4b-full] scoring gemma-4b-full on full_targets: 10 questions
+Running gemma-4b-full on dev: 10 questions -> /root/sellma/experiments/gemma-4b-full/baseline/full_targets
+  10/10 questions, running accuracy 0.0%
+2026-11-19 06:23:07 UTC [gemma-4b-full] finished experiments/gemma-4b-full/baseline/full_targets: accuracy 0.0%
+2026-11-19 06:23:07 UTC [gemma-4b-full] scoring gemma-4b-full on full_test: 180 questions, with damage checks
+Running gemma-4b-full on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/baseline/full_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:23:43 UTC [gemma-4b-full] finished experiments/gemma-4b-full/baseline/full_test: accuracy 76.1%
+2026-11-19 06:23:43 UTC [gemma-4b-full] scoring gemma-4b-full on full_dev_subset: 300 questions
+Running gemma-4b-full on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/baseline/full_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.3%
+2026-11-19 06:24:11 UTC [gemma-4b-full] finished experiments/gemma-4b-full/baseline/full_dev_subset: accuracy 74.3%
+2026-11-19 06:24:12 UTC [gemma-4b-full] searching the edit for 2022-05-07/p5/LAS/16 at layer 23
+2026-11-19 06:24:13 UTC [gemma-4b-full] 2022-05-07/p5/LAS/16: fixed at alpha fraction 0.1 after 4 ladder steps
+2026-11-19 06:24:13 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2022-05-07/p5/LAS/16] on targeted_target: 1 questions
+Running gemma-4b-full+edit[2022-05-07/p5/LAS/16] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:24:13 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_target: accuracy 100.0%
+2026-11-19 06:24:13 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2022-05-07/p5/LAS/16] on targeted_test: 180 questions, with damage checks
+Running gemma-4b-full+edit[2022-05-07/p5/LAS/16] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_test
+  50/180 questions, running accuracy 76.0%
+  100/180 questions, running accuracy 75.0%
+  150/180 questions, running accuracy 75.3%
+  180/180 questions, running accuracy 77.2%
+2026-11-19 06:24:52 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_test: accuracy 77.2%
+2026-11-19 06:24:52 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2022-05-07/p5/LAS/16] on targeted_dev_subset: 300 questions
+Running gemma-4b-full+edit[2022-05-07/p5/LAS/16] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 80.7%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.7%
+2026-11-19 06:25:19 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_dev_subset: accuracy 74.7%
+2026-11-19 06:25:19 UTC [gemma-4b-full] scoring gemma-4b-full+random[2022-05-07/p5/LAS/16] on control_target: 1 questions
+Running gemma-4b-full+random[2022-05-07/p5/LAS/16] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:25:19 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/control_target: accuracy 0.0%
+2026-11-19 06:25:19 UTC [gemma-4b-full] scoring gemma-4b-full+random[2022-05-07/p5/LAS/16] on control_test: 180 questions, with damage checks
+Running gemma-4b-full+random[2022-05-07/p5/LAS/16] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/control_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:25:58 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/control_test: accuracy 76.1%
+2026-11-19 06:25:58 UTC [gemma-4b-full] scoring gemma-4b-full+random[2022-05-07/p5/LAS/16] on control_dev_subset: 300 questions
+Running gemma-4b-full+random[2022-05-07/p5/LAS/16] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/control_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.3%
+2026-11-19 06:26:28 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/control_dev_subset: accuracy 74.3%
+2026-11-19 06:26:28 UTC [gemma-4b-full] searching the edit for 2019-04-06/p4/LAS/16 at layer 23
+2026-11-19 06:26:29 UTC [gemma-4b-full] 2019-04-06/p4/LAS/16: not fixed (could_not_fix) after 7 ladder steps
+2026-11-19 06:26:29 UTC [gemma-4b-full] searching the edit for 2015-03-28/p3/LAS/13 at layer 23
+2026-11-19 06:26:29 UTC [gemma-4b-full] 2015-03-28/p3/LAS/13: fixed at alpha fraction 0.05 after 3 ladder steps
+2026-11-19 06:26:29 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2015-03-28/p3/LAS/13] on targeted_target: 1 questions
+Running gemma-4b-full+edit[2015-03-28/p3/LAS/13] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:26:29 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_target: accuracy 100.0%
+2026-11-19 06:26:29 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2015-03-28/p3/LAS/13] on targeted_test: 180 questions, with damage checks
+Running gemma-4b-full+edit[2015-03-28/p3/LAS/13] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 71.0%
+  150/180 questions, running accuracy 72.7%
+  180/180 questions, running accuracy 73.9%
+2026-11-19 06:27:04 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_test: accuracy 73.9%
+2026-11-19 06:27:04 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2015-03-28/p3/LAS/13] on targeted_dev_subset: 300 questions
+Running gemma-4b-full+edit[2015-03-28/p3/LAS/13] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 83.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 78.0%
+  250/300 questions, running accuracy 74.8%
+  300/300 questions, running accuracy 72.7%
+2026-11-19 06:27:32 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_dev_subset: accuracy 72.7%
+2026-11-19 06:27:32 UTC [gemma-4b-full] scoring gemma-4b-full+random[2015-03-28/p3/LAS/13] on control_target: 1 questions
+Running gemma-4b-full+random[2015-03-28/p3/LAS/13] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:27:32 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/control_target: accuracy 0.0%
+2026-11-19 06:27:32 UTC [gemma-4b-full] scoring gemma-4b-full+random[2015-03-28/p3/LAS/13] on control_test: 180 questions, with damage checks
+Running gemma-4b-full+random[2015-03-28/p3/LAS/13] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/control_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:28:10 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/control_test: accuracy 76.1%
+2026-11-19 06:28:10 UTC [gemma-4b-full] scoring gemma-4b-full+random[2015-03-28/p3/LAS/13] on control_dev_subset: 300 questions
+Running gemma-4b-full+random[2015-03-28/p3/LAS/13] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/control_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.3%
+2026-11-19 06:28:35 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/control_dev_subset: accuracy 74.3%
+2026-11-19 06:28:35 UTC [gemma-4b-full] searching the edit for 2016-10-29/p2/LAS/12 at layer 23
+2026-11-19 06:28:36 UTC [gemma-4b-full] 2016-10-29/p2/LAS/12: not fixed (could_not_fix) after 7 ladder steps
+2026-11-19 06:28:36 UTC [gemma-4b-full] searching the edit for 2021-03-13/p4/MEK/28 at layer 23
+2026-11-19 06:28:36 UTC [gemma-4b-full] 2021-03-13/p4/MEK/28: fixed at alpha fraction 0.01 after 1 ladder steps
+2026-11-19 06:28:36 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2021-03-13/p4/MEK/28] on targeted_target: 1 questions
+Running gemma-4b-full+edit[2021-03-13/p4/MEK/28] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:28:36 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_target: accuracy 100.0%
+2026-11-19 06:28:36 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2021-03-13/p4/MEK/28] on targeted_test: 180 questions, with damage checks
+Running gemma-4b-full+edit[2021-03-13/p4/MEK/28] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:29:14 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_test: accuracy 76.1%
+2026-11-19 06:29:14 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2021-03-13/p4/MEK/28] on targeted_dev_subset: 300 questions
+Running gemma-4b-full+edit[2021-03-13/p4/MEK/28] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.3%
+2026-11-19 06:29:44 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_dev_subset: accuracy 74.3%
+2026-11-19 06:29:44 UTC [gemma-4b-full] scoring gemma-4b-full+random[2021-03-13/p4/MEK/28] on control_target: 1 questions
+Running gemma-4b-full+random[2021-03-13/p4/MEK/28] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:29:44 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/control_target: accuracy 0.0%
+2026-11-19 06:29:44 UTC [gemma-4b-full] scoring gemma-4b-full+random[2021-03-13/p4/MEK/28] on control_test: 180 questions, with damage checks
+Running gemma-4b-full+random[2021-03-13/p4/MEK/28] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/control_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:30:18 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/control_test: accuracy 76.1%
+2026-11-19 06:30:18 UTC [gemma-4b-full] scoring gemma-4b-full+random[2021-03-13/p4/MEK/28] on control_dev_subset: 300 questions
+Running gemma-4b-full+random[2021-03-13/p4/MEK/28] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/control_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.3%
+2026-11-19 06:30:47 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/control_dev_subset: accuracy 74.3%
+2026-11-19 06:30:47 UTC [gemma-4b-full] searching the edit for 2023-10-22/p5/MEK/21 at layer 23
+2026-11-19 06:30:47 UTC [gemma-4b-full] 2023-10-22/p5/MEK/21: not fixed (could_not_fix) after 7 ladder steps
+2026-11-19 06:30:47 UTC [gemma-4b-full] searching the edit for 2022-10-23/p5/MEK/26 at layer 23
+2026-11-19 06:30:48 UTC [gemma-4b-full] 2022-10-23/p5/MEK/26: fixed at alpha fraction 0.01 after 1 ladder steps
+2026-11-19 06:30:48 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2022-10-23/p5/MEK/26] on targeted_target: 1 questions
+Running gemma-4b-full+edit[2022-10-23/p5/MEK/26] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:30:48 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/targeted_target: accuracy 100.0%
+2026-11-19 06:30:48 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2022-10-23/p5/MEK/26] on targeted_test: 180 questions, with damage checks
+Running gemma-4b-full+edit[2022-10-23/p5/MEK/26] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/targeted_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 71.0%
+  150/180 questions, running accuracy 72.7%
+  180/180 questions, running accuracy 75.0%
+2026-11-19 06:31:25 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/targeted_test: accuracy 75.0%
+2026-11-19 06:31:25 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2022-10-23/p5/MEK/26] on targeted_dev_subset: 300 questions
+Running gemma-4b-full+edit[2022-10-23/p5/MEK/26] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/targeted_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 78.5%
+  250/300 questions, running accuracy 76.0%
+  300/300 questions, running accuracy 74.0%
+2026-11-19 06:31:50 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/targeted_dev_subset: accuracy 74.0%
+2026-11-19 06:31:50 UTC [gemma-4b-full] scoring gemma-4b-full+random[2022-10-23/p5/MEK/26] on control_target: 1 questions
+Running gemma-4b-full+random[2022-10-23/p5/MEK/26] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:31:50 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/control_target: accuracy 0.0%
+2026-11-19 06:31:50 UTC [gemma-4b-full] scoring gemma-4b-full+random[2022-10-23/p5/MEK/26] on control_test: 180 questions, with damage checks
+Running gemma-4b-full+random[2022-10-23/p5/MEK/26] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/control_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:32:28 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/control_test: accuracy 76.1%
+2026-11-19 06:32:28 UTC [gemma-4b-full] scoring gemma-4b-full+random[2022-10-23/p5/MEK/26] on control_dev_subset: 300 questions
+Running gemma-4b-full+random[2022-10-23/p5/MEK/26] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/control_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.3%
+2026-11-19 06:32:55 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-10-23_p5_MEK_26/control_dev_subset: accuracy 74.3%
+2026-11-19 06:32:55 UTC [gemma-4b-full] searching the edit for 2017-04-01/p5/MEK/24 at layer 23
+2026-11-19 06:32:55 UTC [gemma-4b-full] 2017-04-01/p5/MEK/24: fixed at alpha fraction 0.05 after 3 ladder steps
+2026-11-19 06:32:55 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2017-04-01/p5/MEK/24] on targeted_target: 1 questions
+Running gemma-4b-full+edit[2017-04-01/p5/MEK/24] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/targeted_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:32:55 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/targeted_target: accuracy 100.0%
+2026-11-19 06:32:55 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2017-04-01/p5/MEK/24] on targeted_test: 180 questions, with damage checks
+Running gemma-4b-full+edit[2017-04-01/p5/MEK/24] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/targeted_test
+  50/180 questions, running accuracy 68.0%
+  100/180 questions, running accuracy 70.0%
+  150/180 questions, running accuracy 70.7%
+  180/180 questions, running accuracy 72.8%
+2026-11-19 06:33:31 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/targeted_test: accuracy 72.8%
+2026-11-19 06:33:31 UTC [gemma-4b-full] scoring gemma-4b-full+edit[2017-04-01/p5/MEK/24] on targeted_dev_subset: 300 questions
+Running gemma-4b-full+edit[2017-04-01/p5/MEK/24] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/targeted_dev_subset
+  50/300 questions, running accuracy 84.0%
+  100/300 questions, running accuracy 83.0%
+  150/300 questions, running accuracy 80.7%
+  200/300 questions, running accuracy 76.5%
+  250/300 questions, running accuracy 73.2%
+  300/300 questions, running accuracy 69.7%
+2026-11-19 06:33:59 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/targeted_dev_subset: accuracy 69.7%
+2026-11-19 06:33:59 UTC [gemma-4b-full] scoring gemma-4b-full+random[2017-04-01/p5/MEK/24] on control_target: 1 questions
+Running gemma-4b-full+random[2017-04-01/p5/MEK/24] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/control_target
+  1/1 questions, running accuracy 0.0%
+2026-11-19 06:33:59 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/control_target: accuracy 0.0%
+2026-11-19 06:33:59 UTC [gemma-4b-full] scoring gemma-4b-full+random[2017-04-01/p5/MEK/24] on control_test: 180 questions, with damage checks
+Running gemma-4b-full+random[2017-04-01/p5/MEK/24] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/control_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:34:36 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/control_test: accuracy 76.1%
+2026-11-19 06:34:36 UTC [gemma-4b-full] scoring gemma-4b-full+random[2017-04-01/p5/MEK/24] on control_dev_subset: 300 questions
+Running gemma-4b-full+random[2017-04-01/p5/MEK/24] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/control_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.3%
+2026-11-19 06:35:01 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2017-04-01_p5_MEK_24/control_dev_subset: accuracy 74.3%
+2026-11-19 06:35:01 UTC [gemma-4b-full] searching the edit for 2022-10-23/p2/ORD/10 at layer 23
+2026-11-19 06:35:01 UTC [gemma-4b-full] 2022-10-23/p2/ORD/10: not fixed (could_not_fix) after 7 ladder steps
+2026-11-19 06:35:01 UTC [gemma-4b-full] searching the edit for 2023-03-25/p3/ORD/9 at layer 23
+2026-11-19 06:35:02 UTC [gemma-4b-full] 2023-03-25/p3/ORD/9: not fixed (could_not_fix) after 7 ladder steps
+2026-11-19 06:35:02 UTC [gemma-4b-full] edits: finished
+2026-11-19 06:35:02 UTC [gemma-4b-full] select-failures: done already (experiments/gemma-4b-full/failure_cases.jsonl)
+2026-11-19 06:35:02 UTC [gemma-4b-full] dev-subset: done already (experiments/dev_subset.json)
+2026-11-19 06:35:02 UTC [gemma-4b-full] scoring gemma-4b-full+edits[combined 5] on targeted_targets: 5 questions
+Running gemma-4b-full+edits[combined 5] on dev: 5 questions -> /root/sellma/experiments/gemma-4b-full/combined/targeted_targets
+  5/5 questions, running accuracy 20.0%
+2026-11-19 06:35:02 UTC [gemma-4b-full] finished experiments/gemma-4b-full/combined/targeted_targets: accuracy 20.0%
+2026-11-19 06:35:02 UTC [gemma-4b-full] scoring gemma-4b-full+edits[combined 5] on targeted_test: 180 questions, with damage checks
+Running gemma-4b-full+edits[combined 5] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/combined/targeted_test
+  50/180 questions, running accuracy 68.0%
+  100/180 questions, running accuracy 71.0%
+  150/180 questions, running accuracy 72.7%
+  180/180 questions, running accuracy 75.0%
+2026-11-19 06:35:39 UTC [gemma-4b-full] finished experiments/gemma-4b-full/combined/targeted_test: accuracy 75.0%
+2026-11-19 06:35:39 UTC [gemma-4b-full] scoring gemma-4b-full+edits[combined 5] on targeted_dev_subset: 300 questions
+Running gemma-4b-full+edits[combined 5] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/combined/targeted_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 77.5%
+  250/300 questions, running accuracy 74.4%
+  300/300 questions, running accuracy 71.3%
+2026-11-19 06:36:05 UTC [gemma-4b-full] finished experiments/gemma-4b-full/combined/targeted_dev_subset: accuracy 71.3%
+2026-11-19 06:36:05 UTC [gemma-4b-full] scoring gemma-4b-full+random[combined 5] on control_targets: 5 questions
+Running gemma-4b-full+random[combined 5] on dev: 5 questions -> /root/sellma/experiments/gemma-4b-full/combined/control_targets
+  5/5 questions, running accuracy 0.0%
+2026-11-19 06:36:06 UTC [gemma-4b-full] finished experiments/gemma-4b-full/combined/control_targets: accuracy 0.0%
+2026-11-19 06:36:06 UTC [gemma-4b-full] scoring gemma-4b-full+random[combined 5] on control_test: 180 questions, with damage checks
+Running gemma-4b-full+random[combined 5] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/combined/control_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:36:42 UTC [gemma-4b-full] finished experiments/gemma-4b-full/combined/control_test: accuracy 76.1%
+2026-11-19 06:36:42 UTC [gemma-4b-full] scoring gemma-4b-full+random[combined 5] on control_dev_subset: 300 questions
+Running gemma-4b-full+random[combined 5] on dev: 300 questions -> /root/sellma/experiments/gemma-4b-full/combined/control_dev_subset
+  50/300 questions, running accuracy 86.0%
+  100/300 questions, running accuracy 84.0%
+  150/300 questions, running accuracy 81.3%
+  200/300 questions, running accuracy 79.0%
+  250/300 questions, running accuracy 76.4%
+  300/300 questions, running accuracy 74.3%
+2026-11-19 06:37:09 UTC [gemma-4b-full] finished experiments/gemma-4b-full/combined/control_dev_subset: accuracy 74.3%
+2026-11-19 06:37:09 UTC [gemma-4b-full] combined: finished
+2026-11-19 06:37:09 UTC [gemma-4b-full] select-failures: done already (experiments/gemma-4b-full/failure_cases.jsonl)
+2026-11-19 06:37:09 UTC [gemma-4b-full] dev-subset: done already (experiments/dev_subset.json)
+2026-11-19 06:37:09 UTC [gemma-4b-full] loading gemma-4b-q4 (unedited 4-bit) (can take minutes)
+2026-11-19 06:37:13 UTC [gemma-4b-full] scoring gemma-4b-q4 on q4_targets: 10 questions
+Running gemma-4b-q4 on dev: 10 questions -> /root/sellma/experiments/gemma-4b-full/baseline/q4_targets
+  10/10 questions, running accuracy 10.0%
+2026-11-19 06:37:17 UTC [gemma-4b-full] finished experiments/gemma-4b-full/baseline/q4_targets: accuracy 10.0%
+2026-11-19 06:37:17 UTC [gemma-4b-full] saving the edited model to work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/hf
+2026-11-19 06:37:18 UTC [gemma-4b-full] compressing to Q4_K_M: work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/edited-Q4_K_M.gguf
+compress: /root/llama-venv/bin/python /root/llama.cpp/convert_hf_to_gguf.py /root/sellma/work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/hf --outfile /root/sellma/work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/.edited-Q4_K_M.gguf.bf16.tmp --outtype bf16
+compress: /root/llama.cpp/build/bin/llama-quantize /root/sellma/work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/.edited-Q4_K_M.gguf.bf16.tmp /root/sellma/work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/.edited-Q4_K_M.gguf.unfinished Q4_K_M 32
+2026-11-19 06:38:14 UTC [gemma-4b-full] loading 4-bit edited model work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/edited-Q4_K_M.gguf (can take minutes)
+2026-11-19 06:38:16 UTC [gemma-4b-full] scoring gemma-4b-q4+edit[2022-05-07/p5/LAS/16] on targeted_q4_target: 1 questions
+Running gemma-4b-q4+edit[2022-05-07/p5/LAS/16] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_q4_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:38:17 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_q4_target: accuracy 100.0%
+2026-11-19 06:38:17 UTC [gemma-4b-full] scoring gemma-4b-q4+edit[2022-05-07/p5/LAS/16] on targeted_q4_test: 180 questions, with damage checks
+Running gemma-4b-q4+edit[2022-05-07/p5/LAS/16] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_q4_test
+  50/180 questions, running accuracy 76.0%
+  100/180 questions, running accuracy 75.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 06:41:24 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2022-05-07_p5_LAS_16/targeted_q4_test: accuracy 76.1%
+2026-11-19 06:41:25 UTC [gemma-4b-full] deleted work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted
+2026-11-19 06:41:25 UTC [gemma-4b-full] saving the edited model to work/gemma-4b-full/2015-03-28_p3_LAS_13_targeted/hf
+2026-11-19 06:41:26 UTC [gemma-4b-full] compressing to Q4_K_M: work/gemma-4b-full/2015-03-28_p3_LAS_13_targeted/edited-Q4_K_M.gguf
+compress: /root/llama-venv/bin/python /root/llama.cpp/convert_hf_to_gguf.py /root/sellma/work/gemma-4b-full/2015-03-28_p3_LAS_13_targeted/hf --outfile /root/sellma/work/gemma-4b-full/2015-03-28_p3_LAS_13_targeted/.edited-Q4_K_M.gguf.bf16.tmp --outtype bf16
+compress: /root/llama.cpp/build/bin/llama-quantize /root/sellma/work/gemma-4b-full/2015-03-28_p3_LAS_13_targeted/.edited-Q4_K_M.gguf.bf16.tmp /root/sellma/work/gemma-4b-full/2015-03-28_p3_LAS_13_targeted/.edited-Q4_K_M.gguf.unfinished Q4_K_M 32
+2026-11-19 06:42:23 UTC [gemma-4b-full] loading 4-bit edited model work/gemma-4b-full/2015-03-28_p3_LAS_13_targeted/edited-Q4_K_M.gguf (can take minutes)
+2026-11-19 06:42:27 UTC [gemma-4b-full] scoring gemma-4b-q4+edit[2015-03-28/p3/LAS/13] on targeted_q4_target: 1 questions
+Running gemma-4b-q4+edit[2015-03-28/p3/LAS/13] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_q4_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:42:27 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_q4_target: accuracy 100.0%
+2026-11-19 06:42:27 UTC [gemma-4b-full] scoring gemma-4b-q4+edit[2015-03-28/p3/LAS/13] on targeted_q4_test: 180 questions, with damage checks
+Running gemma-4b-q4+edit[2015-03-28/p3/LAS/13] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_q4_test
+  50/180 questions, running accuracy 70.0%
+  100/180 questions, running accuracy 72.0%
+  150/180 questions, running accuracy 72.7%
+  180/180 questions, running accuracy 73.3%
+2026-11-19 06:45:19 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2015-03-28_p3_LAS_13/targeted_q4_test: accuracy 73.3%
+2026-11-19 06:45:21 UTC [gemma-4b-full] deleted work/gemma-4b-full/2015-03-28_p3_LAS_13_targeted
+2026-11-19 06:45:21 UTC [gemma-4b-full] saving the edited model to work/gemma-4b-full/2021-03-13_p4_MEK_28_targeted/hf
+2026-11-19 06:45:22 UTC [gemma-4b-full] compressing to Q4_K_M: work/gemma-4b-full/2021-03-13_p4_MEK_28_targeted/edited-Q4_K_M.gguf
+compress: /root/llama-venv/bin/python /root/llama.cpp/convert_hf_to_gguf.py /root/sellma/work/gemma-4b-full/2021-03-13_p4_MEK_28_targeted/hf --outfile /root/sellma/work/gemma-4b-full/2021-03-13_p4_MEK_28_targeted/.edited-Q4_K_M.gguf.bf16.tmp --outtype bf16
+compress: /root/llama.cpp/build/bin/llama-quantize /root/sellma/work/gemma-4b-full/2021-03-13_p4_MEK_28_targeted/.edited-Q4_K_M.gguf.bf16.tmp /root/sellma/work/gemma-4b-full/2021-03-13_p4_MEK_28_targeted/.edited-Q4_K_M.gguf.unfinished Q4_K_M 32
+2026-11-19 06:46:19 UTC [gemma-4b-full] loading 4-bit edited model work/gemma-4b-full/2021-03-13_p4_MEK_28_targeted/edited-Q4_K_M.gguf (can take minutes)
+2026-11-19 06:46:21 UTC [gemma-4b-full] scoring gemma-4b-q4+edit[2021-03-13/p4/MEK/28] on targeted_q4_target: 1 questions
+Running gemma-4b-q4+edit[2021-03-13/p4/MEK/28] on dev: 1 questions -> /root/sellma/experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_q4_target
+  1/1 questions, running accuracy 100.0%
+2026-11-19 06:46:21 UTC [gemma-4b-full] finished experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_q4_target: accuracy 100.0%
+2026-11-19 06:46:21 UTC [gemma-4b-full] scoring gemma-4b-q4+edit[2021-03-13/p4/MEK/28] on targeted_q4_test: 180 questions, with damage checks
+Running gemma-4b-q4+edit[2021-03-13/p4/MEK/28] on test: 180 questions -> /root/sellma/experiments/gemma-4b-full/edits/2021-03-13_p4_MEK_28/targeted_q4_test
+  50/180 questions, running accuracy 72.0%
+  100/180 questions, running accuracy 73.0%

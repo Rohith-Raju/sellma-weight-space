@@ -1,0 +1,182 @@
+[2026-11-19T06:06:54Z] phase 1 started
+[2026-11-19T06:06:54Z] qwen: start qwen-9b-full dev
+[2026-11-19T06:06:54Z] gemma: start gemma-4b-full dev
+[qwen-9b-full dev] Running qwen-9b-full on dev: 1350 questions -> /root/sellma/runs/20261119T060703Z_qwen-9b-full_dev
+[gemma-4b-full dev] Running gemma-4b-full on dev: 1350 questions -> /root/sellma/runs/20261119T060704Z_gemma-4b-full_dev
+[qwen-9b-full dev] [transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen-9b-full dev] [transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[gemma-4b-full dev]   50/1350 questions, running accuracy 80.0%
+[qwen-9b-full dev]   50/1350 questions, running accuracy 90.0%
+[gemma-4b-full dev]   100/1350 questions, running accuracy 73.0%
+[qwen-9b-full dev]   100/1350 questions, running accuracy 86.0%
+[gemma-4b-full dev]   150/1350 questions, running accuracy 68.7%
+[gemma-4b-full dev]   200/1350 questions, running accuracy 70.5%
+[qwen-9b-full dev]   150/1350 questions, running accuracy 83.3%
+[gemma-4b-full dev]   250/1350 questions, running accuracy 71.2%
+[gemma-4b-full dev]   300/1350 questions, running accuracy 68.3%
+[qwen-9b-full dev]   200/1350 questions, running accuracy 84.5%
+[gemma-4b-full dev]   350/1350 questions, running accuracy 69.1%
+[qwen-9b-full dev]   250/1350 questions, running accuracy 85.2%
+[gemma-4b-full dev]   400/1350 questions, running accuracy 69.8%
+[gemma-4b-full dev]   450/1350 questions, running accuracy 70.9%
+[qwen-9b-full dev]   300/1350 questions, running accuracy 85.0%
+[gemma-4b-full dev]   500/1350 questions, running accuracy 71.2%
+[gemma-4b-full dev]   550/1350 questions, running accuracy 71.5%
+[qwen-9b-full dev]   350/1350 questions, running accuracy 84.9%
+[gemma-4b-full dev]   600/1350 questions, running accuracy 72.2%
+[qwen-9b-full dev]   400/1350 questions, running accuracy 84.2%
+[gemma-4b-full dev]   650/1350 questions, running accuracy 72.8%
+[gemma-4b-full dev]   700/1350 questions, running accuracy 73.1%
+[qwen-9b-full dev]   450/1350 questions, running accuracy 85.1%
+[gemma-4b-full dev]   750/1350 questions, running accuracy 72.8%
+[gemma-4b-full dev]   800/1350 questions, running accuracy 73.0%
+[qwen-9b-full dev]   500/1350 questions, running accuracy 85.6%
+[gemma-4b-full dev]   850/1350 questions, running accuracy 73.1%
+[qwen-9b-full dev]   550/1350 questions, running accuracy 86.0%
+[gemma-4b-full dev]   900/1350 questions, running accuracy 73.3%
+[gemma-4b-full dev]   950/1350 questions, running accuracy 72.4%
+[qwen-9b-full dev]   600/1350 questions, running accuracy 86.8%
+[gemma-4b-full dev]   1000/1350 questions, running accuracy 72.0%
+[gemma-4b-full dev]   1050/1350 questions, running accuracy 71.9%
+[qwen-9b-full dev]   650/1350 questions, running accuracy 87.4%
+[gemma-4b-full dev]   1100/1350 questions, running accuracy 72.6%
+[qwen-9b-full dev]   700/1350 questions, running accuracy 87.6%
+[gemma-4b-full dev]   1150/1350 questions, running accuracy 73.0%
+[gemma-4b-full dev]   1200/1350 questions, running accuracy 72.8%
+[qwen-9b-full dev]   750/1350 questions, running accuracy 87.7%
+[gemma-4b-full dev]   1250/1350 questions, running accuracy 72.6%
+[gemma-4b-full dev]   1300/1350 questions, running accuracy 72.9%
+[qwen-9b-full dev]   800/1350 questions, running accuracy 88.1%
+[gemma-4b-full dev]   1350/1350 questions, running accuracy 73.1%
+[qwen-9b-full dev]   850/1350 questions, running accuracy 88.5%
+[qwen-9b-full dev]   900/1350 questions, running accuracy 88.8%
+[qwen-9b-full dev]   950/1350 questions, running accuracy 88.1%
+[gemma-4b-full dev] Run written to /root/sellma/runs/20261119T060704Z_gemma-4b-full_dev
+[2026-11-19T06:09:20Z] gemma: done gemma-4b-full dev
+[2026-11-19T06:09:20Z] gemma: start gemma-4b-full test
+[qwen-9b-full dev]   1000/1350 questions, running accuracy 88.1%
+[gemma-4b-full test] Running gemma-4b-full on test: 180 questions -> /root/sellma/runs/20261119T060929Z_gemma-4b-full_test
+[qwen-9b-full dev]   1050/1350 questions, running accuracy 88.0%
+[gemma-4b-full test]   50/180 questions, running accuracy 74.0%
+[qwen-9b-full dev]   1100/1350 questions, running accuracy 88.3%
+[gemma-4b-full test]   100/180 questions, running accuracy 73.0%
+[qwen-9b-full dev]   1150/1350 questions, running accuracy 88.3%
+[gemma-4b-full test]   150/180 questions, running accuracy 74.0%
+[gemma-4b-full test]   180/180 questions, running accuracy 76.1%
+[qwen-9b-full dev]   1200/1350 questions, running accuracy 88.3%
+[qwen-9b-full dev]   1250/1350 questions, running accuracy 88.3%
+[qwen-9b-full dev]   1300/1350 questions, running accuracy 88.5%
+[gemma-4b-full test] Run written to /root/sellma/runs/20261119T060929Z_gemma-4b-full_test
+[2026-11-19T06:10:09Z] gemma: done gemma-4b-full test
+[2026-11-19T06:10:09Z] gemma: start gemma-4b-full gemma_extra
+[qwen-9b-full dev]   1350/1350 questions, running accuracy 88.8%
+[gemma-4b-full gemma_extra] Running gemma-4b-full on gemma_extra: 120 questions -> /root/sellma/runs/20261119T061019Z_gemma-4b-full_gemma_extra
+[gemma-4b-full gemma_extra]   50/120 questions, running accuracy 72.0%
+[qwen-9b-full dev] [transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen-9b-full dev] [transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[gemma-4b-full gemma_extra]   100/120 questions, running accuracy 78.0%
+[gemma-4b-full gemma_extra]   120/120 questions, running accuracy 77.5%
+[qwen-9b-full dev] Run written to /root/sellma/runs/20261119T060703Z_qwen-9b-full_dev
+[2026-11-19T06:10:46Z] qwen: done qwen-9b-full dev
+[2026-11-19T06:10:46Z] qwen: start qwen-9b-full test
+[gemma-4b-full gemma_extra] Run written to /root/sellma/runs/20261119T061019Z_gemma-4b-full_gemma_extra
+[qwen-9b-full test] Running qwen-9b-full on test: 180 questions -> /root/sellma/runs/20261119T061055Z_qwen-9b-full_test
+[2026-11-19T06:10:56Z] gemma: done gemma-4b-full gemma_extra
+[2026-11-19T06:10:56Z] gemma: start gemma-4b-q4 dev
+[qwen-9b-full test] [transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen-9b-full test] [transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[qwen-9b-full test]   50/180 questions, running accuracy 90.0%
+[gemma-4b-q4 dev] Running gemma-4b-q4 on dev: 1350 questions -> /root/sellma/runs/20261119T061105Z_gemma-4b-q4_dev
+[qwen-9b-full test]   100/180 questions, running accuracy 89.0%
+[gemma-4b-q4 dev]   50/1350 questions, running accuracy 80.0%
+[qwen-9b-full test]   150/180 questions, running accuracy 90.7%
+[qwen-9b-full test]   180/180 questions, running accuracy 91.7%
+[gemma-4b-q4 dev]   100/1350 questions, running accuracy 71.0%
+[gemma-4b-q4 dev]   150/1350 questions, running accuracy 66.7%
+[qwen-9b-full test] [transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[qwen-9b-full test] [transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[gemma-4b-q4 dev]   200/1350 questions, running accuracy 68.0%
+[qwen-9b-full test] Run written to /root/sellma/runs/20261119T061055Z_qwen-9b-full_test
+[2026-11-19T06:11:49Z] qwen: done qwen-9b-full test
+[2026-11-19T06:11:49Z] qwen: start qwen-9b-q4 dev
+[gemma-4b-q4 dev]   250/1350 questions, running accuracy 68.4%
+[gemma-4b-q4 dev]   300/1350 questions, running accuracy 67.3%
+[qwen-9b-q4 dev] Running qwen-9b-q4 on dev: 1350 questions -> /root/sellma/runs/20261119T061201Z_qwen-9b-q4_dev
+[gemma-4b-q4 dev]   350/1350 questions, running accuracy 68.9%
+[qwen-9b-q4 dev]   50/1350 questions, running accuracy 92.0%
+[gemma-4b-q4 dev]   400/1350 questions, running accuracy 69.5%
+[qwen-9b-q4 dev]   100/1350 questions, running accuracy 85.0%
+[gemma-4b-q4 dev]   450/1350 questions, running accuracy 70.0%
+[qwen-9b-q4 dev]   150/1350 questions, running accuracy 82.7%
+[gemma-4b-q4 dev]   500/1350 questions, running accuracy 69.2%
+[gemma-4b-q4 dev]   550/1350 questions, running accuracy 68.7%
+[qwen-9b-q4 dev]   200/1350 questions, running accuracy 84.0%
+[gemma-4b-q4 dev]   600/1350 questions, running accuracy 69.5%
+[qwen-9b-q4 dev]   250/1350 questions, running accuracy 84.0%
+[gemma-4b-q4 dev]   650/1350 questions, running accuracy 70.2%
+[qwen-9b-q4 dev]   300/1350 questions, running accuracy 84.0%
+[gemma-4b-q4 dev]   700/1350 questions, running accuracy 70.6%
+[qwen-9b-q4 dev]   350/1350 questions, running accuracy 83.7%
+[gemma-4b-q4 dev]   750/1350 questions, running accuracy 70.5%
+[qwen-9b-q4 dev]   400/1350 questions, running accuracy 83.2%
+[gemma-4b-q4 dev]   800/1350 questions, running accuracy 70.9%
+[qwen-9b-q4 dev]   450/1350 questions, running accuracy 84.4%
+[gemma-4b-q4 dev]   850/1350 questions, running accuracy 71.1%
+[qwen-9b-q4 dev]   500/1350 questions, running accuracy 84.4%
+[gemma-4b-q4 dev]   900/1350 questions, running accuracy 71.1%
+[qwen-9b-q4 dev]   550/1350 questions, running accuracy 84.7%
+[gemma-4b-q4 dev]   950/1350 questions, running accuracy 70.2%
+[gemma-4b-q4 dev]   1000/1350 questions, running accuracy 70.0%
+[qwen-9b-q4 dev]   600/1350 questions, running accuracy 85.7%
+[gemma-4b-q4 dev]   1050/1350 questions, running accuracy 69.9%
+[qwen-9b-q4 dev]   650/1350 questions, running accuracy 86.0%
+[gemma-4b-q4 dev]   1100/1350 questions, running accuracy 70.5%
+[qwen-9b-q4 dev]   700/1350 questions, running accuracy 85.7%
+[gemma-4b-q4 dev]   1150/1350 questions, running accuracy 71.0%
+[qwen-9b-q4 dev]   750/1350 questions, running accuracy 85.7%
+[gemma-4b-q4 dev]   1200/1350 questions, running accuracy 70.6%
+[gemma-4b-q4 dev]   1250/1350 questions, running accuracy 70.2%
+[qwen-9b-q4 dev]   800/1350 questions, running accuracy 86.2%
+[gemma-4b-q4 dev]   1300/1350 questions, running accuracy 70.3%
+[qwen-9b-q4 dev]   850/1350 questions, running accuracy 86.7%
+[gemma-4b-q4 dev]   1350/1350 questions, running accuracy 70.6%
+[qwen-9b-q4 dev]   900/1350 questions, running accuracy 87.3%
+[qwen-9b-q4 dev]   950/1350 questions, running accuracy 86.8%
+[qwen-9b-q4 dev]   1000/1350 questions, running accuracy 86.9%
+[qwen-9b-q4 dev]   1050/1350 questions, running accuracy 87.0%
+[qwen-9b-q4 dev]   1100/1350 questions, running accuracy 87.2%
+[qwen-9b-q4 dev]   1150/1350 questions, running accuracy 87.3%
+[qwen-9b-q4 dev]   1200/1350 questions, running accuracy 87.1%
+[gemma-4b-q4 dev] Run written to /root/sellma/runs/20261119T061105Z_gemma-4b-q4_dev
+[2026-11-19T06:16:33Z] gemma: done gemma-4b-q4 dev
+[2026-11-19T06:16:33Z] gemma: start gemma-4b-q4 test
+[qwen-9b-q4 dev]   1250/1350 questions, running accuracy 87.0%
+[gemma-4b-q4 test] Running gemma-4b-q4 on test: 180 questions -> /root/sellma/runs/20261119T061642Z_gemma-4b-q4_test
+[qwen-9b-q4 dev]   1300/1350 questions, running accuracy 87.1%
+[gemma-4b-q4 test]   50/180 questions, running accuracy 72.0%
+[qwen-9b-q4 dev]   1350/1350 questions, running accuracy 87.4%
+[gemma-4b-q4 test]   100/180 questions, running accuracy 72.0%
+[gemma-4b-q4 test]   150/180 questions, running accuracy 72.7%
+[gemma-4b-q4 test]   180/180 questions, running accuracy 73.9%
+[qwen-9b-q4 dev] Run written to /root/sellma/runs/20261119T061201Z_qwen-9b-q4_dev
+[2026-11-19T06:19:11Z] qwen: done qwen-9b-q4 dev
+[2026-11-19T06:19:11Z] qwen: start qwen-9b-q4 test
+[gemma-4b-q4 test] Run written to /root/sellma/runs/20261119T061642Z_gemma-4b-q4_test
+[2026-11-19T06:19:15Z] gemma: done gemma-4b-q4 test
+[2026-11-19T06:19:15Z] gemma: start gemma-4b-q4 gemma_extra
+[qwen-9b-q4 test] Running qwen-9b-q4 on test: 180 questions -> /root/sellma/runs/20261119T061919Z_qwen-9b-q4_test
+[gemma-4b-q4 gemma_extra] Running gemma-4b-q4 on gemma_extra: 120 questions -> /root/sellma/runs/20261119T061922Z_gemma-4b-q4_gemma_extra
+[qwen-9b-q4 test]   50/180 questions, running accuracy 90.0%
+[gemma-4b-q4 gemma_extra]   50/120 questions, running accuracy 70.0%
+[qwen-9b-q4 test]   100/180 questions, running accuracy 87.0%
+[gemma-4b-q4 gemma_extra]   100/120 questions, running accuracy 72.0%
+[gemma-4b-q4 gemma_extra]   120/120 questions, running accuracy 68.3%
+[qwen-9b-q4 test]   150/180 questions, running accuracy 88.0%
+[qwen-9b-q4 test]   180/180 questions, running accuracy 88.9%
+[gemma-4b-q4 gemma_extra] Run written to /root/sellma/runs/20261119T061922Z_gemma-4b-q4_gemma_extra
+[2026-11-19T06:21:45Z] gemma: done gemma-4b-q4 gemma_extra
+[2026-11-19T06:21:45Z] gemma: chain finished
+[qwen-9b-q4 test] Run written to /root/sellma/runs/20261119T061919Z_qwen-9b-q4_test
+[2026-11-19T06:22:01Z] qwen: done qwen-9b-q4 test
+[2026-11-19T06:22:01Z] qwen: chain finished
+[2026-11-19T06:22:25Z] phase 1 complete: all ten baseline runs have results

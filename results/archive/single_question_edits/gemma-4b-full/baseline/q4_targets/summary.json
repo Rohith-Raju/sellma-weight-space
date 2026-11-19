@@ -1,0 +1,281 @@
+{
+  "model": "gemma-4b-q4",
+  "backend": "llamacpp",
+  "split": "dev",
+  "n_questions": 10,
+  "overall": {
+    "n": 10,
+    "accuracy": 0.1,
+    "accuracy_ci95": [
+      0.017876213095072896,
+      0.40415002679523837
+    ],
+    "mean_prob_correct": 0.08968579228805236,
+    "mean_prob_on_letters": 0.9999997989213494,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.1,
+      "B": 0.2,
+      "C": 0.6,
+      "D": 0.1,
+      "E": 0.0
+    }
+  },
+  "headline": {
+    "sections": [
+      "LAS",
+      "MEK"
+    ],
+    "n": 8,
+    "accuracy": 0.125,
+    "accuracy_ci95": [
+      0.02241749145005667,
+      0.47088818221285345
+    ],
+    "mean_prob_correct": 0.112107060061067,
+    "mean_prob_on_letters": 0.9999997612253029,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.125,
+      "B": 0.125,
+      "C": 0.625,
+      "D": 0.125,
+      "E": 0.0
+    }
+  },
+  "sections": {
+    "ORD": {
+      "n": 2,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.6576197724933468
+      ],
+      "mean_prob_correct": 7.211959938030203e-07,
+      "mean_prob_on_letters": 0.9999999497055352,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.5,
+        "C": 0.5,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "LAS": {
+      "n": 4,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.4898908364545972
+      ],
+      "mean_prob_correct": 1.7500954060957592e-06,
+      "mean_prob_on_letters": 0.9999999384647411,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.25,
+        "B": 0.0,
+        "C": 0.5,
+        "D": 0.25,
+        "E": 0.0
+      }
+    },
+    "MEK": {
+      "n": 4,
+      "accuracy": 0.25,
+      "accuracy_ci95": [
+        0.0455872608097006,
+        0.699358157417598
+      ],
+      "mean_prob_correct": 0.2242123700267279,
+      "mean_prob_on_letters": 0.9999995839858646,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.25,
+        "C": 0.75,
+        "D": 0.0,
+        "E": 0.0
+      }
+    }
+  },
+  "exam_dates": {
+    "2015-03-28": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 2.880407364380391e-06,
+      "mean_prob_on_letters": 0.999999978061063,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 1.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2016-10-29": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 1.1353723179178852e-06,
+      "mean_prob_on_letters": 0.999999931991914,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 1.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2017-04-01": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 8.892964436467223e-05,
+      "mean_prob_on_letters": 0.999998730955596,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 1.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2019-04-06": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 9.149948238977549e-07,
+      "mean_prob_on_letters": 1.0000000088904653,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 1.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2021-03-13": {
+      "n": 1,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "mean_prob_correct": 0.8967517623116392,
+      "mean_prob_on_letters": 0.9999996022586018,
+      "unsure_share": 0.0,
+      "ceiling": true,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 1.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2022-05-07": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 2.069607118187006e-06,
+      "mean_prob_on_letters": 0.999999834915522,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 1.0,
+        "E": 0.0
+      }
+    },
+    "2022-10-23": {
+      "n": 2,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.6576197724933468
+      ],
+      "mean_prob_correct": 4.90040138006077e-06,
+      "mean_prob_on_letters": 0.9999999542643617,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 1.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2023-03-25": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 7.888323903676262e-08,
+      "mean_prob_on_letters": 0.9999999760327571,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 1.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2023-10-22": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 3.508568960813378e-07,
+      "mean_prob_on_letters": 1.0000000175788506,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 1.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    }
+  },
+  "damage": null
+}

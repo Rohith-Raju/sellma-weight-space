@@ -1,0 +1,73 @@
+
+=== dev (23 older papers): 900 questions ===
+category          unedited  edited
+knows                  405     439
+habit_A                124      76
+unsure                 262     270
+wrong_belief            51      62
+position_guess           0       0
+no_idea                 58      53
+
+transitions (unedited -> edited), non-zero only:
+  knows           -> unsure          9
+  habit_A         -> knows           42
+  habit_A         -> unsure          9
+  unsure          -> knows           1
+  unsure          -> habit_A         3
+  unsure          -> wrong_belief    11
+  unsure          -> no_idea         7
+  wrong_belief    -> unsure          4
+  wrong_belief    -> no_idea         3
+  no_idea         -> unsure          8
+  no_idea         -> wrong_belief    7
+  unedited wrong_belief: mean prob on chosen option 0.990, on right option 0.002
+  unedited no_idea: mean prob on chosen option 0.966, on right option 0.014
+
+still wrong at A after the edit: 335; same wrong option as unedited at A: 329; different wrong option: 6
+habit_A questions (unedited): 124; edited picks the right option at A: 45
+
+=== hidden (8 older papers no edit was built on): 320 questions ===
+category          unedited  edited
+knows                  157     168
+habit_A                 39      23
+unsure                  85      91
+wrong_belief            21      21
+position_guess           0       0
+no_idea                 18      17
+
+transitions (unedited -> edited), non-zero only:
+  knows           -> unsure          4
+  habit_A         -> knows           15
+  habit_A         -> unsure          1
+  unsure          -> wrong_belief    2
+  unsure          -> no_idea         2
+  wrong_belief    -> unsure          3
+  no_idea         -> unsure          2
+  no_idea         -> wrong_belief    1
+  unedited wrong_belief: mean prob on chosen option 0.985, on right option 0.005
+  unedited no_idea: mean prob on chosen option 0.954, on right option 0.014
+
+still wrong at A after the edit: 110; same wrong option as unedited at A: 110; different wrong option: 0
+habit_A questions (unedited): 39; edited picks the right option at A: 15
+
+=== test (3 newest papers): 120 questions ===
+category          unedited  edited
+knows                   56      61
+habit_A                 14       8
+unsure                  38      36
+wrong_belief             6       8
+position_guess           0       0
+no_idea                  6       7
+
+transitions (unedited -> edited), non-zero only:
+  knows           -> unsure          1
+  habit_A         -> knows           5
+  habit_A         -> unsure          1
+  unsure          -> knows           1
+  unsure          -> wrong_belief    2
+  unsure          -> no_idea         1
+  unedited wrong_belief: mean prob on chosen option 0.987, on right option 0.013
+  unedited no_idea: mean prob on chosen option 0.980, on right option 0.000
+
+still wrong at A after the edit: 40; same wrong option as unedited at A: 40; different wrong option: 0
+habit_A questions (unedited): 14; edited picks the right option at A: 5

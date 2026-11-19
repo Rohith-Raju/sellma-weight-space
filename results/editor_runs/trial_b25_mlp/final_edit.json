@@ -1,0 +1,88 @@
+{
+  "run_name": "trial_b25_mlp",
+  "model": "gemma-4b-full",
+  "submitted_at": "2026-11-19T08:47:54+00:00",
+  "budget": 1,
+  "passes_used": 0,
+  "explanation": "Editor 2 trial (pass 6): x2 on 256 first-option correctness neurons per layer, MLP down_proj columns, layers 13-18.",
+  "size": {
+    "weights_touched": 3932160,
+    "weights_changed": 3932160,
+    "model_weights": 4300079472,
+    "share_of_model": 0.0009144389134210867,
+    "tensors": {
+      "model.language_model.layers.13.mlp.down_proj.weight": {
+        "shape": [
+          2560,
+          10240
+        ],
+        "form": "cols",
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "delta_norm": 7.70367431640625,
+        "tensor_norm": 48.96592330932617,
+        "relative_norm": 0.15732725527793712
+      },
+      "model.language_model.layers.14.mlp.down_proj.weight": {
+        "shape": [
+          2560,
+          10240
+        ],
+        "form": "cols",
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "delta_norm": 6.402915000915527,
+        "tensor_norm": 40.53296661376953,
+        "relative_norm": 0.1579680821768516
+      },
+      "model.language_model.layers.15.mlp.down_proj.weight": {
+        "shape": [
+          2560,
+          10240
+        ],
+        "form": "cols",
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "delta_norm": 4.310619831085205,
+        "tensor_norm": 27.018108367919922,
+        "relative_norm": 0.15954558225858032
+      },
+      "model.language_model.layers.16.mlp.down_proj.weight": {
+        "shape": [
+          2560,
+          10240
+        ],
+        "form": "cols",
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "delta_norm": 7.82849645614624,
+        "tensor_norm": 50.005802154541016,
+        "relative_norm": 0.15655176237254573
+      },
+      "model.language_model.layers.17.mlp.down_proj.weight": {
+        "shape": [
+          2560,
+          10240
+        ],
+        "form": "cols",
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "delta_norm": 6.504498481750488,
+        "tensor_norm": 40.91682434082031,
+        "relative_norm": 0.1589688004027559
+      },
+      "model.language_model.layers.18.mlp.down_proj.weight": {
+        "shape": [
+          2560,
+          10240
+        ],
+        "form": "cols",
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "delta_norm": 6.25895881652832,
+        "tensor_norm": 39.3016242980957,
+        "relative_norm": 0.15925445648391656
+      }
+    }
+  }
+}

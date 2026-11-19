@@ -1,0 +1,13 @@
+{
+  "seed": 1,
+  "control_for": "editor_runs/trial_b10_q_full/final_edit.safetensors",
+  "file": "experiments/editor/trial_b10_q_full/control/control_edit.safetensors",
+  "rule": "same tensors, same rows/columns and nonzero pattern; Gaussian values scaled to the same Frobenius norm per tensor",
+  "norms": [
+    {
+      "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+      "edit_norm": 0.08254662901163101,
+      "control_norm": 0.08254687488079071
+    }
+  ]
+}

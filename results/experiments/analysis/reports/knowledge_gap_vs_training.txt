@@ -1,0 +1,4 @@
+Gemma wrong in all 4 positions (does not know): n=109 | Qwen-9B right (original order) 68 (62%) | Gemma right (original order) 0 (0%) | editor 3's change right in at least one position 12
+Gemma right in some positions only (position-dependent): n=386 | Qwen-9B right (original order) 336 (87%) | Gemma right (original order) 210 (54%) | editor 3's change right in at least one position 368
+Gemma right in all 4 positions (knows): n=405 | Qwen-9B right (original order) 392 (97%) | Gemma right (original order) 405 (100%) | editor 3's change right in at least one position 405
+Gemma's mean probability on the correct option for the never-right questions (original order): 0.008

@@ -1,0 +1,29 @@
+bfloat16 mem GB 9.1
+section     n  accuracy  prob_correct  on_letters  min_on_letters  s/question
+ORD        20     90.0%         0.900       1.000           1.000       0.049
+LAS        20     75.0%         0.723       1.000           1.000       0.072
+MEK        20     65.0%         0.650       1.000           1.000       0.050
+ALL        60     76.7%         0.758       1.000           1.000       0.057
+float32 mem GB 18.3
+section     n  accuracy  prob_correct  on_letters  min_on_letters  s/question
+ORD        20     90.0%         0.900       1.000           1.000       0.044
+LAS        20     75.0%         0.748       1.000           1.000       0.262
+MEK        20     65.0%         0.650       1.000           1.000       0.049
+ALL        60     76.7%         0.766       1.000           1.000       0.118
+same choice 60 of 60
+prob_correct abs diff mean 0.008262791421446055 max 0.49516520106783074
+bfloat16 mem GB 19.5
+section     n  accuracy  prob_correct  on_letters  min_on_letters  s/question
+ORD        20     95.0%         0.902       0.999           0.996       0.075
+LAS        20     95.0%         0.920       1.000           0.999       0.238
+MEK        20     80.0%         0.757       1.000           0.999       0.085
+ALL        60     90.0%         0.860       1.000           0.996       0.132
+float32 mem GB 38.5
+section     n  accuracy  prob_correct  on_letters  min_on_letters  s/question
+ORD        20     95.0%         0.897       0.999           0.996       0.069
+LAS        20     95.0%         0.918       1.000           0.999       0.502
+MEK        20     80.0%         0.759       1.000           0.999       0.081
+ALL        60     90.0%         0.858       1.000           0.996       0.218
+same choice 60 of 60
+prob_correct abs diff mean 0.0034161150607836008 max 0.07504369018232904
+FINISHED

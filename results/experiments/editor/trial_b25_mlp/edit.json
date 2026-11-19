@@ -1,0 +1,396 @@
+{
+  "run": "trial_b25_mlp",
+  "model": "gemma-4b-full",
+  "created_at": "2026-11-19T08:58:40+00:00",
+  "source": "editor_runs/trial_b25_mlp/final_edit.safetensors",
+  "source_sha256": "8cac3aebdcc9f0d2db9c5f106e866efc36178a7fdf94967b8c4a50e53d04f766",
+  "loader": "bench.editor.workbench.load_edit",
+  "editor": {
+    "run_name": "trial_b25_mlp",
+    "model": "gemma-4b-full",
+    "submitted_at": "2026-11-19T08:47:54+00:00",
+    "budget": 1,
+    "passes_used": 0,
+    "explanation": "Editor 2 trial (pass 6): x2 on 256 first-option correctness neurons per layer, MLP down_proj columns, layers 13-18.",
+    "size": {
+      "weights_touched": 3932160,
+      "weights_changed": 3932160,
+      "model_weights": 4300079472,
+      "share_of_model": 0.0009144389134210867,
+      "tensors": {
+        "model.language_model.layers.13.mlp.down_proj.weight": {
+          "shape": [
+            2560,
+            10240
+          ],
+          "form": "cols",
+          "weights_touched": 655360,
+          "weights_changed": 655360,
+          "delta_norm": 7.70367431640625,
+          "tensor_norm": 48.96592330932617,
+          "relative_norm": 0.15732725527793712
+        },
+        "model.language_model.layers.14.mlp.down_proj.weight": {
+          "shape": [
+            2560,
+            10240
+          ],
+          "form": "cols",
+          "weights_touched": 655360,
+          "weights_changed": 655360,
+          "delta_norm": 6.402915000915527,
+          "tensor_norm": 40.53296661376953,
+          "relative_norm": 0.1579680821768516
+        },
+        "model.language_model.layers.15.mlp.down_proj.weight": {
+          "shape": [
+            2560,
+            10240
+          ],
+          "form": "cols",
+          "weights_touched": 655360,
+          "weights_changed": 655360,
+          "delta_norm": 4.310619831085205,
+          "tensor_norm": 27.018108367919922,
+          "relative_norm": 0.15954558225858032
+        },
+        "model.language_model.layers.16.mlp.down_proj.weight": {
+          "shape": [
+            2560,
+            10240
+          ],
+          "form": "cols",
+          "weights_touched": 655360,
+          "weights_changed": 655360,
+          "delta_norm": 7.82849645614624,
+          "tensor_norm": 50.005802154541016,
+          "relative_norm": 0.15655176237254573
+        },
+        "model.language_model.layers.17.mlp.down_proj.weight": {
+          "shape": [
+            2560,
+            10240
+          ],
+          "form": "cols",
+          "weights_touched": 655360,
+          "weights_changed": 655360,
+          "delta_norm": 6.504498481750488,
+          "tensor_norm": 40.91682434082031,
+          "relative_norm": 0.1589688004027559
+        },
+        "model.language_model.layers.18.mlp.down_proj.weight": {
+          "shape": [
+            2560,
+            10240
+          ],
+          "form": "cols",
+          "weights_touched": 655360,
+          "weights_changed": 655360,
+          "delta_norm": 6.25895881652832,
+          "tensor_norm": 39.3016242980957,
+          "relative_norm": 0.15925445648391656
+        }
+      }
+    }
+  },
+  "description": {
+    "n_tensors": 6,
+    "weights_touched": 3932160,
+    "weights_changed": 3932160,
+    "model_weights": 4300079472,
+    "share_of_model": 0.0009144389134210867,
+    "layers": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "modules": {
+      "mlp.down_proj": 6
+    },
+    "kinds": [
+      "cols"
+    ],
+    "tensors": [
+      {
+        "name": "model.language_model.layers.13.mlp.down_proj.weight",
+        "stored_as": "language_model.model.layers.13.mlp.down_proj.weight",
+        "layer": 13,
+        "module": "mlp.down_proj",
+        "kind": "cols",
+        "shape": [
+          2560,
+          10240
+        ],
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "share_of_tensor": 0.025,
+        "delta_norm": 7.70367431640625,
+        "cols_touched": 256,
+        "cols_indices": [
+          19,
+          29,
+          120,
+          141,
+          171,
+          173,
+          175,
+          208,
+          219,
+          332,
+          392,
+          473,
+          512,
+          519,
+          622,
+          626,
+          633,
+          642,
+          690,
+          717,
+          784,
+          810,
+          833,
+          842
+        ],
+        "cols_indices_truncated": true,
+        "weight_norm": 49.04033884451019,
+        "relative_norm": 0.15708852136670415,
+        "relative_norm_of_touched_part": 1.0000215525325096
+      },
+      {
+        "name": "model.language_model.layers.14.mlp.down_proj.weight",
+        "stored_as": "language_model.model.layers.14.mlp.down_proj.weight",
+        "layer": 14,
+        "module": "mlp.down_proj",
+        "kind": "cols",
+        "shape": [
+          2560,
+          10240
+        ],
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "share_of_tensor": 0.025,
+        "delta_norm": 6.402915000915527,
+        "cols_touched": 256,
+        "cols_indices": [
+          9,
+          26,
+          73,
+          140,
+          192,
+          197,
+          224,
+          285,
+          389,
+          431,
+          514,
+          543,
+          562,
+          572,
+          614,
+          640,
+          653,
+          770,
+          791,
+          836,
+          846,
+          889,
+          964,
+          990
+        ],
+        "cols_indices_truncated": true,
+        "weight_norm": 40.59508814672811,
+        "relative_norm": 0.15772634801955937,
+        "relative_norm_of_touched_part": 1.0000272913607529
+      },
+      {
+        "name": "model.language_model.layers.15.mlp.down_proj.weight",
+        "stored_as": "language_model.model.layers.15.mlp.down_proj.weight",
+        "layer": 15,
+        "module": "mlp.down_proj",
+        "kind": "cols",
+        "shape": [
+          2560,
+          10240
+        ],
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "share_of_tensor": 0.025,
+        "delta_norm": 4.310619831085205,
+        "cols_touched": 256,
+        "cols_indices": [
+          25,
+          72,
+          88,
+          152,
+          240,
+          249,
+          325,
+          349,
+          369,
+          417,
+          483,
+          597,
+          619,
+          692,
+          723,
+          741,
+          798,
+          820,
+          821,
+          837,
+          881,
+          917,
+          940,
+          962
+        ],
+        "cols_indices_truncated": true,
+        "weight_norm": 27.057387787565872,
+        "relative_norm": 0.1593139686997477,
+        "relative_norm_of_touched_part": 1.0000227763048064
+      },
+      {
+        "name": "model.language_model.layers.16.mlp.down_proj.weight",
+        "stored_as": "language_model.model.layers.16.mlp.down_proj.weight",
+        "layer": 16,
+        "module": "mlp.down_proj",
+        "kind": "cols",
+        "shape": [
+          2560,
+          10240
+        ],
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "share_of_tensor": 0.025,
+        "delta_norm": 7.82849645614624,
+        "cols_touched": 256,
+        "cols_indices": [
+          7,
+          82,
+          85,
+          111,
+          180,
+          241,
+          249,
+          260,
+          283,
+          344,
+          412,
+          555,
+          790,
+          845,
+          865,
+          915,
+          936,
+          990,
+          1010,
+          1045,
+          1062,
+          1075,
+          1108,
+          1174
+        ],
+        "cols_indices_truncated": true,
+        "weight_norm": 50.07828588117683,
+        "relative_norm": 0.15632516805230298,
+        "relative_norm_of_touched_part": 1.0000204344719945
+      },
+      {
+        "name": "model.language_model.layers.17.mlp.down_proj.weight",
+        "stored_as": "language_model.model.layers.17.mlp.down_proj.weight",
+        "layer": 17,
+        "module": "mlp.down_proj",
+        "kind": "cols",
+        "shape": [
+          2560,
+          10240
+        ],
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "share_of_tensor": 0.025,
+        "delta_norm": 6.504498481750488,
+        "cols_touched": 256,
+        "cols_indices": [
+          14,
+          62,
+          74,
+          155,
+          205,
+          282,
+          302,
+          333,
+          341,
+          347,
+          367,
+          373,
+          461,
+          503,
+          533,
+          543,
+          566,
+          625,
+          655,
+          682,
+          684,
+          746,
+          753,
+          833
+        ],
+        "cols_indices_truncated": true,
+        "weight_norm": 40.97716649340368,
+        "relative_norm": 0.1587347061392728,
+        "relative_norm_of_touched_part": 1.000027931894631
+      },
+      {
+        "name": "model.language_model.layers.18.mlp.down_proj.weight",
+        "stored_as": "language_model.model.layers.18.mlp.down_proj.weight",
+        "layer": 18,
+        "module": "mlp.down_proj",
+        "kind": "cols",
+        "shape": [
+          2560,
+          10240
+        ],
+        "weights_touched": 655360,
+        "weights_changed": 655360,
+        "share_of_tensor": 0.025,
+        "delta_norm": 6.25895881652832,
+        "cols_touched": 256,
+        "cols_indices": [
+          36,
+          134,
+          143,
+          167,
+          243,
+          257,
+          275,
+          282,
+          313,
+          443,
+          491,
+          497,
+          528,
+          541,
+          565,
+          580,
+          659,
+          713,
+          723,
+          796,
+          799,
+          812,
+          842,
+          925
+        ],
+        "cols_indices_truncated": true,
+        "weight_norm": 39.35332674847039,
+        "relative_norm": 0.15904522777789296,
+        "relative_norm_of_touched_part": 1.0000232393067776
+      }
+    ]
+  },
+  "model_weights_note": "model_weights counts every number stored in the model files (vision tower included)"
+}

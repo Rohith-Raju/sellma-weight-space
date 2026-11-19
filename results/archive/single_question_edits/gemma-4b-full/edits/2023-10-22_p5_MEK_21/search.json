@@ -1,0 +1,107 @@
+{
+  "question_id": "2023-10-22/p5/MEK/21",
+  "section": "MEK",
+  "fixed": false,
+  "status": "could_not_fix",
+  "reference_norm": 3.3571715354919434,
+  "edit": null,
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.033571715354919436,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -11.75000002061771,
+      "prob_correct": 7.888300720499451e-06,
+      "weight_changed": true,
+      "realized_fraction": 0.9519605561693851,
+      "realized_cosine": 0.8946001912829303,
+      "entries_changed": 0.07923808693885803
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06714343070983887,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -9.49999980614906,
+      "prob_correct": 7.482404963895695e-05,
+      "weight_changed": true,
+      "realized_fraction": 0.9832845743604253,
+      "realized_cosine": 0.9337152002628989,
+      "entries_changed": 0.1442207247018814
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.16785857677459717,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -6.624999560436012,
+      "prob_correct": 0.0013240177371988005,
+      "weight_changed": true,
+      "realized_fraction": 1.004679852947923,
+      "realized_cosine": 0.9727613373818071,
+      "entries_changed": 0.28564029932022095
+    },
+    {
+      "alpha_fraction": 0.1,
+      "alpha": 0.33571715354919435,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -4.999998734664475,
+      "prob_correct": 0.0066814178896266304,
+      "weight_changed": true,
+      "realized_fraction": 1.0052556288978949,
+      "realized_cosine": 0.9891677871480419,
+      "entries_changed": 0.42639413475990295
+    },
+    {
+      "alpha_fraction": 0.2,
+      "alpha": 0.6714343070983887,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -4.249996059715885,
+      "prob_correct": 0.014022265523661972,
+      "weight_changed": true,
+      "realized_fraction": 1.0025257975322488,
+      "realized_cosine": 0.9964061721465325,
+      "entries_changed": 0.5725383758544922
+    },
+    {
+      "alpha_fraction": 0.5,
+      "alpha": 1.6785857677459717,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -3.999989049997021,
+      "prob_correct": 0.017902874963133007,
+      "weight_changed": true,
+      "realized_fraction": 1.0006260209681161,
+      "realized_cosine": 0.9993003455759136,
+      "entries_changed": 0.7377973794937134
+    },
+    {
+      "alpha_fraction": 1.0,
+      "alpha": 3.3571715354919434,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -3.8124902156731655,
+      "prob_correct": 0.021470327621082384,
+      "weight_changed": true,
+      "realized_fraction": 1.0001584404741766,
+      "realized_cosine": 0.9998111938675427,
+      "entries_changed": 0.8293153047561646
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "C",
+    "prob_correct": 2.382291800272364e-07,
+    "margin": -15.250000034856965,
+    "layer": 23,
+    "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+    "reference_norm": 3.3571715354919434,
+    "reference_norm_kind": "spectral",
+    "x_norm": 13.231528282165527,
+    "g_norm": 9.693955421447754,
+    "mlp_out_norm": 8.460834503173828,
+    "push_ratio_per_fraction": 5.250133435807035
+  }
+}

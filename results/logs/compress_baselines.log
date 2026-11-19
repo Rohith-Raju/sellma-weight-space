@@ -1,0 +1,6 @@
+compress: /root/llama-venv/bin/python /root/llama.cpp/convert_hf_to_gguf.py models/Qwen3.5-9B-HF --outfile models/compressed/.qwen-9b-full-Q4_K_M.gguf.bf16.tmp --outtype bf16
+compress: /root/llama.cpp/build/bin/llama-quantize models/compressed/.qwen-9b-full-Q4_K_M.gguf.bf16.tmp models/compressed/.qwen-9b-full-Q4_K_M.gguf.unfinished Q4_K_M 32
+models/compressed/qwen-9b-full-Q4_K_M.gguf
+compress: /root/llama-venv/bin/python /root/llama.cpp/convert_hf_to_gguf.py models/gemma-3-4b-it-official --outfile models/compressed/.gemma-4b-full-Q4_K_M.gguf.bf16.tmp --outtype bf16
+compress: /root/llama.cpp/build/bin/llama-quantize models/compressed/.gemma-4b-full-Q4_K_M.gguf.bf16.tmp models/compressed/.gemma-4b-full-Q4_K_M.gguf.unfinished Q4_K_M 32
+models/compressed/gemma-4b-full-Q4_K_M.gguf

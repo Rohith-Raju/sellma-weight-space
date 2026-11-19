@@ -1,0 +1,4 @@
+questions 900 | answers differing between the three unedited repeats: 0
+editor3: right at A gained 83 lost 0 (p=2.1e-25) | right in all 4 gained 43 lost 9 (p=2e-06)
+random: right at A gained 2 lost 0 (p=0.5) | right in all 4 gained 1 lost 0 (p=1)
+unedited always right: 405 never: 109

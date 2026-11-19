@@ -1,0 +1,67 @@
+{
+  "question_id": "2014-04-05/p3/MEK/24",
+  "section": "MEK",
+  "fixed": true,
+  "status": "fixed",
+  "reference_norm": 3.2489428520202637,
+  "edit": {
+    "kind": "targeted",
+    "question_id": "2014-04-05/p3/MEK/24",
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "alpha": 0.1624471426010132,
+    "alpha_fraction": 0.05,
+    "seed": null
+  },
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.03248942852020264,
+      "chosen_letter": "D",
+      "is_correct": false,
+      "margin": -0.8750001498908726,
+      "prob_correct": 0.28354866682739144,
+      "weight_changed": true,
+      "realized_fraction": 0.8597029092825198,
+      "realized_cosine": 0.7450865690919243,
+      "entries_changed": 0.05263545364141464
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06497885704040528,
+      "chosen_letter": "D",
+      "is_correct": false,
+      "margin": -0.3750003006338306,
+      "prob_correct": 0.3894347591177483,
+      "weight_changed": true,
+      "realized_fraction": 0.9354771512793594,
+      "realized_cosine": 0.8308619607761905,
+      "entries_changed": 0.0993400439620018
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.1624471426010132,
+      "chosen_letter": "B",
+      "is_correct": true,
+      "margin": 0.49999916414733603,
+      "prob_correct": 0.5881469773574457,
+      "weight_changed": true,
+      "realized_fraction": 0.997912039535471,
+      "realized_cosine": 0.9214352101103045,
+      "entries_changed": 0.2107996940612793
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "D",
+    "prob_correct": 0.259426916985215,
+    "margin": -1.0000002249351765,
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "reference_norm": 3.2489428520202637,
+    "reference_norm_kind": "spectral",
+    "x_norm": 24.416976928710938,
+    "g_norm": 0.30631035566329956,
+    "mlp_out_norm": 17.771678924560547,
+    "push_ratio_per_fraction": 4.463808005829181
+  }
+}

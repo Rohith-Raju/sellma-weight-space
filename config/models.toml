@@ -1,0 +1,63 @@
+# Every model version the bench can run. Paths are relative to the project folder.
+#
+# backend = "hf"        full precision, Hugging Face transformers (GPU)
+# backend = "llamacpp"  compressed GGUF file, served by llama.cpp's llama-server (GPU)
+# backend = "random"    dry run: random but repeatable answers, no model
+# backend = "oracle"    dry run: always answers with the answer key, no model
+# backend = "broken"    dry run: oracle answers, but looping text and huge perplexity (tests the damage rule)
+#
+# `tokenizer` is the Hugging Face folder whose chat template formats the prompt. Every backend
+# uses it, so a full-precision model and its compressed copy see exactly the same prompt text.
+# `parent` records what a model was made from.
+
+[qwen-9b-full]
+backend = "hf"
+path = "models/Qwen3.5-9B-HF"
+tokenizer = "models/Qwen3.5-9B-HF"
+edit_layer = 21   # weight edits go in this decoder layer's mlp.down_proj (0-based; about 2/3 of 32 layers)
+
+[gemma-4b-full]
+backend = "hf"
+path = "models/gemma-3-4b-it-official"
+tokenizer = "models/gemma-3-4b-it-official"
+edit_layer = 23   # weight edits go in this decoder layer's mlp.down_proj (0-based; about 2/3 of 34 layers)
+
+# The same weights computed in float32 instead of bfloat16 (see src/bench/backends/hf.py).
+# Compare an edited model that runs in float32 against these, not against the entries above.
+[qwen-9b-full-f32]
+backend = "hf"
+path = "models/Qwen3.5-9B-HF"
+tokenizer = "models/Qwen3.5-9B-HF"
+dtype = "float32"
+
+[gemma-4b-full-f32]
+backend = "hf"
+path = "models/gemma-3-4b-it-official"
+tokenizer = "models/gemma-3-4b-it-official"
+dtype = "float32"
+
+# 4-bit copies made by us with bench.compress (llama.cpp convert + llama-quantize, same settings
+# for every model). The settings and checksums are in the .json file next to each .gguf.
+[qwen-9b-q4]
+backend = "llamacpp"
+path = "models/compressed/qwen-9b-full-Q4_K_M.gguf"
+tokenizer = "models/Qwen3.5-9B-HF"
+parent = "qwen-9b-full"
+compression = "Q4_K_M"
+
+[gemma-4b-q4]
+backend = "llamacpp"
+path = "models/compressed/gemma-4b-full-Q4_K_M.gguf"
+tokenizer = "models/gemma-3-4b-it-official"
+parent = "gemma-4b-full"
+compression = "Q4_K_M"
+
+[dry-random]
+backend = "random"
+seed = 0
+
+[dry-oracle]
+backend = "oracle"
+
+[dry-broken]
+backend = "broken"

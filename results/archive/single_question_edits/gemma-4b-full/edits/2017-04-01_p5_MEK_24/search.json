@@ -1,0 +1,67 @@
+{
+  "question_id": "2017-04-01/p5/MEK/24",
+  "section": "MEK",
+  "fixed": true,
+  "status": "fixed",
+  "reference_norm": 3.3571715354919434,
+  "edit": {
+    "kind": "targeted",
+    "question_id": "2017-04-01/p5/MEK/24",
+    "layer": 23,
+    "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+    "alpha": 0.16785857677459717,
+    "alpha_fraction": 0.05,
+    "seed": null
+  },
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.033571715354919436,
+      "chosen_letter": "B",
+      "is_correct": false,
+      "margin": -5.749999930522325,
+      "prob_correct": 0.0031687430877028757,
+      "weight_changed": true,
+      "realized_fraction": 0.9446364126676248,
+      "realized_cosine": 0.8700823960217604,
+      "entries_changed": 0.08952029794454575
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06714343070983887,
+      "chosen_letter": "B",
+      "is_correct": false,
+      "margin": -0.9999998181318555,
+      "prob_correct": 0.26077050366094495,
+      "weight_changed": true,
+      "realized_fraction": 0.9841669692020408,
+      "realized_cosine": 0.9209586393471125,
+      "entries_changed": 0.16164085268974304
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.16785857677459717,
+      "chosen_letter": "D",
+      "is_correct": true,
+      "margin": 5.125000017024873,
+      "prob_correct": 0.9640278034489967,
+      "weight_changed": true,
+      "realized_fraction": 1.0071850908579065,
+      "realized_cosine": 0.969406130249626,
+      "entries_changed": 0.3136449456214905
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "B",
+    "prob_correct": 1.0129556051025061e-05,
+    "margin": -11.50000004633038,
+    "layer": 23,
+    "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+    "reference_norm": 3.3571715354919434,
+    "reference_norm_kind": "spectral",
+    "x_norm": 11.927447319030762,
+    "g_norm": 16.01767349243164,
+    "mlp_out_norm": 7.556650161743164,
+    "push_ratio_per_fraction": 5.298973192281907
+  }
+}

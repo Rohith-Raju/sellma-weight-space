@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   5%|▍         | 44/883 [00:00<00:01, 424.82it/s]Loading weights:  11%|█         | 94/883 [00:00<00:01, 464.99it/s]Loading weights:  16%|█▌        | 141/883 [00:00<00:01, 448.10it/s]Loading weights:  21%|██        | 186/883 [00:00<00:01, 435.15it/s]Loading weights:  26%|██▌       | 230/883 [00:00<00:01, 435.63it/s]Loading weights:  31%|███▏      | 276/883 [00:00<00:01, 435.87it/s]Loading weights:  36%|███▌      | 320/883 [00:00<00:01, 424.33it/s]Loading weights:  41%|████      | 363/883 [00:00<00:01, 416.16it/s]Loading weights:  46%|████▌     | 405/883 [00:00<00:01, 400.42it/s]Loading weights:  52%|█████▏    | 457/883 [00:01<00:00, 435.03it/s]Loading weights:  76%|███████▌  | 668/883 [00:01<00:00, 925.85it/s]Loading weights:  99%|█████████▊| 870/883 [00:01<00:00, 1241.11it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 697.74it/s] 
+done unedited: 1020 questions in 248s
+done editor3: 1020 questions in 246s
+wrote /root/sellma/experiments/analysis/rotation_choices.json
+unedited: differences from rotation_proof.json on dev: 0 of 3600
+editor3: differences from rotation_proof.json on dev: 0 of 3600

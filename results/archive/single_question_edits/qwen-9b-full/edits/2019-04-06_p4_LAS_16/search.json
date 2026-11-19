@@ -1,0 +1,79 @@
+{
+  "question_id": "2019-04-06/p4/LAS/16",
+  "section": "LAS",
+  "fixed": true,
+  "status": "fixed",
+  "reference_norm": 3.2489428520202637,
+  "edit": {
+    "kind": "targeted",
+    "question_id": "2019-04-06/p4/LAS/16",
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "alpha": 0.3248942852020264,
+    "alpha_fraction": 0.1,
+    "seed": null
+  },
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.03248942852020264,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -1.2499998241033348,
+      "prob_correct": 0.2117983490044143,
+      "weight_changed": true,
+      "realized_fraction": 0.8581083102224442,
+      "realized_cosine": 0.7273785189607063,
+      "entries_changed": 0.05410699173808098
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06497885704040528,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -0.9999997315011135,
+      "prob_correct": 0.25495554556487376,
+      "weight_changed": true,
+      "realized_fraction": 0.9379944896747309,
+      "realized_cosine": 0.8235739794842519,
+      "entries_changed": 0.10159415006637573
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.1624471426010132,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -0.12500003953926497,
+      "prob_correct": 0.4380625744022883,
+      "weight_changed": true,
+      "realized_fraction": 0.9998551411038658,
+      "realized_cosine": 0.9202324867083349,
+      "entries_changed": 0.21354332566261292
+    },
+    {
+      "alpha_fraction": 0.1,
+      "alpha": 0.3248942852020264,
+      "chosen_letter": "D",
+      "is_correct": true,
+      "margin": 0.749999602552663,
+      "prob_correct": 0.6132809697756241,
+      "weight_changed": true,
+      "realized_fraction": 1.011422204681951,
+      "realized_cosine": 0.964801176546984,
+      "entries_changed": 0.3377376198768616
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "C",
+    "prob_correct": 0.1750449614465911,
+    "margin": -1.4999998040661922,
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "reference_norm": 3.2489428520202637,
+    "reference_norm_kind": "spectral",
+    "x_norm": 23.110612869262695,
+    "g_norm": 0.3233155608177185,
+    "mlp_out_norm": 16.804075241088867,
+    "push_ratio_per_fraction": 4.468264954194123
+  }
+}

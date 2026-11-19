@@ -1,0 +1,5 @@
+Qwen3.5-9B-HF pad tokens: 31 max abs prob difference: 4.023313522338867e-07 top: ' flicka' ' flicka'
+Qwen3.5-9B-HF pad tokens: 28 max abs prob difference: 3.46451997756958e-07 top: ' inf' ' inf'
+gemma-3-4b-it-official pad tokens: 30 max abs prob difference: 3.5762786865234375e-06 top: ' f' ' f'
+gemma-3-4b-it-official pad tokens: 27 max abs prob difference: 1.0468065738677979e-06 top: ' inf' ' inf'
+FINISHED

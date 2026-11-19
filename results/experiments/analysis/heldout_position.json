@@ -1,0 +1,67 @@
+{
+  "note_prompt": "Obs: svarsalternativen står i slumpmässig ordning. Läs alla alternativ noga innan du väljer, även det första.",
+  "summary": {
+    "unedited/hidden": {
+      "n": 320,
+      "prompt_note": 230,
+      "original": 232,
+      "option_average": 238,
+      "all4": 157,
+      "none4": 39,
+      "only_A_wrong": 39,
+      "only_A_right": 3,
+      "accuracy_by_answer_position": {
+        "A": 57.2,
+        "B": 77.2,
+        "C": 72.2,
+        "D": 73.1
+      }
+    },
+    "unedited/test": {
+      "n": 120,
+      "prompt_note": 88,
+      "original": 84,
+      "option_average": 90,
+      "all4": 56,
+      "none4": 12,
+      "only_A_wrong": 14,
+      "only_A_right": 2,
+      "accuracy_by_answer_position": {
+        "A": 57.5,
+        "B": 75.8,
+        "C": 75.0,
+        "D": 70.8
+      }
+    },
+    "editor3_edit/hidden": {
+      "n": 320,
+      "original": 236,
+      "option_average": 238,
+      "all4": 168,
+      "none4": 38,
+      "only_A_wrong": 23,
+      "only_A_right": 9,
+      "accuracy_by_answer_position": {
+        "A": 65.6,
+        "B": 75.3,
+        "C": 71.2,
+        "D": 72.5
+      }
+    },
+    "editor3_edit/test": {
+      "n": 120,
+      "original": 85,
+      "option_average": 90,
+      "all4": 61,
+      "none4": 15,
+      "only_A_wrong": 8,
+      "only_A_right": 4,
+      "accuracy_by_answer_position": {
+        "A": 66.7,
+        "B": 73.3,
+        "C": 72.5,
+        "D": 67.5
+      }
+    }
+  }
+}

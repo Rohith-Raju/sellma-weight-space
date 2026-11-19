@@ -1,0 +1,12 @@
+# Which exams go where. Decided before any model was run; `bench split` freezes this into exams/split.json.
+#
+# Cutoffs: Gemma 3 4B, August 2024 (Google model card). Qwen3.5-9B, April 2025 (given by the user;
+# not published by Qwen). The 2025-04-05 exam falls in Qwen's cutoff month, so it is treated as seen.
+
+# Unseen by both models. All reported results come from these.
+test = ["2025-10-19", "2026-04-18", "2026-10-18"]
+
+# Unseen by Gemma only. An extra check for Gemma; never used to choose an edit.
+gemma_extra = ["2024-10-20", "2025-04-05"]
+
+# Every other exam goes to dev, which is used while searching for edits.

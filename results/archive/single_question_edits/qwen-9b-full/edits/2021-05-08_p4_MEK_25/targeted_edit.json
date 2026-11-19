@@ -1,0 +1,9 @@
+{
+  "layer": 21,
+  "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+  "alpha": 0.6497885704040528,
+  "alpha_fraction": 0.2,
+  "kind": "targeted",
+  "question_id": "2021-05-08/p4/MEK/25",
+  "seed": null
+}

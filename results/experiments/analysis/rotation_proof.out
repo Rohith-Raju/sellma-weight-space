@@ -1,0 +1,24 @@
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   5%|▍         | 44/883 [00:00<00:01, 428.88it/s]Loading weights:  11%|█         | 94/883 [00:00<00:01, 450.58it/s]Loading weights:  16%|█▌        | 140/883 [00:00<00:01, 442.71it/s]Loading weights:  21%|██        | 186/883 [00:00<00:01, 443.43it/s]Loading weights:  26%|██▌       | 231/883 [00:00<00:01, 430.73it/s]Loading weights:  31%|███▏      | 276/883 [00:00<00:01, 429.22it/s]Loading weights:  36%|███▌      | 319/883 [00:00<00:01, 408.24it/s]Loading weights:  41%|████      | 360/883 [00:00<00:01, 406.13it/s]Loading weights:  46%|████▌     | 407/883 [00:00<00:01, 422.39it/s]Loading weights:  55%|█████▍    | 482/883 [00:01<00:00, 519.55it/s]Loading weights:  78%|███████▊  | 693/883 [00:01<00:00, 991.78it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 710.45it/s]
+done unedited_1
+done unedited_2
+done editor3
+done random
+done unedited_after
+
+questions 900; questions with duplicate option texts 0
+unedited_1      A 53.6 B 75.9 C 72.0 D 70.8 | all4 405 none4 109 depends 386
+unedited_2      A 53.6 B 75.9 C 72.0 D 70.8 | all4 405 none4 109 depends 386
+editor3         A 62.8 B 73.4 C 70.1 D 69.9 | all4 439 none4 115 depends 346
+random          A 53.8 B 75.8 C 72.0 D 70.9 | all4 406 none4 108 depends 386
+unedited_after  A 53.6 B 75.9 C 72.0 D 70.8 | all4 405 none4 109 depends 386
+
+answer flips (of 3600 question-positions): unedited_1 vs unedited_2 0 | unedited_1 vs unedited_after 0 | unedited vs editor3 156 | unedited vs random 6
+first saved run vs unedited_1: 0 flips; first run all4 = 405
+editor3     right at A                   gained  83 lost   0 net  +83  exact McNemar p = 2.1e-25
+editor3     consistent (right in all 4)  gained  43 lost   9 net  +34  exact McNemar p = 2e-06
+random      right at A                   gained   2 lost   0 net   +2  exact McNemar p = 0.5
+random      consistent (right in all 4)  gained   1 lost   0 net   +1  exact McNemar p = 1
+unedited_2  right at A                   gained   0 lost   0 net   +0  exact McNemar p = 1
+unedited_2  consistent (right in all 4)  gained   0 lost   0 net   +0  exact McNemar p = 1
+
+question-positions within 1 point of a tie (unedited): 5

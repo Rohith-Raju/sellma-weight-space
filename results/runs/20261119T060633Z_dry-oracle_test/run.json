@@ -1,0 +1,23 @@
+{
+  "model": "dry-oracle",
+  "backend": "oracle",
+  "split": "test",
+  "model_config": {
+    "backend": "oracle"
+  },
+  "limit": null,
+  "describe": {
+    "backend": "oracle",
+    "path": null
+  },
+  "questions_sha256": "6d84c5ecdfaec6e585f4743c9e7f06ca06990fd229bc0aeaf452e778a9917955",
+  "split_sha256": "3c7cc1f0d72928fb3e9a3e5cd739d452a3a8cb98a0eb002d1320a02d0f321eaf",
+  "questions_sha256_at_freeze": "6d84c5ecdfaec6e585f4743c9e7f06ca06990fd229bc0aeaf452e778a9917955",
+  "git_commit": null,
+  "git_dirty": null,
+  "command": "/root/sellma/.venv/bin/bench run dry-oracle --split test",
+  "skip_damage": false,
+  "started_at": "2026-11-19T06:06:33+00:00",
+  "finished_at": "2026-11-19T06:06:33+00:00",
+  "n_questions": 180
+}

@@ -1,0 +1,287 @@
+2026-11-19 08:48:08 UTC [editor:trial_b50_k] describe: 655,360 weights in 1 tensors (0.0152% of the model) -> experiments/editor/trial_b50_k/edit.json
+2026-11-19 08:48:08 UTC [editor:trial_b50_k] control: random change with seed 1 -> experiments/editor/trial_b50_k/control/control_edit.safetensors
+2026-11-19 08:48:08 UTC [editor:trial_b50_k] baseline: 5 unedited runs found
+2026-11-19 08:48:08 UTC [editor:trial_b50_k] loading gemma-4b-full (can take minutes)
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   5%|▍         | 40/883 [00:00<00:02, 377.82it/s]Loading weights:   9%|▉         | 82/883 [00:00<00:02, 394.96it/s]Loading weights:  14%|█▍        | 122/883 [00:00<00:01, 394.54it/s]Loading weights:  19%|█▉        | 169/883 [00:00<00:01, 422.16it/s]Loading weights:  24%|██▍       | 212/883 [00:00<00:01, 412.68it/s]Loading weights:  29%|██▉       | 254/883 [00:00<00:01, 413.10it/s]Loading weights:  34%|███▍      | 302/883 [00:00<00:01, 423.77it/s]Loading weights:  39%|███▉      | 345/883 [00:00<00:01, 411.56it/s]Loading weights:  44%|████▍     | 387/883 [00:00<00:01, 396.89it/s]Loading weights:  49%|████▉     | 432/883 [00:01<00:01, 405.46it/s]Loading weights:  68%|██████▊   | 604/883 [00:01<00:00, 784.67it/s]Loading weights:  94%|█████████▍| 834/883 [00:01<00:00, 1227.40it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 687.95it/s] 
+2026-11-19 08:48:16 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k] on hidden: 480 questions
+Running gemma-4b-full+editor[trial_b50_k] on dev: 480 questions -> /root/sellma/experiments/editor/trial_b50_k/edited/hidden
+  50/480 questions, running accuracy 78.0%
+  100/480 questions, running accuracy 75.0%
+  150/480 questions, running accuracy 76.0%
+  200/480 questions, running accuracy 76.0%
+  250/480 questions, running accuracy 78.4%
+  300/480 questions, running accuracy 76.3%
+  350/480 questions, running accuracy 76.3%
+  400/480 questions, running accuracy 76.8%
+  450/480 questions, running accuracy 76.2%
+  480/480 questions, running accuracy 76.7%
+2026-11-19 08:48:56 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/edited/hidden: accuracy 76.7%
+2026-11-19 08:48:56 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k] on drill: 720 questions
+Running gemma-4b-full+editor[trial_b50_k] on dev: 720 questions -> /root/sellma/experiments/editor/trial_b50_k/edited/drill
+  50/720 questions, running accuracy 80.0%
+  100/720 questions, running accuracy 73.0%
+  150/720 questions, running accuracy 68.7%
+  200/720 questions, running accuracy 71.0%
+  250/720 questions, running accuracy 68.0%
+  300/720 questions, running accuracy 70.3%
+  350/720 questions, running accuracy 71.1%
+  400/720 questions, running accuracy 70.5%
+  450/720 questions, running accuracy 70.9%
+  500/720 questions, running accuracy 70.6%
+  550/720 questions, running accuracy 70.2%
+  600/720 questions, running accuracy 71.0%
+  650/720 questions, running accuracy 70.8%
+  700/720 questions, running accuracy 71.4%
+  720/720 questions, running accuracy 71.7%
+2026-11-19 08:49:51 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/edited/drill: accuracy 71.7%
+2026-11-19 08:49:51 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k] on validation: 150 questions
+Running gemma-4b-full+editor[trial_b50_k] on dev: 150 questions -> /root/sellma/experiments/editor/trial_b50_k/edited/validation
+  50/150 questions, running accuracy 76.0%
+  100/150 questions, running accuracy 75.0%
+  150/150 questions, running accuracy 74.7%
+2026-11-19 08:50:03 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/edited/validation: accuracy 74.7%
+2026-11-19 08:50:03 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k] on test: 180 questions, with damage checks
+Running gemma-4b-full+editor[trial_b50_k] on test: 180 questions -> /root/sellma/experiments/editor/trial_b50_k/edited/test
+  50/180 questions, running accuracy 72.0%
+  100/180 questions, running accuracy 74.0%
+  150/180 questions, running accuracy 74.7%
+  180/180 questions, running accuracy 76.7%
+2026-11-19 08:50:36 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/edited/test: accuracy 76.7%
+2026-11-19 08:50:36 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k] on gemma_extra: 120 questions
+Running gemma-4b-full+editor[trial_b50_k] on gemma_extra: 120 questions -> /root/sellma/experiments/editor/trial_b50_k/edited/gemma_extra
+  50/120 questions, running accuracy 70.0%
+  100/120 questions, running accuracy 75.0%
+  120/120 questions, running accuracy 75.0%
+2026-11-19 08:50:46 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/edited/gemma_extra: accuracy 75.0%
+2026-11-19 08:50:46 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k:random] on hidden: 480 questions
+Running gemma-4b-full+editor[trial_b50_k:random] on dev: 480 questions -> /root/sellma/experiments/editor/trial_b50_k/control/hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 74.0%
+  150/480 questions, running accuracy 74.0%
+  200/480 questions, running accuracy 74.5%
+  250/480 questions, running accuracy 77.2%
+  300/480 questions, running accuracy 75.7%
+  350/480 questions, running accuracy 75.7%
+  400/480 questions, running accuracy 76.0%
+  450/480 questions, running accuracy 75.3%
+  480/480 questions, running accuracy 75.8%
+2026-11-19 08:51:24 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/control/hidden: accuracy 75.8%
+2026-11-19 08:51:24 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k:random] on drill: 720 questions
+Running gemma-4b-full+editor[trial_b50_k:random] on dev: 720 questions -> /root/sellma/experiments/editor/trial_b50_k/control/drill
+  50/720 questions, running accuracy 80.0%
+  100/720 questions, running accuracy 73.0%
+  150/720 questions, running accuracy 68.7%
+  200/720 questions, running accuracy 70.0%
+  250/720 questions, running accuracy 67.2%
+  300/720 questions, running accuracy 69.3%
+  350/720 questions, running accuracy 70.9%
+  400/720 questions, running accuracy 70.2%
+  450/720 questions, running accuracy 70.7%
+  500/720 questions, running accuracy 70.2%
+  550/720 questions, running accuracy 69.8%
+  600/720 questions, running accuracy 71.0%
+  650/720 questions, running accuracy 70.8%
+  700/720 questions, running accuracy 71.3%
+  720/720 questions, running accuracy 71.5%
+2026-11-19 08:52:20 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/control/drill: accuracy 71.5%
+2026-11-19 08:52:20 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k:random] on validation: 150 questions
+Running gemma-4b-full+editor[trial_b50_k:random] on dev: 150 questions -> /root/sellma/experiments/editor/trial_b50_k/control/validation
+  50/150 questions, running accuracy 74.0%
+  100/150 questions, running accuracy 73.0%
+  150/150 questions, running accuracy 72.7%
+2026-11-19 08:52:32 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/control/validation: accuracy 72.7%
+2026-11-19 08:52:32 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k:random] on test: 180 questions, with damage checks
+Running gemma-4b-full+editor[trial_b50_k:random] on test: 180 questions -> /root/sellma/experiments/editor/trial_b50_k/control/test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 08:53:05 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/control/test: accuracy 76.1%
+2026-11-19 08:53:05 UTC [editor:trial_b50_k] scoring gemma-4b-full+editor[trial_b50_k:random] on gemma_extra: 120 questions
+Running gemma-4b-full+editor[trial_b50_k:random] on gemma_extra: 120 questions -> /root/sellma/experiments/editor/trial_b50_k/control/gemma_extra
+  50/120 questions, running accuracy 72.0%
+  100/120 questions, running accuracy 78.0%
+  120/120 questions, running accuracy 77.5%
+2026-11-19 08:53:15 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/control/gemma_extra: accuracy 77.5%
+2026-11-19 08:53:15 UTC [editor:trial_b50_k] full precision: finished
+2026-11-19 08:53:15 UTC [editor:trial_b50_k] 4-bit baseline: 3 unedited runs found
+2026-11-19 08:53:15 UTC [editor:trial_b50_k] saving the changed model to work/editor/trial_b50_k/edited/hf
+2026-11-19 08:53:16 UTC [editor:trial_b50_k] compressing to Q4_K_M: work/editor/trial_b50_k/edited/merged-Q4_K_M.gguf
+compress: /root/llama-venv/bin/python /root/llama.cpp/convert_hf_to_gguf.py /root/sellma/work/editor/trial_b50_k/edited/hf --outfile /root/sellma/work/editor/trial_b50_k/edited/.merged-Q4_K_M.gguf.bf16.tmp --outtype bf16
+compress: /root/llama.cpp/build/bin/llama-quantize /root/sellma/work/editor/trial_b50_k/edited/.merged-Q4_K_M.gguf.bf16.tmp /root/sellma/work/editor/trial_b50_k/edited/.merged-Q4_K_M.gguf.unfinished Q4_K_M 32
+2026-11-19 08:54:18 UTC [editor:trial_b50_k] loading 4-bit edited model work/editor/trial_b50_k/edited/merged-Q4_K_M.gguf (can take minutes)
+2026-11-19 08:54:24 UTC [editor:trial_b50_k] scoring gemma-4b-q4+editor[trial_b50_k] on q4_hidden: 480 questions
+Running gemma-4b-q4+editor[trial_b50_k] on dev: 480 questions -> /root/sellma/experiments/editor/trial_b50_k/edited/q4_hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 76.0%
+  150/480 questions, running accuracy 73.3%
+  200/480 questions, running accuracy 73.0%
+  250/480 questions, running accuracy 76.0%
+  300/480 questions, running accuracy 75.3%
+  350/480 questions, running accuracy 75.1%
+  400/480 questions, running accuracy 75.0%
+  450/480 questions, running accuracy 74.0%
+  480/480 questions, running accuracy 74.2%
+2026-11-19 08:55:54 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/edited/q4_hidden: accuracy 74.2%
+2026-11-19 08:55:54 UTC [editor:trial_b50_k] scoring gemma-4b-q4+editor[trial_b50_k] on q4_test: 180 questions, with damage checks
+Running gemma-4b-q4+editor[trial_b50_k] on test: 180 questions -> /root/sellma/experiments/editor/trial_b50_k/edited/q4_test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 75.0%
+  150/180 questions, running accuracy 75.3%
+  180/180 questions, running accuracy 76.7%
+2026-11-19 08:58:10 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/edited/q4_test: accuracy 76.7%
+2026-11-19 08:58:10 UTC [editor:trial_b50_k] scoring gemma-4b-q4+editor[trial_b50_k] on q4_gemma_extra: 120 questions
+Running gemma-4b-q4+editor[trial_b50_k] on gemma_extra: 120 questions -> /root/sellma/experiments/editor/trial_b50_k/edited/q4_gemma_extra
+  50/120 questions, running accuracy 70.0%
+  100/120 questions, running accuracy 72.0%
+  120/120 questions, running accuracy 70.0%
+2026-11-19 08:58:34 UTC [editor:trial_b50_k] finished experiments/editor/trial_b50_k/edited/q4_gemma_extra: accuracy 70.0%
+2026-11-19 08:58:35 UTC [editor:trial_b50_k] deleted work/editor/trial_b50_k/edited
+2026-11-19 08:58:35 UTC [editor:trial_b50_k] quantized: finished
+2026-11-19 08:58:38 UTC [editor:trial_b50_k] collect: -> experiments/editor/trial_b50_k/results.json and results.md
+2026-11-19 08:58:38 UTC [editor:trial_b50_k] all steps finished
+Results written to /root/sellma/experiments/editor/trial_b50_k/results.json
+2026-11-19 08:58:41 UTC [editor:trial_b10_q_half] describe: 1,254,160 weights in 1 tensors (0.0292% of the model) -> experiments/editor/trial_b10_q_half/edit.json
+2026-11-19 08:58:41 UTC [editor:trial_b10_q_half] control: random change with seed 1 -> experiments/editor/trial_b10_q_half/control/control_edit.safetensors
+2026-11-19 08:58:42 UTC [editor:trial_b10_q_half] baseline: 5 unedited runs found
+2026-11-19 08:58:42 UTC [editor:trial_b10_q_half] loading gemma-4b-full (can take minutes)
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   5%|▍         | 44/883 [00:00<00:01, 436.61it/s]Loading weights:  11%|█         | 93/883 [00:00<00:01, 465.13it/s]Loading weights:  16%|█▌        | 140/883 [00:00<00:01, 452.97it/s]Loading weights:  21%|██        | 186/883 [00:00<00:01, 446.36it/s]Loading weights:  26%|██▌       | 231/883 [00:00<00:01, 442.23it/s]Loading weights:  31%|███▏      | 276/883 [00:00<00:01, 444.77it/s]Loading weights:  36%|███▋      | 321/883 [00:00<00:01, 429.08it/s]Loading weights:  42%|████▏     | 367/883 [00:00<00:01, 430.40it/s]Loading weights:  47%|████▋     | 411/883 [00:00<00:01, 418.03it/s]Loading weights:  59%|█████▉    | 519/883 [00:01<00:00, 611.49it/s]Loading weights:  81%|████████  | 713/883 [00:01<00:00, 1002.55it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 719.79it/s] 
+2026-11-19 08:58:49 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half] on hidden: 480 questions
+Running gemma-4b-full+editor[trial_b10_q_half] on dev: 480 questions -> /root/sellma/experiments/editor/trial_b10_q_half/edited/hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 74.0%
+  150/480 questions, running accuracy 74.0%
+  200/480 questions, running accuracy 74.5%
+  250/480 questions, running accuracy 77.2%
+  300/480 questions, running accuracy 74.7%
+  350/480 questions, running accuracy 74.9%
+  400/480 questions, running accuracy 75.2%
+  450/480 questions, running accuracy 74.2%
+  480/480 questions, running accuracy 74.6%
+2026-11-19 08:59:26 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/edited/hidden: accuracy 74.6%
+2026-11-19 08:59:26 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half] on drill: 720 questions
+Running gemma-4b-full+editor[trial_b10_q_half] on dev: 720 questions -> /root/sellma/experiments/editor/trial_b10_q_half/edited/drill
+  50/720 questions, running accuracy 82.0%
+  100/720 questions, running accuracy 74.0%
+  150/720 questions, running accuracy 68.7%
+  200/720 questions, running accuracy 69.0%
+  250/720 questions, running accuracy 66.8%
+  300/720 questions, running accuracy 69.0%
+  350/720 questions, running accuracy 70.6%
+  400/720 questions, running accuracy 70.0%
+  450/720 questions, running accuracy 70.7%
+  500/720 questions, running accuracy 70.4%
+  550/720 questions, running accuracy 70.4%
+  600/720 questions, running accuracy 71.3%
+  650/720 questions, running accuracy 71.2%
+  700/720 questions, running accuracy 72.1%
+  720/720 questions, running accuracy 72.2%
+2026-11-19 09:00:17 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/edited/drill: accuracy 72.2%
+2026-11-19 09:00:17 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half] on validation: 150 questions
+Running gemma-4b-full+editor[trial_b10_q_half] on dev: 150 questions -> /root/sellma/experiments/editor/trial_b10_q_half/edited/validation
+  50/150 questions, running accuracy 72.0%
+  100/150 questions, running accuracy 70.0%
+  150/150 questions, running accuracy 71.3%
+2026-11-19 09:00:29 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/edited/validation: accuracy 71.3%
+2026-11-19 09:00:29 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half] on test: 180 questions, with damage checks
+Running gemma-4b-full+editor[trial_b10_q_half] on test: 180 questions -> /root/sellma/experiments/editor/trial_b10_q_half/edited/test
+  50/180 questions, running accuracy 72.0%
+  100/180 questions, running accuracy 72.0%
+  150/180 questions, running accuracy 73.3%
+  180/180 questions, running accuracy 75.0%
+2026-11-19 09:01:01 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/edited/test: accuracy 75.0%
+2026-11-19 09:01:01 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half] on gemma_extra: 120 questions
+Running gemma-4b-full+editor[trial_b10_q_half] on gemma_extra: 120 questions -> /root/sellma/experiments/editor/trial_b10_q_half/edited/gemma_extra
+  50/120 questions, running accuracy 70.0%
+  100/120 questions, running accuracy 76.0%
+  120/120 questions, running accuracy 75.8%
+2026-11-19 09:01:10 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/edited/gemma_extra: accuracy 75.8%
+2026-11-19 09:01:10 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half:random] on hidden: 480 questions
+Running gemma-4b-full+editor[trial_b10_q_half:random] on dev: 480 questions -> /root/sellma/experiments/editor/trial_b10_q_half/control/hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 74.0%
+  150/480 questions, running accuracy 74.0%
+  200/480 questions, running accuracy 74.5%
+  250/480 questions, running accuracy 77.2%
+  300/480 questions, running accuracy 75.7%
+  350/480 questions, running accuracy 75.7%
+  400/480 questions, running accuracy 76.0%
+  450/480 questions, running accuracy 75.1%
+  480/480 questions, running accuracy 75.6%
+2026-11-19 09:01:47 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/control/hidden: accuracy 75.6%
+2026-11-19 09:01:47 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half:random] on drill: 720 questions
+Running gemma-4b-full+editor[trial_b10_q_half:random] on dev: 720 questions -> /root/sellma/experiments/editor/trial_b10_q_half/control/drill
+  50/720 questions, running accuracy 80.0%
+  100/720 questions, running accuracy 73.0%
+  150/720 questions, running accuracy 68.7%
+  200/720 questions, running accuracy 70.0%
+  250/720 questions, running accuracy 67.2%
+  300/720 questions, running accuracy 69.3%
+  350/720 questions, running accuracy 70.9%
+  400/720 questions, running accuracy 70.2%
+  450/720 questions, running accuracy 70.4%
+  500/720 questions, running accuracy 70.0%
+  550/720 questions, running accuracy 69.6%
+  600/720 questions, running accuracy 70.8%
+  650/720 questions, running accuracy 70.6%
+  700/720 questions, running accuracy 71.1%
+  720/720 questions, running accuracy 71.4%
+2026-11-19 09:02:43 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/control/drill: accuracy 71.4%
+2026-11-19 09:02:43 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half:random] on validation: 150 questions
+Running gemma-4b-full+editor[trial_b10_q_half:random] on dev: 150 questions -> /root/sellma/experiments/editor/trial_b10_q_half/control/validation
+  50/150 questions, running accuracy 74.0%
+  100/150 questions, running accuracy 73.0%
+  150/150 questions, running accuracy 72.7%
+2026-11-19 09:02:56 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/control/validation: accuracy 72.7%
+2026-11-19 09:02:56 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half:random] on test: 180 questions, with damage checks
+Running gemma-4b-full+editor[trial_b10_q_half:random] on test: 180 questions -> /root/sellma/experiments/editor/trial_b10_q_half/control/test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 09:03:27 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/control/test: accuracy 76.1%
+2026-11-19 09:03:27 UTC [editor:trial_b10_q_half] scoring gemma-4b-full+editor[trial_b10_q_half:random] on gemma_extra: 120 questions
+Running gemma-4b-full+editor[trial_b10_q_half:random] on gemma_extra: 120 questions -> /root/sellma/experiments/editor/trial_b10_q_half/control/gemma_extra
+  50/120 questions, running accuracy 72.0%
+  100/120 questions, running accuracy 78.0%
+  120/120 questions, running accuracy 77.5%
+2026-11-19 09:03:36 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/control/gemma_extra: accuracy 77.5%
+2026-11-19 09:03:36 UTC [editor:trial_b10_q_half] full precision: finished
+2026-11-19 09:03:36 UTC [editor:trial_b10_q_half] 4-bit baseline: 3 unedited runs found
+2026-11-19 09:03:36 UTC [editor:trial_b10_q_half] saving the changed model to work/editor/trial_b10_q_half/edited/hf
+2026-11-19 09:03:37 UTC [editor:trial_b10_q_half] compressing to Q4_K_M: work/editor/trial_b10_q_half/edited/merged-Q4_K_M.gguf
+compress: /root/llama-venv/bin/python /root/llama.cpp/convert_hf_to_gguf.py /root/sellma/work/editor/trial_b10_q_half/edited/hf --outfile /root/sellma/work/editor/trial_b10_q_half/edited/.merged-Q4_K_M.gguf.bf16.tmp --outtype bf16
+compress: /root/llama.cpp/build/bin/llama-quantize /root/sellma/work/editor/trial_b10_q_half/edited/.merged-Q4_K_M.gguf.bf16.tmp /root/sellma/work/editor/trial_b10_q_half/edited/.merged-Q4_K_M.gguf.unfinished Q4_K_M 32
+2026-11-19 09:04:36 UTC [editor:trial_b10_q_half] loading 4-bit edited model work/editor/trial_b10_q_half/edited/merged-Q4_K_M.gguf (can take minutes)
+2026-11-19 09:04:40 UTC [editor:trial_b10_q_half] scoring gemma-4b-q4+editor[trial_b10_q_half] on q4_hidden: 480 questions
+Running gemma-4b-q4+editor[trial_b10_q_half] on dev: 480 questions -> /root/sellma/experiments/editor/trial_b10_q_half/edited/q4_hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 74.0%
+  150/480 questions, running accuracy 70.7%
+  200/480 questions, running accuracy 70.5%
+  250/480 questions, running accuracy 74.0%
+  300/480 questions, running accuracy 72.7%
+  350/480 questions, running accuracy 72.9%
+  400/480 questions, running accuracy 72.8%
+  450/480 questions, running accuracy 71.8%
+  480/480 questions, running accuracy 72.3%
+2026-11-19 09:06:12 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/edited/q4_hidden: accuracy 72.3%
+2026-11-19 09:06:12 UTC [editor:trial_b10_q_half] scoring gemma-4b-q4+editor[trial_b10_q_half] on q4_test: 180 questions, with damage checks
+Running gemma-4b-q4+editor[trial_b10_q_half] on test: 180 questions -> /root/sellma/experiments/editor/trial_b10_q_half/edited/q4_test
+  50/180 questions, running accuracy 72.0%
+  100/180 questions, running accuracy 72.0%
+  150/180 questions, running accuracy 72.7%
+  180/180 questions, running accuracy 73.9%
+2026-11-19 09:09:05 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/edited/q4_test: accuracy 73.9%
+2026-11-19 09:09:05 UTC [editor:trial_b10_q_half] scoring gemma-4b-q4+editor[trial_b10_q_half] on q4_gemma_extra: 120 questions
+Running gemma-4b-q4+editor[trial_b10_q_half] on gemma_extra: 120 questions -> /root/sellma/experiments/editor/trial_b10_q_half/edited/q4_gemma_extra
+  50/120 questions, running accuracy 72.0%
+  100/120 questions, running accuracy 73.0%
+  120/120 questions, running accuracy 68.3%
+2026-11-19 09:09:32 UTC [editor:trial_b10_q_half] finished experiments/editor/trial_b10_q_half/edited/q4_gemma_extra: accuracy 68.3%
+2026-11-19 09:09:33 UTC [editor:trial_b10_q_half] deleted work/editor/trial_b10_q_half/edited
+2026-11-19 09:09:33 UTC [editor:trial_b10_q_half] quantized: finished
+2026-11-19 09:09:36 UTC [editor:trial_b10_q_half] collect: -> experiments/editor/trial_b10_q_half/results.json and results.md
+2026-11-19 09:09:36 UTC [editor:trial_b10_q_half] all steps finished
+Results written to /root/sellma/experiments/editor/trial_b10_q_half/results.json
+CHAIN1_DONE

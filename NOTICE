@@ -1,0 +1,93 @@
+NOTICE
+
+This repository contains files derived from third-party models and data. This file lists them and
+gives the notices their licences or terms ask for. The source of each obligation is noted in
+report/references/article_sources_licences.md (entries [gemma_terms], [qwen35_hf], [belebele],
+[mmlu], [riksdagen_terms]), checked 2026-11-19. The Högskoleprovet question texts are not in this
+repository (see report/DATA_RIGHTS.md).
+
+
+1. Gemma (google/gemma-3-4b-it): modified files
+-----------------------------------------------
+
+Gemma is provided under and subject to the Gemma Terms of Use found at gemma.ai/resources/terms
+
+Base model: google/gemma-3-4b-it, revision 093f9f388b31de276ce2de164bdc2081324b9767 (Hugging Face).
+
+Modified files. The files below are modifications of Gemma made by this project. Each one is a
+weight change ("delta") to be added to Gemma 3 4B it. They are not the full model. We modified
+these files: they hold changed values of Gemma's weights, not Google's original values.
+
+  results/editor_runs/trial_b50_k/final_edit.safetensors           editor 3's edit (main experiment)
+  results/editor_runs/trial_b10_q_full/final_edit.safetensors      a trial edit by an AI editor
+  results/editor_runs/gemma_b10/final_edit.safetensors             final edit of the 10-pass session (all zero)
+  results/editor_runs/gemma_b25/final_edit.safetensors             final edit of the 25-pass session (all zero)
+  results/editor_runs/gemma_b50/final_edit.safetensors             final edit of the 50-pass session (all zero)
+  results/experiments/editor/trial_b50_k/control/control_edit.safetensors   random control of editor 3's edit
+  results/experiments/group/gemma-4b-full/trained/delta.safetensors         group-trained edit
+  results/experiments/group/gemma-4b-full/control/delta.safetensors         random control of the group edit
+  results/archive/single_question_edits/gemma-4b-full/edits/*/targeted_edit.safetensors   (5 files)
+  results/archive/single_question_edits/gemma-4b-full/edits/*/control_edit.safetensors    (5 files)
+
+That is 18 files. As a precaution the same notice also covers the AI editors' analysis tensors,
+which may hold values computed from Gemma's weights or activations:
+
+  results/editor_runs/gemma_b*/notes/*.pt, *.npz, *.pkl
+
+Use restrictions. Use of these files is subject to the Gemma Terms of Use, including the use
+restrictions in its section 3.2, and to the Gemma Prohibited Use Policy:
+
+  Gemma Terms of Use:        https://gemma.ai/resources/terms
+  Prohibited Use Policy:     https://gemma.ai/resources/prohibited_use_policy
+
+If you distribute these files or anything made from them, you must give every recipient a copy of
+the Gemma Terms of Use (or the link above), pass on the same use restrictions, keep this notice,
+and mark any files you modify further (Gemma Terms of Use, section 3.1).
+
+The model weights themselves are not in this repository. Download them from Hugging Face after
+accepting the terms there (`make models`, see REPRODUCE.md).
+
+
+2. Qwen3.5-9B: modified files (Apache License 2.0)
+--------------------------------------------------
+
+Base model: Qwen/Qwen3.5-9B, revision c202236235762e1c871ad0ccb60c8ee5ba337b9a (Hugging Face).
+Copyright 2026 Alibaba Cloud. Licensed under the Apache License, Version 2.0:
+https://www.apache.org/licenses/LICENSE-2.0
+
+Modified files. The 14 files below are rank-1 weight changes to Qwen3.5-9B made by this project
+(one per question, each with a random control of the same size). They are not the full model. We
+changed the values: they are additions to one down_proj matrix of Qwen3.5-9B, not Alibaba Cloud's
+original weights.
+
+  results/archive/single_question_edits/qwen-9b-full/edits/*/targeted_edit.safetensors   (7 files)
+  results/archive/single_question_edits/qwen-9b-full/edits/*/control_edit.safetensors    (7 files)
+
+
+3. Datasets used in the experiments
+-----------------------------------
+
+Belebele (facebook/belebele, revision 7899cdfa4e1e0d733fd77c848e2c273cb1d32be2), configs swe_Latn and
+eng_Latn. Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Credit:
+Bandarkar et al. (2024), "The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122
+Language Variants", ACL 2024. This repository holds only question ids and our models' results
+(results/experiments/analysis/other_exams/), not the Belebele texts. The data is downloaded at the
+pinned revision by analysis/other_exams.py.
+
+MMLU (cais/mmlu, revision c30699e8356da336a370243923dbaf21066bb9fe), three mathematics subjects.
+Licence: MIT, "Copyright (c) 2020 Dan Hendrycks". Credit: Hendrycks et al. (2021), "Measuring
+Massive Multitask Language Understanding", ICLR 2021. This repository holds only question ids and
+our models' results, not the MMLU texts.
+
+Riksdagen open data (data.riksdagen.se), speeches of the 2025/26 session, in data/damage/ and
+repeated as prompts in the generations.jsonl files of the run folders.
+  Källa: Sveriges riksdag
+  Source: The Swedish Parliament
+The Riksdag is not behind this project and has not endorsed it. The speeches contain personal data
+(speakers' names and statements). Terms: https://www.riksdagen.se/sv/dokument-och-lagar/riksdagens-oppna-data/anvandarstod/anvandningsvillkor/
+Details are in data/damage/SOURCES.md.
+
+Högskoleprovet (UHR, studera.nu). Only question ids, answer letters, model answers and checksums
+are published. Two short example items are quoted in the report under the quotation right
+(22 § upphovsrättslagen), with UHR named as the source. Everything else is rebuilt locally with
+`make data` (see report/DATA_RIGHTS.md and REPRODUCE.md).

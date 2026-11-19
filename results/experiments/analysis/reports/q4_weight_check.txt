@@ -1,0 +1,16 @@
+unedited Q4_K_M sha256 fe8598adf4f20d50 (GPU-made unedited file starts fe8598adf4: IDENTICAL)
+edited   Q4_K_M sha256 994acc5f56f26719
+=== edited: tensors differing from unedited, bf16 GGUF: ['blk.23.attn_k.weight']; Q4_K_M GGUF: ['blk.23.attn_k.weight']
+--- blk.23.attn_k.weight: 4-bit type Q4_K, shape (1024, 2560); rows with the intended change 256 (256-511)
+entries changed in bf16: 366,231; entries changed after 4-bit: 447,027 (in the edited rows 447,027, in other rows 0)
+of the bf16-changed entries, still different after 4-bit: 314,961 (86.0%)
+projection of the 4-bit change onto the intended change (D.Dq/D.D): 1.0007
+rounding noise left over, relative to the intended change: 4.852; cos(D, Dq) 0.202
+intended change relative to the weights in the edited rows: 0.0103; 4-bit rounding error of those weights: 0.0754
+=== control: tensors differing from unedited, bf16 GGUF: ['blk.23.attn_k.weight']; Q4_K_M GGUF: ['blk.23.attn_k.weight']
+--- blk.23.attn_k.weight: 4-bit type Q4_K, shape (1024, 2560); rows with the intended change 256 (256-511)
+entries changed in bf16: 552,769; entries changed after 4-bit: 638,455 (in the edited rows 638,455, in other rows 0)
+of the bf16-changed entries, still different after 4-bit: 539,642 (97.6%)
+projection of the 4-bit change onto the intended change (D.Dq/D.D): 0.9931
+rounding noise left over, relative to the intended change: 6.255; cos(D, Dq) 0.157
+intended change relative to the weights in the edited rows: 0.0104; 4-bit rounding error of those weights: 0.0754

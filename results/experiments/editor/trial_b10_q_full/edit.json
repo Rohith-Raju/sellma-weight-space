@@ -1,0 +1,101 @@
+{
+  "run": "trial_b10_q_full",
+  "model": "gemma-4b-full",
+  "created_at": "2026-11-19T08:48:08+00:00",
+  "source": "editor_runs/trial_b10_q_full/final_edit.safetensors",
+  "source_sha256": "af79b46fb3850ff7da3e94bb48d016e47fafeb3ef392d57b6053d97b4e9a7342",
+  "loader": "bench.editor.workbench.load_edit",
+  "editor": {
+    "run_name": "trial_b10_q_full",
+    "model": "gemma-4b-full",
+    "submitted_at": "2026-11-19T08:47:50+00:00",
+    "budget": 1,
+    "passes_used": 0,
+    "explanation": "Editor 1 trial (pass 3): rank-1 change to layer-23 q_proj rows of heads 3 and 7 removing the position prior, full strength. Not submitted by the editor; scored only to see what compression does to an edit.",
+    "size": {
+      "weights_touched": 1254160,
+      "weights_changed": 606820,
+      "model_weights": 4300079472,
+      "share_of_model": 0.00029165972586471306,
+      "tensors": {
+        "model.language_model.layers.23.self_attn.q_proj.weight": {
+          "shape": [
+            2048,
+            2560
+          ],
+          "form": "rows",
+          "weights_touched": 1254160,
+          "weights_changed": 606820,
+          "delta_norm": 0.08254662901163101,
+          "tensor_norm": 26.223405838012695,
+          "relative_norm": 0.0031478225796274634
+        }
+      }
+    }
+  },
+  "description": {
+    "n_tensors": 1,
+    "weights_touched": 1254160,
+    "weights_changed": 606820,
+    "model_weights": 4300079472,
+    "share_of_model": 0.00029165972586471306,
+    "layers": [
+      23
+    ],
+    "modules": {
+      "self_attn.q_proj": 1
+    },
+    "kinds": [
+      "rows"
+    ],
+    "tensors": [
+      {
+        "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+        "stored_as": "language_model.model.layers.23.self_attn.q_proj.weight",
+        "layer": 23,
+        "module": "self_attn.q_proj",
+        "kind": "rows",
+        "shape": [
+          2048,
+          2560
+        ],
+        "weights_touched": 1254160,
+        "weights_changed": 606820,
+        "share_of_tensor": 0.2392120361328125,
+        "delta_norm": 0.08254662901163101,
+        "rows_touched": 512,
+        "rows_indices": [
+          768,
+          769,
+          770,
+          771,
+          772,
+          773,
+          774,
+          775,
+          776,
+          777,
+          778,
+          779,
+          780,
+          781,
+          782,
+          783,
+          784,
+          785,
+          786,
+          787,
+          788,
+          789,
+          790,
+          791
+        ],
+        "rows_indices_truncated": true,
+        "weight_norm": 26.225185909285038,
+        "relative_norm": 0.003147608916755299,
+        "relative_norm_of_touched_part": 0.0063741802326890565
+      }
+    ]
+  },
+  "model_weights_note": "model_weights counts every number stored in the model files (vision tower included)"
+}

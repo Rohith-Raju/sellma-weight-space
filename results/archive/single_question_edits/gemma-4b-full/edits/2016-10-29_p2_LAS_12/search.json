@@ -1,0 +1,107 @@
+{
+  "question_id": "2016-10-29/p2/LAS/12",
+  "section": "LAS",
+  "fixed": false,
+  "status": "could_not_fix",
+  "reference_norm": 3.3571715354919434,
+  "edit": null,
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.033571715354919436,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -9.499999931117818,
+      "prob_correct": 7.484520550007009e-05,
+      "weight_changed": true,
+      "realized_fraction": 0.9570933599663887,
+      "realized_cosine": 0.9078335954150938,
+      "entries_changed": 0.0724576935172081
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06714343070983887,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -7.874999872193676,
+      "prob_correct": 0.00037996394554607555,
+      "weight_changed": true,
+      "realized_fraction": 0.9828694537489459,
+      "realized_cosine": 0.9406963801477647,
+      "entries_changed": 0.13286811113357544
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.16785857677459717,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -5.499999916518936,
+      "prob_correct": 0.004068814297729928,
+      "weight_changed": true,
+      "realized_fraction": 1.0029985090545428,
+      "realized_cosine": 0.9745892756750939,
+      "entries_changed": 0.26798567175865173
+    },
+    {
+      "alpha_fraction": 0.1,
+      "alpha": 0.33571715354919435,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -3.249999492824735,
+      "prob_correct": 0.03722307130453657,
+      "weight_changed": true,
+      "realized_fraction": 1.0046245479191176,
+      "realized_cosine": 0.9896216214114598,
+      "entries_changed": 0.40661242604255676
+    },
+    {
+      "alpha_fraction": 0.2,
+      "alpha": 0.6714343070983887,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -1.875000736492362,
+      "prob_correct": 0.13169322774839567,
+      "weight_changed": true,
+      "realized_fraction": 1.0024209576622338,
+      "realized_cosine": 0.9964945311178552,
+      "entries_changed": 0.5533303618431091
+    },
+    {
+      "alpha_fraction": 0.5,
+      "alpha": 1.6785857677459717,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -1.6250157429312169,
+      "prob_correct": 0.16207763330927305,
+      "weight_changed": true,
+      "realized_fraction": 1.0005556424338673,
+      "realized_cosine": 0.9993077490793766,
+      "entries_changed": 0.722494900226593
+    },
+    {
+      "alpha_fraction": 1.0,
+      "alpha": 3.3571715354919434,
+      "chosen_letter": "C",
+      "is_correct": false,
+      "margin": -1.7500321480045038,
+      "prob_correct": 0.14526001954995554,
+      "weight_changed": true,
+      "realized_fraction": 1.0001968610463547,
+      "realized_cosine": 0.9998118401535953,
+      "entries_changed": 0.8182240128517151
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "C",
+    "prob_correct": 2.561280185312512e-06,
+    "margin": -12.875000048211831,
+    "layer": 23,
+    "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+    "reference_norm": 3.3571715354919434,
+    "reference_norm_kind": "spectral",
+    "x_norm": 15.881770133972168,
+    "g_norm": 8.730231285095215,
+    "mlp_out_norm": 8.557631492614746,
+    "push_ratio_per_fraction": 6.2304419947284275
+  }
+}

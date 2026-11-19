@@ -1,0 +1,213 @@
+2026-11-19 07:08:59 UTC [gemma-4b-full] split: 8 hidden, 3 validation and 12 drill papers from 20261119T060704Z_gemma-4b-full_dev: drill_wrong 205, drill_right 515, validation_wrong 41, validation_right 109, hidden_wrong 117, hidden_right 363 -> experiments/group/gemma-4b-full/split.json
+2026-11-19 07:08:59 UTC [gemma-4b-full] split: done already (experiments/group/gemma-4b-full/split.json): drill_wrong 205, drill_right 515, validation_wrong 41, validation_right 109, hidden_wrong 117, hidden_right 363
+2026-11-19 07:08:59 UTC [gemma-4b-full] loading gemma-4b-full (can take minutes)
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   5%|▍         | 44/883 [00:00<00:02, 412.53it/s]Loading weights:  10%|█         | 91/883 [00:00<00:01, 441.77it/s]Loading weights:  15%|█▌        | 136/883 [00:00<00:01, 407.72it/s]Loading weights:  21%|██        | 182/883 [00:00<00:01, 426.73it/s]Loading weights:  25%|██▌       | 225/883 [00:00<00:01, 406.76it/s]Loading weights:  30%|███       | 266/883 [00:00<00:01, 397.72it/s]Loading weights:  35%|███▌      | 310/883 [00:00<00:01, 409.63it/s]Loading weights:  40%|████      | 354/883 [00:00<00:01, 418.81it/s]Loading weights:  45%|████▍     | 397/883 [00:00<00:01, 403.96it/s]Loading weights:  52%|█████▏    | 457/883 [00:01<00:00, 461.00it/s]Loading weights:  77%|███████▋  | 678/883 [00:01<00:00, 975.23it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 700.93it/s]
+2026-11-19 07:09:08 UTC [gemma-4b-full] scoring gemma-4b-full on hidden: 480 questions
+Running gemma-4b-full on dev: 480 questions -> /root/sellma/experiments/group/gemma-4b-full/baseline/hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 74.0%
+  150/480 questions, running accuracy 74.0%
+  200/480 questions, running accuracy 74.5%
+  250/480 questions, running accuracy 77.2%
+  300/480 questions, running accuracy 75.7%
+  350/480 questions, running accuracy 75.7%
+  400/480 questions, running accuracy 76.0%
+  450/480 questions, running accuracy 75.1%
+  480/480 questions, running accuracy 75.6%
+2026-11-19 07:09:38 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/baseline/hidden: accuracy 75.6%
+2026-11-19 07:09:38 UTC [gemma-4b-full] scoring gemma-4b-full on drill: 720 questions
+Running gemma-4b-full on dev: 720 questions -> /root/sellma/experiments/group/gemma-4b-full/baseline/drill
+  50/720 questions, running accuracy 80.0%
+  100/720 questions, running accuracy 73.0%
+  150/720 questions, running accuracy 68.7%
+  200/720 questions, running accuracy 70.0%
+  250/720 questions, running accuracy 67.2%
+  300/720 questions, running accuracy 69.3%
+  350/720 questions, running accuracy 70.9%
+  400/720 questions, running accuracy 70.0%
+  450/720 questions, running accuracy 70.4%
+  500/720 questions, running accuracy 70.0%
+  550/720 questions, running accuracy 69.8%
+  600/720 questions, running accuracy 71.0%
+  650/720 questions, running accuracy 70.8%
+  700/720 questions, running accuracy 71.3%
+  720/720 questions, running accuracy 71.5%
+2026-11-19 07:10:19 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/baseline/drill: accuracy 71.5%
+2026-11-19 07:10:19 UTC [gemma-4b-full] scoring gemma-4b-full on validation: 150 questions
+Running gemma-4b-full on dev: 150 questions -> /root/sellma/experiments/group/gemma-4b-full/baseline/validation
+  50/150 questions, running accuracy 74.0%
+  100/150 questions, running accuracy 73.0%
+  150/150 questions, running accuracy 72.7%
+2026-11-19 07:10:27 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/baseline/validation: accuracy 72.7%
+2026-11-19 07:10:27 UTC [gemma-4b-full] scoring gemma-4b-full on test: 180 questions, with damage checks
+Running gemma-4b-full on test: 180 questions -> /root/sellma/experiments/group/gemma-4b-full/baseline/test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 07:10:54 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/baseline/test: accuracy 76.1%
+2026-11-19 07:10:54 UTC [gemma-4b-full] scoring gemma-4b-full on gemma_extra: 120 questions
+Running gemma-4b-full on gemma_extra: 120 questions -> /root/sellma/experiments/group/gemma-4b-full/baseline/gemma_extra
+  50/120 questions, running accuracy 72.0%
+  100/120 questions, running accuracy 78.0%
+  120/120 questions, running accuracy 77.5%
+2026-11-19 07:11:01 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/baseline/gemma_extra: accuracy 77.5%
+2026-11-19 07:11:01 UTC [gemma-4b-full] evaluate: finished
+2026-11-19 07:11:01 UTC [gemma-4b-full] split: done already (experiments/group/gemma-4b-full/split.json): drill_wrong 205, drill_right 515, validation_wrong 41, validation_right 109, hidden_wrong 117, hidden_right 363
+2026-11-19 07:11:01 UTC [gemma-4b-full] training on 205 drill wrong and 515 drill right questions, stopping by 150 validation questions (log: experiments/group/gemma-4b-full/trained/training_log.jsonl)
+2026-11-19 07:25:49 UTC [gemma-4b-full] train: chose step 50 after 300 steps -> experiments/group/gemma-4b-full/trained
+2026-11-19 07:25:49 UTC [gemma-4b-full] control: random change with seed 1 -> experiments/group/gemma-4b-full/control
+2026-11-19 07:25:49 UTC [gemma-4b-full] split: done already (experiments/group/gemma-4b-full/split.json): drill_wrong 205, drill_right 515, validation_wrong 41, validation_right 109, hidden_wrong 117, hidden_right 363
+2026-11-19 07:25:49 UTC [gemma-4b-full] scoring gemma-4b-full+group[trained] on hidden: 480 questions
+Running gemma-4b-full+group[trained] on dev: 480 questions -> /root/sellma/experiments/group/gemma-4b-full/trained/hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 75.0%
+  150/480 questions, running accuracy 75.3%
+  200/480 questions, running accuracy 76.0%
+  250/480 questions, running accuracy 78.4%
+  300/480 questions, running accuracy 76.3%
+  350/480 questions, running accuracy 76.3%
+  400/480 questions, running accuracy 76.5%
+  450/480 questions, running accuracy 75.8%
+  480/480 questions, running accuracy 76.0%
+2026-11-19 07:26:17 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/trained/hidden: accuracy 76.0%
+2026-11-19 07:26:17 UTC [gemma-4b-full] scoring gemma-4b-full+group[trained] on drill: 720 questions
+Running gemma-4b-full+group[trained] on dev: 720 questions -> /root/sellma/experiments/group/gemma-4b-full/trained/drill
+  50/720 questions, running accuracy 82.0%
+  100/720 questions, running accuracy 73.0%
+  150/720 questions, running accuracy 68.0%
+  200/720 questions, running accuracy 69.0%
+  250/720 questions, running accuracy 66.4%
+  300/720 questions, running accuracy 68.7%
+  350/720 questions, running accuracy 70.3%
+  400/720 questions, running accuracy 69.8%
+  450/720 questions, running accuracy 70.4%
+  500/720 questions, running accuracy 70.2%
+  550/720 questions, running accuracy 69.8%
+  600/720 questions, running accuracy 70.7%
+  650/720 questions, running accuracy 70.5%
+  700/720 questions, running accuracy 71.0%
+  720/720 questions, running accuracy 71.2%
+2026-11-19 07:26:57 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/trained/drill: accuracy 71.2%
+2026-11-19 07:26:57 UTC [gemma-4b-full] scoring gemma-4b-full+group[trained] on validation: 150 questions
+Running gemma-4b-full+group[trained] on dev: 150 questions -> /root/sellma/experiments/group/gemma-4b-full/trained/validation
+  50/150 questions, running accuracy 72.0%
+  100/150 questions, running accuracy 73.0%
+  150/150 questions, running accuracy 72.7%
+2026-11-19 07:27:06 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/trained/validation: accuracy 72.7%
+2026-11-19 07:27:06 UTC [gemma-4b-full] scoring gemma-4b-full+group[trained] on test: 180 questions, with damage checks
+Running gemma-4b-full+group[trained] on test: 180 questions -> /root/sellma/experiments/group/gemma-4b-full/trained/test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 74.0%
+  150/180 questions, running accuracy 74.7%
+  180/180 questions, running accuracy 76.7%
+2026-11-19 07:27:32 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/trained/test: accuracy 76.7%
+2026-11-19 07:27:32 UTC [gemma-4b-full] scoring gemma-4b-full+group[trained] on gemma_extra: 120 questions
+Running gemma-4b-full+group[trained] on gemma_extra: 120 questions -> /root/sellma/experiments/group/gemma-4b-full/trained/gemma_extra
+  50/120 questions, running accuracy 72.0%
+  100/120 questions, running accuracy 77.0%
+  120/120 questions, running accuracy 77.5%
+2026-11-19 07:27:39 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/trained/gemma_extra: accuracy 77.5%
+2026-11-19 07:27:39 UTC [gemma-4b-full] scoring gemma-4b-full+group[random] on hidden: 480 questions
+Running gemma-4b-full+group[random] on dev: 480 questions -> /root/sellma/experiments/group/gemma-4b-full/control/hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 74.0%
+  150/480 questions, running accuracy 74.0%
+  200/480 questions, running accuracy 74.5%
+  250/480 questions, running accuracy 77.2%
+  300/480 questions, running accuracy 75.7%
+  350/480 questions, running accuracy 75.7%
+  400/480 questions, running accuracy 76.0%
+  450/480 questions, running accuracy 75.3%
+  480/480 questions, running accuracy 75.8%
+2026-11-19 07:28:07 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/control/hidden: accuracy 75.8%
+2026-11-19 07:28:07 UTC [gemma-4b-full] scoring gemma-4b-full+group[random] on drill: 720 questions
+Running gemma-4b-full+group[random] on dev: 720 questions -> /root/sellma/experiments/group/gemma-4b-full/control/drill
+  50/720 questions, running accuracy 80.0%
+  100/720 questions, running accuracy 73.0%
+  150/720 questions, running accuracy 68.7%
+  200/720 questions, running accuracy 70.0%
+  250/720 questions, running accuracy 67.2%
+  300/720 questions, running accuracy 69.3%
+  350/720 questions, running accuracy 70.9%
+  400/720 questions, running accuracy 70.0%
+  450/720 questions, running accuracy 70.2%
+  500/720 questions, running accuracy 69.8%
+  550/720 questions, running accuracy 69.6%
+  600/720 questions, running accuracy 70.8%
+  650/720 questions, running accuracy 70.6%
+  700/720 questions, running accuracy 71.1%
+  720/720 questions, running accuracy 71.4%
+2026-11-19 07:28:47 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/control/drill: accuracy 71.4%
+2026-11-19 07:28:47 UTC [gemma-4b-full] scoring gemma-4b-full+group[random] on validation: 150 questions
+Running gemma-4b-full+group[random] on dev: 150 questions -> /root/sellma/experiments/group/gemma-4b-full/control/validation
+  50/150 questions, running accuracy 74.0%
+  100/150 questions, running accuracy 73.0%
+  150/150 questions, running accuracy 72.7%
+2026-11-19 07:28:56 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/control/validation: accuracy 72.7%
+2026-11-19 07:28:56 UTC [gemma-4b-full] scoring gemma-4b-full+group[random] on test: 180 questions, with damage checks
+Running gemma-4b-full+group[random] on test: 180 questions -> /root/sellma/experiments/group/gemma-4b-full/control/test
+  50/180 questions, running accuracy 74.0%
+  100/180 questions, running accuracy 73.0%
+  150/180 questions, running accuracy 74.0%
+  180/180 questions, running accuracy 76.1%
+2026-11-19 07:29:22 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/control/test: accuracy 76.1%
+2026-11-19 07:29:22 UTC [gemma-4b-full] scoring gemma-4b-full+group[random] on gemma_extra: 120 questions
+Running gemma-4b-full+group[random] on gemma_extra: 120 questions -> /root/sellma/experiments/group/gemma-4b-full/control/gemma_extra
+  50/120 questions, running accuracy 72.0%
+  100/120 questions, running accuracy 78.0%
+  120/120 questions, running accuracy 77.5%
+2026-11-19 07:29:29 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/control/gemma_extra: accuracy 77.5%
+2026-11-19 07:29:29 UTC [gemma-4b-full] evaluate: finished
+2026-11-19 07:29:30 UTC [gemma-4b-full] split: done already (experiments/group/gemma-4b-full/split.json): drill_wrong 205, drill_right 515, validation_wrong 41, validation_right 109, hidden_wrong 117, hidden_right 363
+2026-11-19 07:29:30 UTC [gemma-4b-full] loading gemma-4b-q4 (unedited 4-bit) (can take minutes)
+2026-11-19 07:29:34 UTC [gemma-4b-full] scoring gemma-4b-q4 on q4_hidden: 480 questions
+Running gemma-4b-q4 on dev: 480 questions -> /root/sellma/experiments/group/gemma-4b-full/baseline/q4_hidden
+  50/480 questions, running accuracy 78.0%
+  100/480 questions, running accuracy 76.0%
+  150/480 questions, running accuracy 72.0%
+  200/480 questions, running accuracy 72.0%
+  250/480 questions, running accuracy 75.2%
+  300/480 questions, running accuracy 74.3%
+  350/480 questions, running accuracy 74.6%
+  400/480 questions, running accuracy 74.2%
+  450/480 questions, running accuracy 73.3%
+  480/480 questions, running accuracy 73.3%
+2026-11-19 07:30:59 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/baseline/q4_hidden: accuracy 73.3%
+2026-11-19 07:31:00 UTC [gemma-4b-full] saving the changed model to work/group/gemma-4b-full/trained/hf
+2026-11-19 07:31:02 UTC [gemma-4b-full] compressing to Q4_K_M: work/group/gemma-4b-full/trained/merged-Q4_K_M.gguf
+compress: /root/llama-venv/bin/python /root/llama.cpp/convert_hf_to_gguf.py /root/sellma/work/group/gemma-4b-full/trained/hf --outfile /root/sellma/work/group/gemma-4b-full/trained/.merged-Q4_K_M.gguf.bf16.tmp --outtype bf16
+compress: /root/llama.cpp/build/bin/llama-quantize /root/sellma/work/group/gemma-4b-full/trained/.merged-Q4_K_M.gguf.bf16.tmp /root/sellma/work/group/gemma-4b-full/trained/.merged-Q4_K_M.gguf.unfinished Q4_K_M 32
+2026-11-19 07:31:59 UTC [gemma-4b-full] loading 4-bit changed model work/group/gemma-4b-full/trained/merged-Q4_K_M.gguf (can take minutes)
+2026-11-19 07:32:04 UTC [gemma-4b-full] scoring gemma-4b-q4+group[trained] on q4_hidden: 480 questions
+Running gemma-4b-q4+group[trained] on dev: 480 questions -> /root/sellma/experiments/group/gemma-4b-full/trained/q4_hidden
+  50/480 questions, running accuracy 76.0%
+  100/480 questions, running accuracy 75.0%
+  150/480 questions, running accuracy 72.0%
+  200/480 questions, running accuracy 72.0%
+  250/480 questions, running accuracy 75.2%
+  300/480 questions, running accuracy 74.0%
+  350/480 questions, running accuracy 74.3%
+  400/480 questions, running accuracy 74.0%
+  450/480 questions, running accuracy 73.1%
+  480/480 questions, running accuracy 72.9%
+2026-11-19 07:33:28 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/trained/q4_hidden: accuracy 72.9%
+2026-11-19 07:33:28 UTC [gemma-4b-full] scoring gemma-4b-q4+group[trained] on q4_test: 180 questions, with damage checks
+Running gemma-4b-q4+group[trained] on test: 180 questions -> /root/sellma/experiments/group/gemma-4b-full/trained/q4_test
+  50/180 questions, running accuracy 72.0%
+  100/180 questions, running accuracy 72.0%
+  150/180 questions, running accuracy 72.0%
+  180/180 questions, running accuracy 73.9%
+2026-11-19 07:34:54 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/trained/q4_test: accuracy 73.9%
+2026-11-19 07:34:54 UTC [gemma-4b-full] scoring gemma-4b-q4+group[trained] on q4_gemma_extra: 120 questions
+Running gemma-4b-q4+group[trained] on gemma_extra: 120 questions -> /root/sellma/experiments/group/gemma-4b-full/trained/q4_gemma_extra
+  50/120 questions, running accuracy 72.0%
+  100/120 questions, running accuracy 74.0%
+  120/120 questions, running accuracy 71.7%
+2026-11-19 07:35:15 UTC [gemma-4b-full] finished experiments/group/gemma-4b-full/trained/q4_gemma_extra: accuracy 71.7%
+2026-11-19 07:35:17 UTC [gemma-4b-full] deleted work/group/gemma-4b-full/trained
+2026-11-19 07:35:17 UTC [gemma-4b-full] quantized: finished
+2026-11-19 07:35:17 UTC [gemma-4b-full] split: done already (experiments/group/gemma-4b-full/split.json): drill_wrong 205, drill_right 515, validation_wrong 41, validation_right 109, hidden_wrong 117, hidden_right 363
+2026-11-19 07:35:20 UTC [gemma-4b-full] collect: -> experiments/group/gemma-4b-full/results.json and results.md
+2026-11-19 07:35:20 UTC [gemma-4b-full] all steps finished
+EXIT=0

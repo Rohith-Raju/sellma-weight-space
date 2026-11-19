@@ -1,0 +1,317 @@
+{
+  "edited": "20261119T060633Z_dry-broken_test",
+  "baseline": "20261119T060633Z_dry-oracle_test",
+  "control": null,
+  "split": "test",
+  "indicative_only": false,
+  "n_questions": 180,
+  "metric": "prob_correct",
+  "headline_sections": [
+    "LAS",
+    "MEK"
+  ],
+  "warnings": [
+    "WARNING: backends differ (20261119T060633Z_dry-broken_test: broken, 20261119T060633Z_dry-oracle_test: oracle). Perplexity is only comparable within one backend, so the perplexity rule is treated as failed."
+  ],
+  "headline": {
+    "n": 120,
+    "accuracy": {
+      "edited": 1.0,
+      "baseline": 1.0,
+      "change": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "metric": {
+      "name": "prob_correct",
+      "edited": 0.9700000000000002,
+      "baseline": 0.9700000000000002,
+      "change": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "flips": {
+      "wrong_to_right": 0,
+      "right_to_wrong": 0
+    },
+    "chosen_letter_change": {
+      "A": {
+        "edited": 0.3,
+        "baseline": 0.3,
+        "change": 0.0
+      },
+      "B": {
+        "edited": 0.24166666666666667,
+        "baseline": 0.24166666666666667,
+        "change": 0.0
+      },
+      "C": {
+        "edited": 0.225,
+        "baseline": 0.225,
+        "change": 0.0
+      },
+      "D": {
+        "edited": 0.23333333333333334,
+        "baseline": 0.23333333333333334,
+        "change": 0.0
+      },
+      "E": {
+        "edited": 0.0,
+        "baseline": 0.0,
+        "change": 0.0
+      }
+    }
+  },
+  "overall": {
+    "n": 180,
+    "accuracy": {
+      "edited": 1.0,
+      "baseline": 1.0,
+      "change": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "metric": {
+      "name": "prob_correct",
+      "edited": 0.9699999999999999,
+      "baseline": 0.9699999999999999,
+      "change": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "flips": {
+      "wrong_to_right": 0,
+      "right_to_wrong": 0
+    },
+    "chosen_letter_change": {
+      "A": {
+        "edited": 0.24444444444444444,
+        "baseline": 0.24444444444444444,
+        "change": 0.0
+      },
+      "B": {
+        "edited": 0.22777777777777777,
+        "baseline": 0.22777777777777777,
+        "change": 0.0
+      },
+      "C": {
+        "edited": 0.20555555555555555,
+        "baseline": 0.20555555555555555,
+        "change": 0.0
+      },
+      "D": {
+        "edited": 0.23333333333333334,
+        "baseline": 0.23333333333333334,
+        "change": 0.0
+      },
+      "E": {
+        "edited": 0.08888888888888889,
+        "baseline": 0.08888888888888889,
+        "change": 0.0
+      }
+    }
+  },
+  "sections": {
+    "ORD": {
+      "n": 60,
+      "accuracy": {
+        "edited": 1.0,
+        "baseline": 1.0,
+        "change": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "metric": {
+        "name": "prob_correct",
+        "edited": 0.9699999999999999,
+        "baseline": 0.9699999999999999,
+        "change": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "flips": {
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      "chosen_letter_change": {
+        "A": {
+          "edited": 0.13333333333333333,
+          "baseline": 0.13333333333333333,
+          "change": 0.0
+        },
+        "B": {
+          "edited": 0.2,
+          "baseline": 0.2,
+          "change": 0.0
+        },
+        "C": {
+          "edited": 0.16666666666666666,
+          "baseline": 0.16666666666666666,
+          "change": 0.0
+        },
+        "D": {
+          "edited": 0.23333333333333334,
+          "baseline": 0.23333333333333334,
+          "change": 0.0
+        },
+        "E": {
+          "edited": 0.26666666666666666,
+          "baseline": 0.26666666666666666,
+          "change": 0.0
+        }
+      }
+    },
+    "LAS": {
+      "n": 60,
+      "accuracy": {
+        "edited": 1.0,
+        "baseline": 1.0,
+        "change": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "metric": {
+        "name": "prob_correct",
+        "edited": 0.9699999999999999,
+        "baseline": 0.9699999999999999,
+        "change": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "flips": {
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      "chosen_letter_change": {
+        "A": {
+          "edited": 0.26666666666666666,
+          "baseline": 0.26666666666666666,
+          "change": 0.0
+        },
+        "B": {
+          "edited": 0.25,
+          "baseline": 0.25,
+          "change": 0.0
+        },
+        "C": {
+          "edited": 0.23333333333333334,
+          "baseline": 0.23333333333333334,
+          "change": 0.0
+        },
+        "D": {
+          "edited": 0.25,
+          "baseline": 0.25,
+          "change": 0.0
+        },
+        "E": {
+          "edited": 0.0,
+          "baseline": 0.0,
+          "change": 0.0
+        }
+      }
+    },
+    "MEK": {
+      "n": 60,
+      "accuracy": {
+        "edited": 1.0,
+        "baseline": 1.0,
+        "change": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "metric": {
+        "name": "prob_correct",
+        "edited": 0.9699999999999999,
+        "baseline": 0.9699999999999999,
+        "change": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "flips": {
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      "chosen_letter_change": {
+        "A": {
+          "edited": 0.3333333333333333,
+          "baseline": 0.3333333333333333,
+          "change": 0.0
+        },
+        "B": {
+          "edited": 0.23333333333333334,
+          "baseline": 0.23333333333333334,
+          "change": 0.0
+        },
+        "C": {
+          "edited": 0.21666666666666667,
+          "baseline": 0.21666666666666667,
+          "change": 0.0
+        },
+        "D": {
+          "edited": 0.21666666666666667,
+          "baseline": 0.21666666666666667,
+          "change": 0.0
+        },
+        "E": {
+          "edited": 0.0,
+          "baseline": 0.0,
+          "change": 0.0
+        }
+      }
+    }
+  },
+  "edited_minus_control_metric": null,
+  "damage": {
+    "n_perplexity_docs": 75,
+    "n_prompts": 50,
+    "perplexity": {
+      "edited": 5000000.0,
+      "baseline": 12.0,
+      "relative_change": 416665.6666666667
+    },
+    "loop_rate_percent": {
+      "edited": 100.0,
+      "baseline": 0.0,
+      "change_points": 100.0
+    }
+  },
+  "rules": {
+    "1_metric_improves": {
+      "passed": false,
+      "detail": "headline change in prob_correct +0.0000, 95% CI [+0.0000, +0.0000] (must be above zero)"
+    },
+    "2_beats_control": {
+      "passed": false,
+      "detail": "no control run given, so not checked (counts as failed)"
+    },
+    "3a_perplexity": {
+      "passed": false,
+      "detail": "backends differ, perplexity not comparable (counts as failed)"
+    },
+    "3b_loop_rate": {
+      "passed": false,
+      "detail": "loop rate change +100.0 points (limit +2.0)"
+    }
+  },
+  "verdict": "NO IMPROVEMENT"
+}

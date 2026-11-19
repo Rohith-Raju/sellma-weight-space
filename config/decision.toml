@@ -1,0 +1,21 @@
+# When does an edit count as an improvement? Fixed before any edit is run.
+# `bench compare` applies these rules to an edited run and its baseline (same model, same backend,
+# same split). All three must hold.
+
+# 1. The score goes up and the 95% confidence interval of the change is above zero.
+#    Measured on the test split, on the mean probability given to the correct option.
+metric = "prob_correct"
+confidence = 0.95
+bootstrap_samples = 10000
+
+# 2. It beats a random edit of the same size: the edit's gain must be larger than the random
+#    edit's gain, again with the confidence interval above zero. (Checked when a control run is given.)
+
+# 3. No damage. Perplexity on the held-out Swedish text may rise by at most this fraction,
+#    and the share of looping replies may rise by at most this many percentage points.
+max_perplexity_increase = 0.05
+max_loop_rate_increase = 2.0
+
+# The headline: only these sections decide the verdict (rules 1 and 2). ORD is mostly vocabulary
+# (knowledge), so it is reported separately and does not count.
+headline_sections = ["LAS", "MEK"]

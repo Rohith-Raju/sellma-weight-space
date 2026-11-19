@@ -1,0 +1,167 @@
+{
+  "model": "gemma-4b-full+editor[trial_b10_q_full:random]",
+  "backend": "hf",
+  "split": "dev",
+  "n_questions": 150,
+  "overall": {
+    "n": 150,
+    "accuracy": 0.7266666666666667,
+    "accuracy_ci95": [
+      0.6503549212540405,
+      0.7916585679657648
+    ],
+    "mean_prob_correct": 0.725661570826151,
+    "mean_prob_on_letters": 0.9999998573947054,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.19333333333333333,
+      "B": 0.22666666666666666,
+      "C": 0.24,
+      "D": 0.2866666666666667,
+      "E": 0.05333333333333334
+    }
+  },
+  "headline": {
+    "sections": [
+      "LAS",
+      "MEK"
+    ],
+    "n": 100,
+    "accuracy": 0.68,
+    "accuracy_ci95": [
+      0.5833738138954762,
+      0.7633085267500092
+    ],
+    "mean_prob_correct": 0.6760452219926522,
+    "mean_prob_on_letters": 0.9999999953593524,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.18,
+      "B": 0.25,
+      "C": 0.22,
+      "D": 0.35,
+      "E": 0.0
+    }
+  },
+  "sections": {
+    "ORD": {
+      "n": 50,
+      "accuracy": 0.82,
+      "accuracy_ci95": [
+        0.6920394632569922,
+        0.9022980732976582
+      ],
+      "mean_prob_correct": 0.8248942684931484,
+      "mean_prob_on_letters": 0.999999581465411,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.22,
+        "B": 0.18,
+        "C": 0.28,
+        "D": 0.16,
+        "E": 0.16
+      }
+    },
+    "LAS": {
+      "n": 50,
+      "accuracy": 0.66,
+      "accuracy_ci95": [
+        0.5215382605023261,
+        0.7756305077749991
+      ],
+      "mean_prob_correct": 0.6590795946327449,
+      "mean_prob_on_letters": 1.0000000092535442,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.16,
+        "B": 0.18,
+        "C": 0.28,
+        "D": 0.38,
+        "E": 0.0
+      }
+    },
+    "MEK": {
+      "n": 50,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.562496495355466,
+        0.8089644649911906
+      ],
+      "mean_prob_correct": 0.6930108493525597,
+      "mean_prob_on_letters": 0.9999999814651607,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.2,
+        "B": 0.32,
+        "C": 0.16,
+        "D": 0.32,
+        "E": 0.0
+      }
+    }
+  },
+  "exam_dates": {
+    "2018-04-14": {
+      "n": 30,
+      "accuracy": 0.7666666666666667,
+      "accuracy_ci95": [
+        0.5907167384187784,
+        0.8820761185551051
+      ],
+      "mean_prob_correct": 0.7570960742109433,
+      "mean_prob_on_letters": 1.0000000010455201,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.16666666666666666,
+        "B": 0.2,
+        "C": 0.2,
+        "D": 0.36666666666666664,
+        "E": 0.06666666666666667
+      }
+    },
+    "2022-03-12": {
+      "n": 60,
+      "accuracy": 0.7166666666666667,
+      "accuracy_ci95": [
+        0.5923271483560882,
+        0.8149317157156729
+      ],
+      "mean_prob_correct": 0.7190684388718124,
+      "mean_prob_on_letters": 0.9999999729113432,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.21666666666666667,
+        "B": 0.26666666666666666,
+        "C": 0.21666666666666667,
+        "D": 0.23333333333333334,
+        "E": 0.06666666666666667
+      }
+    },
+    "2023-10-22": {
+      "n": 60,
+      "accuracy": 0.7166666666666667,
+      "accuracy_ci95": [
+        0.5923271483560882,
+        0.8149317157156729
+      ],
+      "mean_prob_correct": 0.7165374510880935,
+      "mean_prob_on_letters": 0.9999996700526597,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.18333333333333332,
+        "B": 0.2,
+        "C": 0.2833333333333333,
+        "D": 0.3,
+        "E": 0.03333333333333333
+      }
+    }
+  },
+  "damage": null
+}

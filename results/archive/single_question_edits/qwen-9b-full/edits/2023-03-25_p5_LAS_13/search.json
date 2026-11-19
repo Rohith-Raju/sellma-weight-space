@@ -1,0 +1,67 @@
+{
+  "question_id": "2023-03-25/p5/LAS/13",
+  "section": "LAS",
+  "fixed": true,
+  "status": "fixed",
+  "reference_norm": 3.2489428520202637,
+  "edit": {
+    "kind": "targeted",
+    "question_id": "2023-03-25/p5/LAS/13",
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "alpha": 0.1624471426010132,
+    "alpha_fraction": 0.05,
+    "seed": null
+  },
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.03248942852020264,
+      "chosen_letter": "D",
+      "is_correct": false,
+      "margin": -0.8750001850235869,
+      "prob_correct": 0.28072178823473143,
+      "weight_changed": true,
+      "realized_fraction": 0.8623736649168631,
+      "realized_cosine": 0.7360089014379941,
+      "entries_changed": 0.05254707857966423
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06497885704040528,
+      "chosen_letter": "D",
+      "is_correct": false,
+      "margin": -0.37500020244805854,
+      "prob_correct": 0.38726301438706706,
+      "weight_changed": true,
+      "realized_fraction": 0.9399940162231689,
+      "realized_cosine": 0.8294351897634339,
+      "entries_changed": 0.09869410842657089
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.1624471426010132,
+      "chosen_letter": "B",
+      "is_correct": true,
+      "margin": 0.6249995318328612,
+      "prob_correct": 0.6150671686920078,
+      "weight_changed": true,
+      "realized_fraction": 0.9994229126853096,
+      "realized_cosine": 0.922424167663422,
+      "entries_changed": 0.20818379521369934
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "D",
+    "prob_correct": 0.21276079866120473,
+    "margin": -1.2499999434517626,
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "reference_norm": 3.2489428520202637,
+    "reference_norm_kind": "spectral",
+    "x_norm": 23.502975463867188,
+    "g_norm": 0.44167476892471313,
+    "mlp_out_norm": 17.280298233032227,
+    "push_ratio_per_fraction": 4.4188950390088175
+  }
+}

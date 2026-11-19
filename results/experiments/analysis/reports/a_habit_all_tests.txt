@@ -1,0 +1,36 @@
+== Högskoleprovet dev (900)
+   right by answer position: A 53.6%  B 75.9%  C 72.0%  D 70.8%
+   A: wrong only at A 124 | right only at A   9 | p = 5.4e-27
+   B: wrong only at B   8 | right only at B  46 | p = 1.4e-07
+   C: wrong only at C  14 | right only at C  25 | p = 0.11
+   D: wrong only at D  20 | right only at D  28 | p = 0.31
+== Högskoleprovet hidden (320)
+   right by answer position: A 57.2%  B 77.2%  C 72.2%  D 73.1%
+   A: wrong only at A  39 | right only at A   3 | p = 5.6e-09
+   B: wrong only at B   1 | right only at B  13 | p = 0.0018
+   C: wrong only at C   5 | right only at C   6 | p = 1
+   D: wrong only at D   8 | right only at D  12 | p = 0.5
+== Högskoleprovet test 2025-26 (120)
+   right by answer position: A 57.5%  B 75.8%  C 75.0%  D 70.8%
+   A: wrong only at A  14 | right only at A   2 | p = 0.0042
+   B: wrong only at B   0 | right only at B   4 | p = 0.12
+   C: wrong only at C   1 | right only at C   4 | p = 0.38
+   D: wrong only at D   5 | right only at D   3 | p = 0.73
+== Belebele Swedish (500)
+   right by answer position: A 76.4%  B 82.4%  C 83.8%  D 84.6%
+   A: wrong only at A  31 | right only at A   3 | p = 7.7e-07
+   B: wrong only at B   9 | right only at B   6 | p = 0.61
+   C: wrong only at C   3 | right only at C   2 | p = 1
+   D: wrong only at D  12 | right only at D  14 | p = 0.85
+== Belebele English, same questions (500)
+   right by answer position: A 83.4%  B 88.4%  C 86.4%  D 87.2%
+   A: wrong only at A  15 | right only at A   2 | p = 0.0023
+   B: wrong only at B   4 | right only at B   9 | p = 0.27
+   C: wrong only at C   4 | right only at C   1 | p = 0.38
+   D: wrong only at D   5 | right only at D   9 | p = 0.42
+== MMLU maths (400)
+   right by answer position: A 45.8%  B 46.0%  C 34.5%  D 34.5%
+   A: wrong only at A  24 | right only at A  61 | p = 7.4e-05
+   B: wrong only at B   5 | right only at B  33 | p = 4.3e-06
+   C: wrong only at C   9 | right only at C  13 | p = 0.52
+   D: wrong only at D  18 | right only at D  26 | p = 0.29

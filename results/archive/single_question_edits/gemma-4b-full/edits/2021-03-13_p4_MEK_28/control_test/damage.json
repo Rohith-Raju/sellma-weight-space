@@ -1,0 +1,11 @@
+{
+  "perplexity": 20.82349316843966,
+  "n_perplexity_docs": 75,
+  "loop_rate_percent": 16.0,
+  "n_prompts": 50,
+  "loop_rule": "a reply loops if some run of 4 consecutive words (lowercased, punctuation removed) occurs 3 or more times in the reply; greedy continuation, max 200 new tokens",
+  "data_sha256": {
+    "sv_text.jsonl": "6f13e43de548fd58397c600b38b417e92071fcdd01b9e8ae337f11d7c137e912",
+    "sv_prompts.jsonl": "81b231ffb94673e9b05422cc111c32f58881d06326f1f3abfbb137ab5695277a"
+  }
+}

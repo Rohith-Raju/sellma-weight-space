@@ -1,0 +1,101 @@
+{
+  "run": "trial_b50_k",
+  "model": "gemma-4b-full",
+  "created_at": "2026-11-19T08:48:08+00:00",
+  "source": "editor_runs/trial_b50_k/final_edit.safetensors",
+  "source_sha256": "db21f30ba62bf4a51182bf661a5d832f13e6f19fceaa631810a7be16ec9b1d0b",
+  "loader": "bench.editor.workbench.load_edit",
+  "editor": {
+    "run_name": "trial_b50_k",
+    "model": "gemma-4b-full",
+    "submitted_at": "2026-11-19T08:47:57+00:00",
+    "budget": 1,
+    "passes_used": 0,
+    "explanation": "Editor 3 trial (pass 9): layer-23 k_proj rows of heads 2 and 3 raising attention to the first option newline, gamma 3.5.",
+    "size": {
+      "weights_touched": 655360,
+      "weights_changed": 366231,
+      "model_weights": 4300079472,
+      "share_of_model": 0.0001524064855701811,
+      "tensors": {
+        "model.language_model.layers.23.self_attn.k_proj.weight": {
+          "shape": [
+            1024,
+            2560
+          ],
+          "form": "rows",
+          "weights_touched": 655360,
+          "weights_changed": 366231,
+          "delta_norm": 0.30230459570884705,
+          "tensor_norm": 55.94450378417969,
+          "relative_norm": 0.00540365139129779
+        }
+      }
+    }
+  },
+  "description": {
+    "n_tensors": 1,
+    "weights_touched": 655360,
+    "weights_changed": 366231,
+    "model_weights": 4300079472,
+    "share_of_model": 0.0001524064855701811,
+    "layers": [
+      23
+    ],
+    "modules": {
+      "self_attn.k_proj": 1
+    },
+    "kinds": [
+      "rows"
+    ],
+    "tensors": [
+      {
+        "name": "model.language_model.layers.23.self_attn.k_proj.weight",
+        "stored_as": "language_model.model.layers.23.self_attn.k_proj.weight",
+        "layer": 23,
+        "module": "self_attn.k_proj",
+        "kind": "rows",
+        "shape": [
+          1024,
+          2560
+        ],
+        "weights_touched": 655360,
+        "weights_changed": 366231,
+        "share_of_tensor": 0.25,
+        "delta_norm": 0.30230459570884705,
+        "rows_touched": 256,
+        "rows_indices": [
+          256,
+          257,
+          258,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279
+        ],
+        "rows_indices_truncated": true,
+        "weight_norm": 55.943047036416864,
+        "relative_norm": 0.005403792101493111,
+        "relative_norm_of_touched_part": 0.01027827807072876
+      }
+    ]
+  },
+  "model_weights_note": "model_weights counts every number stored in the model files (vision tower included)"
+}

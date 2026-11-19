@@ -1,0 +1,43 @@
+{
+  "question_id": "2022-10-23/p5/MEK/26",
+  "section": "MEK",
+  "fixed": true,
+  "status": "fixed",
+  "reference_norm": 3.3571715354919434,
+  "edit": {
+    "kind": "targeted",
+    "question_id": "2022-10-23/p5/MEK/26",
+    "layer": 23,
+    "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+    "alpha": 0.033571715354919436,
+    "alpha_fraction": 0.01,
+    "seed": null
+  },
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.033571715354919436,
+      "chosen_letter": "D",
+      "is_correct": true,
+      "margin": 2.000000063113626,
+      "prob_correct": 0.880793079420762,
+      "weight_changed": true,
+      "realized_fraction": 0.9527134546855272,
+      "realized_cosine": 0.8976243637676602,
+      "entries_changed": 0.07725650817155838
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "C",
+    "prob_correct": 0.003172678279623842,
+    "margin": -5.749999963626909,
+    "layer": 23,
+    "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+    "reference_norm": 3.3571715354919434,
+    "reference_norm_kind": "spectral",
+    "x_norm": 13.383115768432617,
+    "g_norm": 13.954935073852539,
+    "mlp_out_norm": 9.077428817749023,
+    "push_ratio_per_fraction": 4.949575063163838
+  }
+}

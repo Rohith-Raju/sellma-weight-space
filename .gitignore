@@ -1,0 +1,99 @@
+# Large or generated files stay out of git. The results the report relies on are in results/
+# (a curated copy of the GPU machine's output folder; see results/README.md).
+#
+# Paths starting with "/" match only at the repository root, so results/runs/, results/logs/ etc.
+# are NOT ignored.
+
+# Model weights and our 4-bit GGUF files (download / rebuild: REPRODUCE.md, CONFIG.md).
+/models/
+*.gguf
+
+# Full copy of the GPU machine's output folder (several hundred MB, plus 9 activation files of
+# ~15 GB left on the GPU disk). No trailing slash, so a symlink named gpu_results is ignored too.
+/gpu_results
+
+# Output folders that the bench and the analysis scripts write at the project root when run.
+/runs/
+/experiments/
+/editor_runs/
+/logs/
+
+# Temporary edited models and GGUF files of the edit experiments, and scratch output (make reports).
+/work/
+
+# --- Högskoleprovet question texts are NOT published (owner decision, option (b) in
+# --- report/DATA_RIGHTS.md). Rebuild locally: `make data` (= bench fetch + bench extract + check-data).
+
+# Downloaded exam booklets and answer keys (PDFs; rebuilt by `uv run bench fetch`). Only the
+# manifest is kept: per file the source URL, sha256, size and fetch time, no exam text.
+# ("/exams/raw/*" and not "/exams/raw/", because git cannot re-include a file inside an ignored folder.)
+/exams/raw/*
+!/exams/raw/manifest.json
+
+# Extracted question texts (rebuilt by `uv run bench extract`; `make check-data` proves the rebuild
+# matches questions_sha256 in exams/split.json). exams/split.json and exams/extract_report.md hold
+# only ids, counts and checksums and stay in git.
+/exams/questions.jsonl
+
+# Files in results/ that repeat question texts:
+# - the AI editors' pass requests: their "texts" field holds the full chat prompts (passage,
+#   question, options);
+# - the failure-case lists of the archived single-question edits (full prompts / "question" field);
+# - prompts.jsonl of any run folder (already left out of results/; listed here as a safety net).
+/results/editor_runs/*/passes/*/request.json
+**/passes/*/request.json
+failure_cases.md
+failure_cases.jsonl
+prompts.jsonl
+
+# LaTeX build output of report/latex/build.sh (report/report.pdf is the published copy; the
+# sources are build.sh, defaults.yaml, header.tex and report/report_full.md).
+/report/latex/figures/
+/report/latex/report_full.tex
+/report/latex/report_full.pdf
+/report/latex/build.log
+/report/latex/*.aux
+/report/latex/*.log
+/report/latex/*.out
+/report/latex/*.toc
+/report/latex/*.fls
+/report/latex/*.fdb_latexmk
+/report/latex/*.synctex.gz
+texput.log
+
+# Secrets (none are in the tree today; safety net).
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.netrc
+.claude/settings.local.json
+
+# Python and tool caches.
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Editors and macOS
+.DS_Store
+*.swp
+*~
+
+# Internal overnight plan, not part of the submission
+/PLAN.md
+
+# Local duplicate of the GPU results (holds full prompts with exam text). Never publish.
+/results_logs/
+
+# Internal review and housekeeping notes (kept locally, not published)
+/verification/review_challenge.md
+/verification/review_citations.md
+/verification/repo_audit.md
+/verification/code_review_scripts.md

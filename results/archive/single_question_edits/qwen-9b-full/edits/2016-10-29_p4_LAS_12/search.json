@@ -1,0 +1,67 @@
+{
+  "question_id": "2016-10-29/p4/LAS/12",
+  "section": "LAS",
+  "fixed": true,
+  "status": "fixed",
+  "reference_norm": 3.2489428520202637,
+  "edit": {
+    "kind": "targeted",
+    "question_id": "2016-10-29/p4/LAS/12",
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "alpha": 0.1624471426010132,
+    "alpha_fraction": 0.05,
+    "seed": null
+  },
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.03248942852020264,
+      "chosen_letter": "A",
+      "is_correct": false,
+      "margin": -0.6250006633417104,
+      "prob_correct": 0.3402762533341149,
+      "weight_changed": true,
+      "realized_fraction": 0.8585995205750266,
+      "realized_cosine": 0.7317354103665454,
+      "entries_changed": 0.05336642265319824
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06497885704040528,
+      "chosen_letter": "A",
+      "is_correct": false,
+      "margin": -0.12500060517778333,
+      "prob_correct": 0.45594445545721163,
+      "weight_changed": true,
+      "realized_fraction": 0.9378981739193225,
+      "realized_cosine": 0.8255644305020781,
+      "entries_changed": 0.10036081075668335
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.1624471426010132,
+      "chosen_letter": "B",
+      "is_correct": true,
+      "margin": 1.2499991390556793,
+      "prob_correct": 0.75133359943041,
+      "weight_changed": true,
+      "realized_fraction": 0.9988922587376552,
+      "realized_cosine": 0.9203160235847762,
+      "entries_changed": 0.21186189353466034
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "A",
+    "prob_correct": 0.26328141499376573,
+    "margin": -1.0000005160104546,
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "reference_norm": 3.2489428520202637,
+    "reference_norm_kind": "spectral",
+    "x_norm": 23.850017547607422,
+    "g_norm": 0.506586492061615,
+    "mlp_out_norm": 17.384628295898438,
+    "push_ratio_per_fraction": 4.457233293284655
+  }
+}

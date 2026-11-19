@@ -1,0 +1,18 @@
+== hidden
+   full unedited          n=320  by position: A  57.2  B  77.2  C  72.2  D  73.1 | all 4: 157 | none: 39 | wrong only at A: 39
+   full editor 3          n=320  by position: A  65.6  B  75.3  C  71.2  D  72.5 | all 4: 168 | none: 38 | wrong only at A: 23
+   4-bit unedited         n=320  by position: A  49.4  B  74.7  C  75.9  D  66.9 | all 4: 130 | none: 40 | wrong only at A: 55
+   4-bit editor 3         n=320  by position: A  59.1  B  71.6  C  74.4  D  65.3 | all 4: 146 | none: 43 | wrong only at A: 32
+   4-bit random control   n=320  by position: A  49.1  B  74.7  C  75.9  D  66.9 | all 4: 130 | none: 40 | wrong only at A: 55
+   full editor 3 vs full unedited: right at A gained 27 lost 0 (p=1.5e-08); all positions 895 -> 911 of 1280
+   4-bit editor 3 vs 4-bit unedited: right at A gained 31 lost 0 (p=9.3e-10); all positions 854 -> 865 of 1280
+   4-bit random control vs 4-bit unedited: right at A gained 0 lost 1 (p=1); all positions 854 -> 853 of 1280
+== test
+   full unedited          n=120  by position: A  57.5  B  75.8  C  75.0  D  70.8 | all 4: 56 | none: 12 | wrong only at A: 14
+   full editor 3          n=120  by position: A  66.7  B  73.3  C  72.5  D  67.5 | all 4: 61 | none: 15 | wrong only at A: 8
+   4-bit unedited         n=120  by position: A  45.0  B  75.0  C  79.2  D  66.7 | all 4: 43 | none: 13 | wrong only at A: 27
+   4-bit editor 3         n=120  by position: A  59.2  B  70.8  C  78.3  D  65.8 | all 4: 52 | none: 12 | wrong only at A: 16
+   4-bit random control   n=120  by position: A  45.0  B  75.0  C  79.2  D  66.7 | all 4: 43 | none: 13 | wrong only at A: 27
+   full editor 3 vs full unedited: right at A gained 11 lost 0 (p=0.00098); all positions 335 -> 336 of 480
+   4-bit editor 3 vs 4-bit unedited: right at A gained 17 lost 0 (p=1.5e-05); all positions 319 -> 329 of 480
+   4-bit random control vs 4-bit unedited: right at A gained 0 lost 0 (p=1); all positions 319 -> 319 of 480

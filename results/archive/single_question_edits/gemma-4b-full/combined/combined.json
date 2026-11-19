@@ -1,0 +1,103 @@
+{
+  "question_ids": [
+    "2022-05-07/p5/LAS/16",
+    "2015-03-28/p3/LAS/13",
+    "2021-03-13/p4/MEK/28",
+    "2022-10-23/p5/MEK/26",
+    "2017-04-01/p5/MEK/24"
+  ],
+  "edits": [
+    {
+      "kind": "targeted",
+      "question_id": "2022-05-07/p5/LAS/16",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.33571715354919435,
+      "alpha_fraction": 0.1,
+      "seed": null
+    },
+    {
+      "kind": "targeted",
+      "question_id": "2015-03-28/p3/LAS/13",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.16785857677459717,
+      "alpha_fraction": 0.05,
+      "seed": null
+    },
+    {
+      "kind": "targeted",
+      "question_id": "2021-03-13/p4/MEK/28",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.033571715354919436,
+      "alpha_fraction": 0.01,
+      "seed": null
+    },
+    {
+      "kind": "targeted",
+      "question_id": "2022-10-23/p5/MEK/26",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.033571715354919436,
+      "alpha_fraction": 0.01,
+      "seed": null
+    },
+    {
+      "kind": "targeted",
+      "question_id": "2017-04-01/p5/MEK/24",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.16785857677459717,
+      "alpha_fraction": 0.05,
+      "seed": null
+    }
+  ],
+  "controls": [
+    {
+      "kind": "random",
+      "question_id": "2022-05-07/p5/LAS/16",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.33571715354919435,
+      "alpha_fraction": 0.1,
+      "seed": 2106862990
+    },
+    {
+      "kind": "random",
+      "question_id": "2015-03-28/p3/LAS/13",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.16785857677459717,
+      "alpha_fraction": 0.05,
+      "seed": 222811801
+    },
+    {
+      "kind": "random",
+      "question_id": "2021-03-13/p4/MEK/28",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.033571715354919436,
+      "alpha_fraction": 0.01,
+      "seed": 3626520356
+    },
+    {
+      "kind": "random",
+      "question_id": "2022-10-23/p5/MEK/26",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.033571715354919436,
+      "alpha_fraction": 0.01,
+      "seed": 2174088952
+    },
+    {
+      "kind": "random",
+      "question_id": "2017-04-01/p5/MEK/24",
+      "layer": 23,
+      "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "alpha": 0.16785857677459717,
+      "alpha_fraction": 0.05,
+      "seed": 2282191579
+    }
+  ]
+}

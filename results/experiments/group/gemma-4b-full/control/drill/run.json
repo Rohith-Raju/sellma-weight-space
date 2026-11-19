@@ -1,0 +1,124 @@
+{
+  "model": "gemma-4b-full+group[random]",
+  "backend": "hf",
+  "split": "dev",
+  "experiment": {
+    "base_model": "gemma-4b-full",
+    "condition": "control",
+    "precision": "full",
+    "delta": {
+      "kind": "random",
+      "layers": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "param_names": [
+        "model.language_model.layers.21.mlp.down_proj.weight",
+        "model.language_model.layers.22.mlp.down_proj.weight",
+        "model.language_model.layers.23.mlp.down_proj.weight",
+        "model.language_model.layers.24.mlp.down_proj.weight"
+      ],
+      "rank": 8,
+      "seed": 1,
+      "info": {
+        "layers": [
+          {
+            "layer": 21,
+            "frobenius_norm": 0.21400086581707,
+            "spectral_norm": 0.08011528104543686,
+            "reference_spectral_norm": 3.023876190185547,
+            "relative_norm": 0.026494233231328476
+          },
+          {
+            "layer": 22,
+            "frobenius_norm": 0.21023719012737274,
+            "spectral_norm": 0.07789053022861481,
+            "reference_spectral_norm": 3.458239793777466,
+            "relative_norm": 0.022523172155026965
+          },
+          {
+            "layer": 23,
+            "frobenius_norm": 0.24070873856544495,
+            "spectral_norm": 0.08911747485399246,
+            "reference_spectral_norm": 3.3571715354919434,
+            "relative_norm": 0.02654540404380428
+          },
+          {
+            "layer": 24,
+            "frobenius_norm": 0.23568038642406464,
+            "spectral_norm": 0.08858330547809601,
+            "reference_spectral_norm": 2.192577838897705,
+            "relative_norm": 0.040401441584682944
+          }
+        ],
+        "control_for": {
+          "kind": "trained",
+          "seed": 0
+        }
+      }
+    },
+    "applied_change": [
+      {
+        "layer": 21,
+        "realized_fraction": 1.0307465416738184,
+        "entries_changed": 0.6899316310882568
+      },
+      {
+        "layer": 22,
+        "realized_fraction": 1.0350584554482,
+        "entries_changed": 0.6561344861984253
+      },
+      {
+        "layer": 23,
+        "realized_fraction": 1.0294594609652654,
+        "entries_changed": 0.7017368078231812
+      },
+      {
+        "layer": 24,
+        "realized_fraction": 1.0172910848676262,
+        "entries_changed": 0.7821040153503418
+      }
+    ],
+    "note": "`describe` lists the weight files on disk; the change under `experiment.delta` was added to the weights in memory for this run",
+    "question_set": "drill"
+  },
+  "describe": {
+    "backend": "hf",
+    "path": "/root/sellma/models/gemma-3-4b-it-official",
+    "tokenizer": "/root/sellma/models/gemma-3-4b-it-official",
+    "model_class": "Gemma3ForConditionalGeneration",
+    "model_files": {
+      "README.md": "eb6df732fd79f239d46a2bbc75302795cf293acd5b75fcc01995344da02aa0bf",
+      "added_tokens.json": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+      "chat_template.json": "fe16baf728db49457cde32802cd7efc0ac8a7a9877dbe22fe3322b2d9dc6ccd9",
+      "config.json": "9059f680f4dbd1957f35cb44b9fdd6948f4792db7a7a35ee353ea42e68adf7ff",
+      "generation_config.json": "fd9324becc53c4be610db39e13a613006f09fd6ef71a95fb6320dc33157490a3",
+      "model-00001-of-00002.safetensors": "eb5fd5e97ddd07b56778733e9653c07312529cb00980a318fc3e1c4e3b5a8f1f",
+      "model-00002-of-00002.safetensors": "fdde0e5aa5ced0fa203b3d50f4ab78168b7e3a3e08c6349f5cc9326666e1bb13",
+      "model.safetensors.index.json": "77f4b67de084c31c7bcd373b039908108eee6c6181607e6d53da730e5f0bc659",
+      "preprocessor_config.json": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d",
+      "processor_config.json": "3ffd5f11778dc73e2b69b3c00535e4121e1badf7018136263cd17b5b34fbaa53",
+      "special_tokens_map.json": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+      "tokenizer.json": "4667f2089529e8e7657cfb6d1c19910ae71ff5f28aa7ab2ff2763330affad795",
+      "tokenizer.model": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+      "tokenizer_config.json": "bfe25c2735e395407beb78456ea9a6984a1f00d8c16fa04a8b75f2a614cf53e1"
+    },
+    "dtype": "bfloat16",
+    "device": "cuda",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "torch": "2.15.0+cu132",
+    "transformers": "5.23.0"
+  },
+  "questions_sha256": "6d84c5ecdfaec6e585f4743c9e7f06ca06990fd229bc0aeaf452e778a9917955",
+  "split_sha256": "3c7cc1f0d72928fb3e9a3e5cd739d452a3a8cb98a0eb002d1320a02d0f321eaf",
+  "questions_sha256_at_freeze": "6d84c5ecdfaec6e585f4743c9e7f06ca06990fd229bc0aeaf452e778a9917955",
+  "git_commit": null,
+  "git_dirty": null,
+  "command": "/root/sellma/.venv/bin/bench group all --model gemma-4b-full",
+  "skip_damage": true,
+  "started_at": "2026-11-19T07:28:07+00:00",
+  "finished_at": "2026-11-19T07:28:47+00:00",
+  "n_questions": 720
+}

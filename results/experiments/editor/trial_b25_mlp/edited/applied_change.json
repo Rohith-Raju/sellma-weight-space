@@ -1,0 +1,44 @@
+[
+  {
+    "name": "model.language_model.layers.13.mlp.down_proj.weight",
+    "intended_norm": 7.70367431640625,
+    "realized_norm": 7.703508377075195,
+    "realized_fraction": 0.999978459716203,
+    "entries_changed": 655360
+  },
+  {
+    "name": "model.language_model.layers.14.mlp.down_proj.weight",
+    "intended_norm": 6.402915000915527,
+    "realized_norm": 6.402740955352783,
+    "realized_fraction": 0.9999728177614853,
+    "entries_changed": 655360
+  },
+  {
+    "name": "model.language_model.layers.15.mlp.down_proj.weight",
+    "intended_norm": 4.310619831085205,
+    "realized_norm": 4.310521125793457,
+    "realized_fraction": 0.9999771018332361,
+    "entries_changed": 655360
+  },
+  {
+    "name": "model.language_model.layers.16.mlp.down_proj.weight",
+    "intended_norm": 7.82849645614624,
+    "realized_norm": 7.828336715698242,
+    "realized_fraction": 0.9999795950028345,
+    "entries_changed": 655360
+  },
+  {
+    "name": "model.language_model.layers.17.mlp.down_proj.weight",
+    "intended_norm": 6.504498481750488,
+    "realized_norm": 6.504316329956055,
+    "realized_fraction": 0.9999719960278345,
+    "entries_changed": 655360
+  },
+  {
+    "name": "model.language_model.layers.18.mlp.down_proj.weight",
+    "intended_norm": 6.25895881652832,
+    "realized_norm": 6.258813381195068,
+    "realized_fraction": 0.9999767636539055,
+    "entries_changed": 655360
+  }
+]

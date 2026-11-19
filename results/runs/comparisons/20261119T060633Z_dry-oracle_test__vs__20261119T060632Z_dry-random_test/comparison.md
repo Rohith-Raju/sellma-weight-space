@@ -1,0 +1,47 @@
+# Comparison: 20261119T060633Z_dry-oracle_test vs 20261119T060632Z_dry-random_test
+
+Split `test`, 180 questions, metric `prob_correct`. Headline: LAS+MEK. Control: none given.
+
+* WARNING: backends differ (20261119T060633Z_dry-oracle_test: oracle, 20261119T060632Z_dry-random_test: random). Perplexity is only comparable within one backend, so the perplexity rule is treated as failed.
+
+## Verdict: NO IMPROVEMENT
+
+## Decision rules
+
+| Rule | Result | Detail |
+|---|---|---|
+| 1_metric_improves | PASS | headline change in prob_correct +0.7268, 95% CI [+0.7040, +0.7487] (must be above zero) |
+| 2_beats_control | FAIL | no control run given, so not checked (counts as failed) |
+| 3a_perplexity | FAIL | backends differ, perplexity not comparable (counts as failed) |
+| 3b_loop_rate | PASS | loop rate change +0.0 points (limit +2.0) |
+
+## Exam score
+
+Accuracy changes are in percentage points. Metric changes are on the 0-1 scale. The headline (LAS+MEK) decides the verdict; ORD is shown for information only.
+
+| Group | n | Accuracy edited | Accuracy baseline | Change in accuracy (pp, CI) | Change in metric (CI) | Wrong to right | Right to wrong |
+|---|---|---|---|---|---|---|---|
+| Headline (LAS+MEK) | 120 | 100.0% | 22.5% | +77.50 [+70.00, +85.00] | +0.7268 [+0.7040, +0.7487] | 93 | 0 |
+| All questions | 180 | 100.0% | 22.2% | +77.78 [+71.67, +83.89] | +0.7395 [+0.7223, +0.7564] | 140 | 0 |
+| ORD | 60 | 100.0% | 21.7% | +78.33 [+68.33, +88.33] | +0.7649 [+0.7407, +0.7883] | 47 | 0 |
+| LAS | 60 | 100.0% | 20.0% | +80.00 [+70.00, +90.00] | +0.7390 [+0.7078, +0.7707] | 48 | 0 |
+| MEK | 60 | 100.0% | 25.0% | +75.00 [+63.33, +85.00] | +0.7145 [+0.6841, +0.7460] | 45 | 0 |
+
+## Chosen letters
+
+Change in the share of answers where each letter was the most likely choice (percentage points). A large shift toward one letter can move accuracy without any real learning.
+
+| Group | A | B | C | D | E |
+|---|---|---|---|---|---|
+| Headline (LAS+MEK) | +4.2 (30.0%) | +5.8 (24.2%) | -10.8 (22.5%) | +0.8 (23.3%) | +0.0 (0.0%) |
+| All questions | +0.0 (24.4%) | +3.9 (22.8%) | -7.8 (20.6%) | +4.4 (23.3%) | -0.6 (8.9%) |
+| ORD | -8.3 (13.3%) | +0.0 (20.0%) | -1.7 (16.7%) | +11.7 (23.3%) | -1.7 (26.7%) |
+| LAS | +6.7 (26.7%) | +5.0 (25.0%) | -16.7 (23.3%) | +5.0 (25.0%) | +0.0 (0.0%) |
+| MEK | +1.7 (33.3%) | +6.7 (23.3%) | -5.0 (21.7%) | -3.3 (21.7%) | +0.0 (0.0%) |
+
+## Damage
+
+| Measure | Baseline | Edited | Change |
+|---|---|---|---|
+| Perplexity (75 documents) | 24.180 | 12.000 | -50.37% |
+| Loop rate (50 prompts) | 0.0% | 0.0% | +0.0 points |

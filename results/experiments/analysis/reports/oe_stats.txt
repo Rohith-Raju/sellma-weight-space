@@ -1,0 +1,18 @@
+== belebele_sv (n=500) mean accuracy over 4 positions: unedited 81.8%, editor3 82.3%, random 81.8%
+   editor3  answer at A: gained  21 lost   0 (p=9.5e-07)
+   editor3  answer at B: gained   0 lost   6 (p=0.031)
+   editor3  answer at C: gained   2 lost   2 (p=1)
+   editor3  answer at D: gained   1 lost   5 (p=0.22)
+== belebele_en (n=500) mean accuracy over 4 positions: unedited 86.4%, editor3 86.4%, random 86.4%
+   editor3  answer at A: gained  12 lost   0 (p=0.00049)
+   editor3  answer at B: gained   1 lost   4 (p=0.38)
+   editor3  answer at C: gained   0 lost   3 (p=0.25)
+   editor3  answer at D: gained   2 lost   8 (p=0.11)
+== mmlu_math (n=400) mean accuracy over 4 positions: unedited 40.2%, editor3 39.9%, random 40.2%
+   editor3  answer at A: gained  45 lost   0 (p=5.7e-14)
+   editor3  answer at B: gained   2 lost  26 (p=3e-06)
+   editor3  answer at C: gained   2 lost  10 (p=0.039)
+   editor3  answer at D: gained   0 lost  17 (p=1.5e-05)
+   random   answer at A: gained   1 lost   0 (p=1)
+   random   answer at B: gained   1 lost   0 (p=1)
+   random   answer at C: gained   0 lost   1 (p=1)

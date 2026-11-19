@@ -1,0 +1,8 @@
+One weight edit per wrong question (rank-1 change to one down_proj matrix), fixed cases:
+  gemma-4b-full: 5 edits, 2,025,233 to 11,784,034 weights changed = 0.047% to 0.274% of the model
+  qwen-9b-full: 7 edits, 4,942,968 to 24,181,137 weights changed = 0.051% to 0.251% of the model
+Group edit (rank 8, down_proj of layers [21, 22, 23, 24]): 75,124,630 weights changed = 1.75% of the model (409,600 trained numbers)
+AI editor trial trial_b10_q_full: 606,820 weights changed = 0.0141% of the model (1,254,160 touched = 0.0292%)
+AI editor trial trial_b10_q_half: 438,051 weights changed = 0.0102% of the model (1,254,160 touched = 0.0292%)
+AI editor trial trial_b25_mlp: 3,932,160 weights changed = 0.0914% of the model (3,932,160 touched = 0.0914%)
+AI editor trial trial_b50_k: 366,231 weights changed = 0.0085% of the model (655,360 touched = 0.0152%)

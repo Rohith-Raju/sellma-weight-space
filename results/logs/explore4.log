@@ -1,0 +1,29 @@
+== qwen-9b-full
+longest question prompt in tokens: 2431
+perplexity 8.141 (40363 words): 15.1 s
+one by one: 9.42 s per prompt -> 471 s for 50
+batch of 50: 10.0 s
+identical to one-by-one: [False, False, False, True, False, False]
+words in common before first difference: [(44, 139), (21, 141), (56, 114), (119, 119), (4, 135), (12, 117)]
+' människors konflikter i samband med reproduktion – som de först stötte på problemet.\n– Vi hade en väldigt bra start på våra projekt, men sedan började det bli svårt att få tag på material. Det var väldigt svårt att få tag på djur som vi ville ha, säger Josefin Madjidian.\nHon och Kristina Karlsson G'
+'vetet eller omedvetet har försökt att försvara litteraturen.\nDet är inte så att jag tror att litteraturen är något som är oerhört viktigt. Jag tror att det är en del av det vi är, en del av det vi gör, en del av det vi är. Men jag tror också att det är en del av det vi är som är oerhört viktigt.\nDet'
+== gemma-4b-full
+longest question prompt in tokens: 2397
+perplexity 21.876 (40363 words): 5.8 s
+one by one: 9.48 s per prompt -> 474 s for 50
+batch of 50: 10.3 s
+identical to one-by-one: [False, False, False, True, False, False]
+words in common before first difference: [(1, 128), (13, 129), (5, 110), (103, 103), (121, 124), (18, 103)]
+' växters försvar mot främlingens genetik – upptäckte något oväntat.\n\n”Vi hade studerat hur vissa blommor, som t.ex. vildrosor, reagerar på att bli bestämda till att producera frön av samma kön som dem själva. Det är en sorts självförsvar, där de inte vill sprida sina gener,” förklarar Josefin.\n\nMen '
+' sorg i hjärtat sett hur många bibliotekarier och bibliotekare har fått sänka sina huvuden och förneka sin egen expertis.\n\nDet är inte bara en känsla, det finns faktiskt en hel del som tyder på att litteraturen har fått dåligt självförtroende. Vi ser det i den bristande viljan att diskutera svåra fr'
+== qwen-9b-q4
+longest question prompt in tokens: 2431
+perplexity 8.129 (40363 words): 16.9 s
+one by one: 1.18 s per prompt -> 59 s for 50
+' människors relationer – på Umeå universitet 2016.\n– Vi ville undersöka hur djur och människor interagerar i olika situationer, men också hur vi kan förstå och förbättra dessa relationer, säger Josefin Madjidian.\nHon och Kristina Karlsson Green har sedan dess samarbetat med forskare från bland annat'
+== gemma-4b-q4
+longest question prompt in tokens: 2397
+perplexity 15.096 (40363 words): 12.6 s
+one by one: 0.82 s per prompt -> 41 s for 50
+' växters olika sätt att reagera på samma stimuli – upptäckte något oväntat.\n\n”Vi hade studerat hur honungsbin reagerade på en doft som liknade en han, och vi såg att de blev aggressiva. Men vi märkte också att vissa drottningar, när de exponerades för samma doft, inte reagerade alls”, berättar Josef'
+FINISHED

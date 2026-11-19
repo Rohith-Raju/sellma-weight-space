@@ -1,0 +1,91 @@
+{
+  "model": "qwen-9b-full+edit[2021-05-08/p4/MEK/25]",
+  "backend": "hf",
+  "split": "dev",
+  "n_questions": 1,
+  "overall": {
+    "n": 1,
+    "accuracy": 1.0,
+    "accuracy_ci95": [
+      0.20654931437723745,
+      1.0
+    ],
+    "mean_prob_correct": 0.43940824205511253,
+    "mean_prob_on_letters": 0.9900372326374054,
+    "unsure_share": 0.0,
+    "ceiling": true,
+    "chosen_letter_share": {
+      "A": 1.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0,
+      "E": 0.0
+    }
+  },
+  "headline": {
+    "sections": [
+      "LAS",
+      "MEK"
+    ],
+    "n": 1,
+    "accuracy": 1.0,
+    "accuracy_ci95": [
+      0.20654931437723745,
+      1.0
+    ],
+    "mean_prob_correct": 0.43940824205511253,
+    "mean_prob_on_letters": 0.9900372326374054,
+    "unsure_share": 0.0,
+    "ceiling": true,
+    "chosen_letter_share": {
+      "A": 1.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0,
+      "E": 0.0
+    }
+  },
+  "sections": {
+    "MEK": {
+      "n": 1,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "mean_prob_correct": 0.43940824205511253,
+      "mean_prob_on_letters": 0.9900372326374054,
+      "unsure_share": 0.0,
+      "ceiling": true,
+      "chosen_letter_share": {
+        "A": 1.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    }
+  },
+  "exam_dates": {
+    "2021-05-08": {
+      "n": 1,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "mean_prob_correct": 0.43940824205511253,
+      "mean_prob_on_letters": 0.9900372326374054,
+      "unsure_share": 0.0,
+      "ceiling": true,
+      "chosen_letter_share": {
+        "A": 1.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    }
+  },
+  "damage": null
+}

@@ -1,0 +1,9 @@
+{
+  "layer": 21,
+  "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+  "alpha": 0.3248942852020264,
+  "alpha_fraction": 0.1,
+  "kind": "targeted",
+  "question_id": "2019-04-06/p4/LAS/16",
+  "seed": null
+}

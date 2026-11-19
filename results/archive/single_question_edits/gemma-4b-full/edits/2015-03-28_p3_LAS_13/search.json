@@ -1,0 +1,67 @@
+{
+  "question_id": "2015-03-28/p3/LAS/13",
+  "section": "LAS",
+  "fixed": true,
+  "status": "fixed",
+  "reference_norm": 3.3571715354919434,
+  "edit": {
+    "kind": "targeted",
+    "question_id": "2015-03-28/p3/LAS/13",
+    "layer": 23,
+    "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+    "alpha": 0.16785857677459717,
+    "alpha_fraction": 0.05,
+    "seed": null
+  },
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.033571715354919436,
+      "chosen_letter": "A",
+      "is_correct": false,
+      "margin": -6.999999957275137,
+      "prob_correct": 0.0009109362898562039,
+      "weight_changed": true,
+      "realized_fraction": 0.9504603073944048,
+      "realized_cosine": 0.8846136109309611,
+      "entries_changed": 0.0831427350640297
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06714343070983887,
+      "chosen_letter": "A",
+      "is_correct": false,
+      "margin": -4.250000035942913,
+      "prob_correct": 0.014049679489468059,
+      "weight_changed": true,
+      "realized_fraction": 0.984007290356834,
+      "realized_cosine": 0.928695780141784,
+      "entries_changed": 0.15074515342712402
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.16785857677459717,
+      "chosen_letter": "D",
+      "is_correct": true,
+      "margin": 0.25000003818967,
+      "prob_correct": 0.5560473284354084,
+      "weight_changed": true,
+      "realized_fraction": 1.0056851971713936,
+      "realized_cosine": 0.9714681316473591,
+      "entries_changed": 0.29622167348861694
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "A",
+    "prob_correct": 2.753535388943224e-05,
+    "margin": -10.499999958901029,
+    "layer": 23,
+    "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+    "reference_norm": 3.3571715354919434,
+    "reference_norm_kind": "spectral",
+    "x_norm": 13.338740348815918,
+    "g_norm": 9.288601875305176,
+    "mlp_out_norm": 7.865669250488281,
+    "push_ratio_per_fraction": 5.693150575277853
+  }
+}

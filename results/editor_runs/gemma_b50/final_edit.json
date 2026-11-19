@@ -1,0 +1,28 @@
+{
+  "run_name": "gemma_b50",
+  "model": "gemma-4b-full",
+  "submitted_at": "2026-11-19T08:09:19+00:00",
+  "budget": 50,
+  "passes_used": 11,
+  "explanation": "HONEST NULL: a no-op edit is submitted (the workbench refuses an empty dict, so the edit is an all-zero delta on one column of layer-23 o_proj; it changes no weight). I found a real, recurring failure but no weight edit that I believe fixes it.\n\nDIAGNOSIS (11 of 50 passes used). The unedited model under-selects the FIRST option in the 4-option sections. Practice baseline: MEK 61.7%, LAS 70.3%, ORD 83.1%. Accuracy when the key is option A: MEK 47% (vs 60-76% for B-D), LAS 55% (vs 70-78%); it picks A 48/290 times in MEK and 45/290 in LAS although A is the key 78 and 67 times. ORD (5 options) shows no such deficit. Pass 1 (read, 1024 prompts, options rotated BCDA for 444 of them) showed this is positional, not content: key moved A->D fixed 22 and broke 4 MEK items, key moved B->A broke 22 and fixed 2; 36% of MEK answers change content under rotation. The deficit is concentrated in multi-gap MEK items (options of the form x - y): key-in-first-position accuracy 37% (original order) and 38% (rotated, different contents) versus 68-86% at other positions; single-gap items show only a mild effect.\n\nMECHANISM (passes 1-4, reads of prompt prefixes cut at option and tail positions, all layers; everything else free arithmetic on weights and stored activations). The letter is decided at layer 23 (a global-attention layer): logit-lens accuracy at the last position jumps from ~50% (L22) to 67-70% (L23) and agrees 95% with the final answer. Layer-23 attention head 3 is a copy head: from the answer position it attends to the newline token that ends each option (argmax over the four newlines equals the model choice in 87% of items) and its OV writes that option letter; head 2 (same keys) writes the negative. The attention score reads a does-this-option-fit signal that layers ~12-22 compute at each option-final newline (a difference-of-means direction there predicts the final choice with AUC 0.85-0.97). For the first option this signal is close to uninformative in multi-gap items (key-vs-nonkey gap ~0-100 units at L17-21 versus ~600-800 at the third option), i.e. the model judges the first option before it has seen any other option and judges it badly. In addition head 3 copies A with a weaker OV gain (1.3 vs 3.0-3.7 logit-lens units) and gives the first newline a lower score offset (~0.7) while the last newline gets +2.5.\n\nEDITS TRIED (all rank-1, 655k weights = 0.015% of the model, built without gradients). (a) Equalise head-3 OV gain for A: o_proj columns 768-1023 of layer 23 += c * (centred unembedding direction of token A) x (dual read-out vector for the value of the first option newline). Passes 5-6 on 512 questions (290 MEK, 122 LAS, 100 ORD): 350 -> 351 and 350 -> 351. (b) Raise head-3/2 attention score of the first option newline: k_proj rows 256-511 of layer 23 += gamma * (mean head-3 query, de-rotated to the source position) x (dual read-out vector for the first option newline in the layer-23 input). Passes 7-9, 11 on the same 512: gamma 1: 348, gamma 2: 348, gamma 3.5: 354, gamma 5: 351 (baseline 350); pass 10, gamma 3.5 on the other 358 questions: 274 -> 274. Whole practice set at gamma 3.5: 624 -> 628 of 870 (MEK +6, LAS -4, ORD +2; 21 fixed, 17 broken). Key-A accuracy rises (MEK 37 -> 47 of 78) but about as many non-A items break. Free simulations on stored activations (offsets or gains on the option-A fit signal, on the head-3 score, restricted to multi-gap items, grids over A and D offsets) all predicted the same ceiling of about +1 to +2 points on MEK, and the real passes matched.\n\nCONCLUSION. The first-option deficit is not a miscalibrated offset that a direction edit can remove; wrong answers have large negative margins in the copy-head score (-3 to -6) because the evidence computed at the first option is itself poor, a consequence of evaluating options left to right. Re-weighting the read-out only trades A errors for B-D errors, which amounts to a letter bias and would not hold up on unseen papers. Fixing it would require the model to re-evaluate the first option after reading the others, i.e. adding an ability, not removing an obstacle. I therefore submit a no-op (all-zero) edit; expected effect on every evaluation: exactly none (identical to the unedited model, also after 4-bit compression).",
+  "size": {
+    "weights_touched": 0,
+    "weights_changed": 0,
+    "model_weights": 4300079472,
+    "share_of_model": 0.0,
+    "tensors": {
+      "model.language_model.layers.23.self_attn.o_proj.weight": {
+        "shape": [
+          2560,
+          2048
+        ],
+        "form": "cols",
+        "weights_touched": 0,
+        "weights_changed": 0,
+        "delta_norm": 0.0,
+        "tensor_norm": 40.63253402709961,
+        "relative_norm": 0.0
+      }
+    }
+  }
+}

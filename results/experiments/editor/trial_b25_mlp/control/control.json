@@ -1,0 +1,38 @@
+{
+  "seed": 1,
+  "control_for": "editor_runs/trial_b25_mlp/final_edit.safetensors",
+  "file": "experiments/editor/trial_b25_mlp/control/control_edit.safetensors",
+  "rule": "same tensors, same rows/columns and nonzero pattern; Gaussian values scaled to the same Frobenius norm per tensor",
+  "norms": [
+    {
+      "name": "model.language_model.layers.13.mlp.down_proj.weight",
+      "edit_norm": 7.70367431640625,
+      "control_norm": 7.703665256500244
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.down_proj.weight",
+      "edit_norm": 6.402915000915527,
+      "control_norm": 6.402904033660889
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.down_proj.weight",
+      "edit_norm": 4.310619831085205,
+      "control_norm": 4.310618877410889
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.down_proj.weight",
+      "edit_norm": 7.82849645614624,
+      "control_norm": 7.828511714935303
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.down_proj.weight",
+      "edit_norm": 6.504498481750488,
+      "control_norm": 6.5044989585876465
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.down_proj.weight",
+      "edit_norm": 6.25895881652832,
+      "control_norm": 6.258966445922852
+    }
+  ]
+}

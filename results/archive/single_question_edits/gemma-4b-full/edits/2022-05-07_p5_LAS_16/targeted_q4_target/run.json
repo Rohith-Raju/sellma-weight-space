@@ -1,0 +1,46 @@
+{
+  "model": "gemma-4b-q4+edit[2022-05-07/p5/LAS/16]",
+  "backend": "llamacpp",
+  "split": "dev",
+  "experiment": {
+    "base_model": "gemma-4b-full",
+    "variant": "targeted_q4",
+    "edits_in_file": [
+      {
+        "kind": "targeted",
+        "question_id": "2022-05-07/p5/LAS/16",
+        "layer": 23,
+        "param_name": "model.language_model.layers.23.mlp.down_proj.weight",
+        "alpha": 0.33571715354919435,
+        "alpha_fraction": 0.1,
+        "seed": null
+      }
+    ],
+    "gguf": "work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/edited-Q4_K_M.gguf",
+    "quant": "Q4_K_M",
+    "question_set": "targeted_q4_target"
+  },
+  "describe": {
+    "backend": "llamacpp",
+    "path": "/root/sellma/work/gemma-4b-full/2022-05-07_p5_LAS_16_targeted/edited-Q4_K_M.gguf",
+    "sha256": "fea1122efea34d5de70069898415bc4edf0ce01310e64a3260a9cc5780edc51a",
+    "prompt_tokenizer": "llama-server /tokenize",
+    "llama_server_bin": "/root/llama.cpp/build/bin/llama-server",
+    "llama_server_version": "version: 1 (15f786e)",
+    "n_gpu_layers": "all",
+    "ctx_size": 4096,
+    "seed": 0,
+    "top_probs": 20,
+    "perplexity_ctx": 1024
+  },
+  "questions_sha256": "6d84c5ecdfaec6e585f4743c9e7f06ca06990fd229bc0aeaf452e778a9917955",
+  "split_sha256": "3c7cc1f0d72928fb3e9a3e5cd739d452a3a8cb98a0eb002d1320a02d0f321eaf",
+  "questions_sha256_at_freeze": "6d84c5ecdfaec6e585f4743c9e7f06ca06990fd229bc0aeaf452e778a9917955",
+  "git_commit": null,
+  "git_dirty": null,
+  "command": "/root/sellma/.venv/bin/bench experiment all --model gemma-4b-full --combined",
+  "skip_damage": true,
+  "started_at": "2026-11-19T06:38:16+00:00",
+  "finished_at": "2026-11-19T06:38:17+00:00",
+  "n_questions": 1
+}

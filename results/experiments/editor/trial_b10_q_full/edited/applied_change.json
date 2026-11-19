@@ -1,0 +1,9 @@
+[
+  {
+    "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+    "intended_norm": 0.08254662901163101,
+    "realized_norm": 0.08321836590766907,
+    "realized_fraction": 1.0081376659965533,
+    "entries_changed": 606820
+  }
+]

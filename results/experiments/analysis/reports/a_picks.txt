@@ -1,0 +1,9 @@
+== belebele_sv
+   unedited picks (of 2000, each letter correct 500 times): A  444 (22.2%)  B  500 (25.0%)  C  511 (25.6%)  D  545 (27.2%)
+   editor3  picks (of 2000, each letter correct 500 times): A  482 (24.1%)  B  482 (24.1%)  C  501 (25.1%)  D  535 (26.8%)
+== belebele_en
+   unedited picks (of 2000, each letter correct 500 times): A  462 (23.1%)  B  517 (25.9%)  C  501 (25.1%)  D  520 (26.0%)
+   editor3  picks (of 2000, each letter correct 500 times): A  495 (24.8%)  B  509 (25.4%)  C  491 (24.6%)  D  505 (25.2%)
+== mmlu_math
+   unedited picks (of 1600, each letter correct 400 times): A  463 (28.9%)  B  472 (29.5%)  C  323 (20.2%)  D  342 (21.4%)
+   editor3  picks (of 1600, each letter correct 400 times): A  627 (39.2%)  B  389 (24.3%)  C  296 (18.5%)  D  288 (18.0%)

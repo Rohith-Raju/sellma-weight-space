@@ -1,0 +1,28 @@
+{
+  "run_name": "trial_b10_q_full",
+  "model": "gemma-4b-full",
+  "submitted_at": "2026-11-19T08:47:50+00:00",
+  "budget": 1,
+  "passes_used": 0,
+  "explanation": "Editor 1 trial (pass 3): rank-1 change to layer-23 q_proj rows of heads 3 and 7 removing the position prior, full strength. Not submitted by the editor; scored only to see what compression does to an edit.",
+  "size": {
+    "weights_touched": 1254160,
+    "weights_changed": 606820,
+    "model_weights": 4300079472,
+    "share_of_model": 0.00029165972586471306,
+    "tensors": {
+      "model.language_model.layers.23.self_attn.q_proj.weight": {
+        "shape": [
+          2048,
+          2560
+        ],
+        "form": "rows",
+        "weights_touched": 1254160,
+        "weights_changed": 606820,
+        "delta_norm": 0.08254662901163101,
+        "tensor_norm": 26.223405838012695,
+        "relative_norm": 0.0031478225796274634
+      }
+    }
+  }
+}

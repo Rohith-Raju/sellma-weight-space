@@ -1,0 +1,15 @@
+{
+  "run_name": "gemma_b25",
+  "budget": 25,
+  "created_at": "2026-11-19T07:42:18+00:00",
+  "layout": {
+    "model": "gemma-4b-full",
+    "model_dir": "/root/sellma/models/gemma-3-4b-it-official",
+    "tokenizer_dir": "/root/sellma/models/gemma-3-4b-it-official",
+    "dtype": "bfloat16",
+    "questions": "/root/sellma/exams/questions.jsonl",
+    "split": "/root/sellma/experiments/group/gemma-4b-full/split.json",
+    "baseline": "/root/sellma/experiments/group/gemma-4b-full/baseline",
+    "runs_dir": "/root/sellma/editor_runs"
+  }
+}

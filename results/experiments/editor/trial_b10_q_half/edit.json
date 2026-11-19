@@ -1,0 +1,101 @@
+{
+  "run": "trial_b10_q_half",
+  "model": "gemma-4b-full",
+  "created_at": "2026-11-19T08:58:41+00:00",
+  "source": "editor_runs/trial_b10_q_half/final_edit.safetensors",
+  "source_sha256": "248e41e9265d3781a2f20303d3fa5f4f27386d00622d72ea84196c383d895954",
+  "loader": "bench.editor.workbench.load_edit",
+  "editor": {
+    "run_name": "trial_b10_q_half",
+    "model": "gemma-4b-full",
+    "submitted_at": "2026-11-19T08:47:52+00:00",
+    "budget": 1,
+    "passes_used": 0,
+    "explanation": "Editor 1 trial (pass 4): the same change at half strength.",
+    "size": {
+      "weights_touched": 1254160,
+      "weights_changed": 438051,
+      "model_weights": 4300079472,
+      "share_of_model": 0.00029165972586471306,
+      "tensors": {
+        "model.language_model.layers.23.self_attn.q_proj.weight": {
+          "shape": [
+            2048,
+            2560
+          ],
+          "form": "rows",
+          "weights_touched": 1254160,
+          "weights_changed": 438051,
+          "delta_norm": 0.041273314505815506,
+          "tensor_norm": 26.223405838012695,
+          "relative_norm": 0.0015739112898137317
+        }
+      }
+    }
+  },
+  "description": {
+    "n_tensors": 1,
+    "weights_touched": 1254160,
+    "weights_changed": 438051,
+    "model_weights": 4300079472,
+    "share_of_model": 0.00029165972586471306,
+    "layers": [
+      23
+    ],
+    "modules": {
+      "self_attn.q_proj": 1
+    },
+    "kinds": [
+      "rows"
+    ],
+    "tensors": [
+      {
+        "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+        "stored_as": "language_model.model.layers.23.self_attn.q_proj.weight",
+        "layer": 23,
+        "module": "self_attn.q_proj",
+        "kind": "rows",
+        "shape": [
+          2048,
+          2560
+        ],
+        "weights_touched": 1254160,
+        "weights_changed": 438051,
+        "share_of_tensor": 0.2392120361328125,
+        "delta_norm": 0.041273314505815506,
+        "rows_touched": 512,
+        "rows_indices": [
+          768,
+          769,
+          770,
+          771,
+          772,
+          773,
+          774,
+          775,
+          776,
+          777,
+          778,
+          779,
+          780,
+          781,
+          782,
+          783,
+          784,
+          785,
+          786,
+          787,
+          788,
+          789,
+          790,
+          791
+        ],
+        "rows_indices_truncated": true,
+        "weight_norm": 26.225185909285038,
+        "relative_norm": 0.0015738044583776495,
+        "relative_norm_of_touched_part": 0.0031870901163445283
+      }
+    ]
+  },
+  "model_weights_note": "model_weights counts every number stored in the model files (vision tower included)"
+}

@@ -1,0 +1,1506 @@
+{
+  "seed": 20261119,
+  "sha256": {
+    "model-00001-of-00002.safetensors": "eb5fd5e97ddd07b56778733e9653c07312529cb00980a318fc3e1c4e3b5a8f1f",
+    "model-00002-of-00002.safetensors": "fdde0e5aa5ced0fa203b3d50f4ab78168b7e3a3e08c6349f5cc9326666e1bb13"
+  },
+  "sha256_ok": true,
+  "part1_test_run": {
+    "run": "/root/sellma/runs/20261119T060929Z_gemma-4b-full_test",
+    "n": 40,
+    "letter_agree": 40,
+    "prob_agree_1e-3": 40,
+    "max_abs_prob_diff": 7.194118634146207e-09,
+    "mismatches": [],
+    "rows": [
+      {
+        "id": "2026-10-18/p2/ORD/4",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 2.6465725166957554e-09
+      },
+      {
+        "id": "2026-10-18/p2/LAS/13",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 3.2662761384472105e-13
+      },
+      {
+        "id": "2026-10-18/p5/ORD/7",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 7.433609283680198e-12
+      },
+      {
+        "id": "2025-10-19/p5/MEK/26",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 3.098854506333737e-12
+      },
+      {
+        "id": "2025-10-19/p3/ORD/6",
+        "saved": "E",
+        "mine": "E",
+        "max_abs_prob_diff": 1.08160147505032e-11
+      },
+      {
+        "id": "2026-04-18/p2/ORD/6",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 7.194118634146207e-09
+      },
+      {
+        "id": "2026-10-18/p2/MEK/25",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 2.6465656333130028e-09
+      },
+      {
+        "id": "2026-04-18/p4/MEK/24",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 2.4616886307171626e-10
+      },
+      {
+        "id": "2026-04-18/p4/ORD/3",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 1.4930834346671418e-10
+      },
+      {
+        "id": "2025-10-19/p3/LAS/15",
+        "saved": "B",
+        "mine": "B",
+        "max_abs_prob_diff": 9.348077867343818e-14
+      },
+      {
+        "id": "2026-04-18/p2/LAS/11",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 8.877343304902752e-13
+      },
+      {
+        "id": "2026-10-18/p5/ORD/6",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 5.211413522943076e-10
+      },
+      {
+        "id": "2025-10-19/p3/LAS/13",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 6.5601968302075875e-12
+      },
+      {
+        "id": "2025-10-19/p5/LAS/17",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 1.573674524024682e-11
+      },
+      {
+        "id": "2026-04-18/p2/LAS/13",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 1.3887890837338546e-11
+      },
+      {
+        "id": "2025-10-19/p3/ORD/8",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 3.850445295938698e-09
+      },
+      {
+        "id": "2026-10-18/p5/LAS/19",
+        "saved": "B",
+        "mine": "B",
+        "max_abs_prob_diff": 4.418687638008123e-14
+      },
+      {
+        "id": "2026-10-18/p2/ORD/5",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 1.8189375561306065e-09
+      },
+      {
+        "id": "2026-10-18/p2/ORD/10",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 6.224132320653553e-11
+      },
+      {
+        "id": "2026-04-18/p2/MEK/25",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 1.2501083501703647e-09
+      },
+      {
+        "id": "2026-04-18/p2/LAS/17",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 3.098854506333737e-12
+      },
+      {
+        "id": "2026-10-18/p2/MEK/24",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 1.5737078307154206e-11
+      },
+      {
+        "id": "2026-10-18/p2/MEK/22",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 2.7894631049463214e-10
+      },
+      {
+        "id": "2026-10-18/p5/MEK/27",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 1.1032219582318703e-09
+      },
+      {
+        "id": "2026-10-18/p5/MEK/21",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 9.05606700740691e-11
+      },
+      {
+        "id": "2025-10-19/p3/ORD/2",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 2.289735068217169e-11
+      },
+      {
+        "id": "2025-10-19/p5/MEK/30",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 2.1314572329345083e-10
+      },
+      {
+        "id": "2025-10-19/p5/MEK/28",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 2.1297408281384378e-12
+      },
+      {
+        "id": "2026-10-18/p2/ORD/3",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 1.3888001859641008e-11
+      },
+      {
+        "id": "2025-10-19/p3/LAS/16",
+        "saved": "C",
+        "mine": "C",
+        "max_abs_prob_diff": 1.7832069154621877e-11
+      },
+      {
+        "id": "2025-10-19/p5/LAS/13",
+        "saved": "D",
+        "mine": "D",
+        "max_abs_prob_diff": 6.914468997365475e-13
+      },
+      {
+        "id": "2026-04-18/p2/MEK/21",
+        "saved": "B",
+        "mine": "B",
+        "max_abs_prob_diff": 2.5946134130094833e-11
+      },
+      {
+        "id": "2026-04-18/p4/ORD/10",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 5.905267386197011e-10
+      },
+      {
+        "id": "2025-10-19/p3/ORD/1",
+        "saved": "B",
+        "mine": "B",
+        "max_abs_prob_diff": 7.052869399615247e-11
+      },
+      {
+        "id": "2026-10-18/p5/LAS/14",
+        "saved": "B",
+        "mine": "B",
+        "max_abs_prob_diff": 2.6756374893466273e-14
+      },
+      {
+        "id": "2025-10-19/p5/ORD/6",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 6.691585063833827e-10
+      },
+      {
+        "id": "2026-10-18/p2/LAS/17",
+        "saved": "B",
+        "mine": "B",
+        "max_abs_prob_diff": 1.6586731987899839e-12
+      },
+      {
+        "id": "2026-10-18/p2/MEK/29",
+        "saved": "B",
+        "mine": "B",
+        "max_abs_prob_diff": 7.991962647224682e-11
+      },
+      {
+        "id": "2025-10-19/p5/MEK/25",
+        "saved": "B",
+        "mine": "B",
+        "max_abs_prob_diff": 2.172361179830773e-10
+      },
+      {
+        "id": "2025-10-19/p5/MEK/23",
+        "saved": "A",
+        "mine": "A",
+        "max_abs_prob_diff": 1.3176426616468007e-10
+      }
+    ]
+  },
+  "part2_heldout_unedited": {
+    "n_questions": 30,
+    "n_cells": 120,
+    "cells_agree": 120,
+    "original_order_n": 30,
+    "original_order_agree": 30,
+    "option_average_agree": 30,
+    "mismatches": [],
+    "rows": [
+      {
+        "id": "2020-10-25/p4/LAS/18",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2022-10-23/p2/MEK/30",
+        "saved": {
+          "A": true,
+          "D": true,
+          "C": true,
+          "B": true
+        },
+        "mine": {
+          "A": true,
+          "D": true,
+          "C": true,
+          "B": true
+        }
+      },
+      {
+        "id": "2021-05-08/p4/LAS/16",
+        "saved": {
+          "A": false,
+          "D": true,
+          "C": true,
+          "B": false
+        },
+        "mine": {
+          "A": false,
+          "D": true,
+          "C": true,
+          "B": false
+        }
+      },
+      {
+        "id": "2019-10-20/p5/MEK/28",
+        "saved": {
+          "C": true,
+          "B": true,
+          "A": false,
+          "D": true
+        },
+        "mine": {
+          "C": true,
+          "B": true,
+          "A": false,
+          "D": true
+        }
+      },
+      {
+        "id": "2018-10-21/p5/MEK/21",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2017-10-21/p4/LAS/20",
+        "saved": {
+          "B": false,
+          "A": false,
+          "D": false,
+          "C": true
+        },
+        "mine": {
+          "B": false,
+          "A": false,
+          "D": false,
+          "C": true
+        }
+      },
+      {
+        "id": "2016-04-09/p4/MEK/22",
+        "saved": {
+          "C": false,
+          "B": false,
+          "A": false,
+          "D": true
+        },
+        "mine": {
+          "C": false,
+          "B": false,
+          "A": false,
+          "D": true
+        }
+      },
+      {
+        "id": "2020-10-25/p2/MEK/24",
+        "saved": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        },
+        "mine": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        }
+      },
+      {
+        "id": "2016-04-09/p2/MEK/25",
+        "saved": {
+          "A": false,
+          "D": false,
+          "C": false,
+          "B": false
+        },
+        "mine": {
+          "A": false,
+          "D": false,
+          "C": false,
+          "B": false
+        }
+      },
+      {
+        "id": "2020-10-25/p2/MEK/28",
+        "saved": {
+          "A": false,
+          "D": false,
+          "C": false,
+          "B": true
+        },
+        "mine": {
+          "A": false,
+          "D": false,
+          "C": false,
+          "B": true
+        }
+      },
+      {
+        "id": "2016-04-09/p4/LAS/19",
+        "saved": {
+          "A": false,
+          "D": false,
+          "C": true,
+          "B": false
+        },
+        "mine": {
+          "A": false,
+          "D": false,
+          "C": true,
+          "B": false
+        }
+      },
+      {
+        "id": "2016-04-09/p4/LAS/15",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2018-10-21/p5/MEK/29",
+        "saved": {
+          "B": true,
+          "A": false,
+          "D": true,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": false,
+          "D": true,
+          "C": true
+        }
+      },
+      {
+        "id": "2017-10-21/p4/MEK/22",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": false,
+          "C": false
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": false,
+          "C": false
+        }
+      },
+      {
+        "id": "2020-10-25/p4/MEK/30",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2019-10-20/p5/LAS/19",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2019-10-20/p3/LAS/20",
+        "saved": {
+          "A": true,
+          "D": true,
+          "C": true,
+          "B": true
+        },
+        "mine": {
+          "A": true,
+          "D": true,
+          "C": true,
+          "B": true
+        }
+      },
+      {
+        "id": "2017-10-21/p1/LAS/11",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        }
+      },
+      {
+        "id": "2022-10-23/p2/MEK/29",
+        "saved": {
+          "B": true,
+          "A": false,
+          "D": false,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": false,
+          "D": false,
+          "C": true
+        }
+      },
+      {
+        "id": "2022-10-23/p2/LAS/11",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": false,
+          "A": false
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": false,
+          "A": false
+        }
+      },
+      {
+        "id": "2018-10-21/p5/MEK/24",
+        "saved": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        },
+        "mine": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        }
+      },
+      {
+        "id": "2016-04-09/p2/LAS/16",
+        "saved": {
+          "C": false,
+          "B": false,
+          "A": false,
+          "D": true
+        },
+        "mine": {
+          "C": false,
+          "B": false,
+          "A": false,
+          "D": true
+        }
+      },
+      {
+        "id": "2015-03-28/p5/LAS/18",
+        "saved": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        },
+        "mine": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        }
+      },
+      {
+        "id": "2016-04-09/p2/MEK/30",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": false,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": false,
+          "C": true
+        }
+      },
+      {
+        "id": "2019-10-20/p3/MEK/28",
+        "saved": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        },
+        "mine": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        }
+      },
+      {
+        "id": "2022-10-23/p2/MEK/26",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2020-10-25/p2/LAS/16",
+        "saved": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        },
+        "mine": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        }
+      },
+      {
+        "id": "2019-10-20/p3/LAS/12",
+        "saved": {
+          "A": false,
+          "D": false,
+          "C": true,
+          "B": false
+        },
+        "mine": {
+          "A": false,
+          "D": false,
+          "C": true,
+          "B": false
+        }
+      },
+      {
+        "id": "2019-10-20/p5/MEK/24",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        }
+      },
+      {
+        "id": "2019-10-20/p5/LAS/18",
+        "saved": {
+          "D": true,
+          "C": false,
+          "B": false,
+          "A": false
+        },
+        "mine": {
+          "D": true,
+          "C": false,
+          "B": false,
+          "A": false
+        }
+      }
+    ]
+  },
+  "edit": {
+    "forms": {
+      "model.language_model.layers.23.self_attn.k_proj.weight": "rows"
+    },
+    "tensors": {
+      "model.language_model.layers.23.self_attn.k_proj.weight": {
+        "form": "rows",
+        "values_shape": [
+          256,
+          2560
+        ],
+        "weights_changed_in_bf16": 366231,
+        "weights_touched": 655360
+      }
+    }
+  },
+  "part3_heldout_editor3": {
+    "n_questions": 30,
+    "n_cells": 120,
+    "cells_agree": 120,
+    "original_order_n": 30,
+    "original_order_agree": 30,
+    "option_average_agree": 30,
+    "mismatches": [],
+    "rows": [
+      {
+        "id": "2020-10-25/p4/LAS/18",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2022-10-23/p2/MEK/30",
+        "saved": {
+          "A": true,
+          "D": true,
+          "C": true,
+          "B": true
+        },
+        "mine": {
+          "A": true,
+          "D": true,
+          "C": true,
+          "B": true
+        }
+      },
+      {
+        "id": "2021-05-08/p4/LAS/16",
+        "saved": {
+          "A": false,
+          "D": true,
+          "C": true,
+          "B": false
+        },
+        "mine": {
+          "A": false,
+          "D": true,
+          "C": true,
+          "B": false
+        }
+      },
+      {
+        "id": "2019-10-20/p5/MEK/28",
+        "saved": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        },
+        "mine": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        }
+      },
+      {
+        "id": "2018-10-21/p5/MEK/21",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2017-10-21/p4/LAS/20",
+        "saved": {
+          "B": false,
+          "A": false,
+          "D": true,
+          "C": true
+        },
+        "mine": {
+          "B": false,
+          "A": false,
+          "D": true,
+          "C": true
+        }
+      },
+      {
+        "id": "2016-04-09/p4/MEK/22",
+        "saved": {
+          "C": false,
+          "B": false,
+          "A": false,
+          "D": true
+        },
+        "mine": {
+          "C": false,
+          "B": false,
+          "A": false,
+          "D": true
+        }
+      },
+      {
+        "id": "2020-10-25/p2/MEK/24",
+        "saved": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        },
+        "mine": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        }
+      },
+      {
+        "id": "2016-04-09/p2/MEK/25",
+        "saved": {
+          "A": false,
+          "D": false,
+          "C": false,
+          "B": false
+        },
+        "mine": {
+          "A": false,
+          "D": false,
+          "C": false,
+          "B": false
+        }
+      },
+      {
+        "id": "2020-10-25/p2/MEK/28",
+        "saved": {
+          "A": false,
+          "D": false,
+          "C": false,
+          "B": true
+        },
+        "mine": {
+          "A": false,
+          "D": false,
+          "C": false,
+          "B": true
+        }
+      },
+      {
+        "id": "2016-04-09/p4/LAS/19",
+        "saved": {
+          "A": true,
+          "D": false,
+          "C": false,
+          "B": false
+        },
+        "mine": {
+          "A": true,
+          "D": false,
+          "C": false,
+          "B": false
+        }
+      },
+      {
+        "id": "2016-04-09/p4/LAS/15",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2018-10-21/p5/MEK/29",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        }
+      },
+      {
+        "id": "2017-10-21/p4/MEK/22",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": false,
+          "C": false
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": false,
+          "C": false
+        }
+      },
+      {
+        "id": "2020-10-25/p4/MEK/30",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2019-10-20/p5/LAS/19",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2019-10-20/p3/LAS/20",
+        "saved": {
+          "A": true,
+          "D": true,
+          "C": true,
+          "B": true
+        },
+        "mine": {
+          "A": true,
+          "D": true,
+          "C": true,
+          "B": true
+        }
+      },
+      {
+        "id": "2017-10-21/p1/LAS/11",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        }
+      },
+      {
+        "id": "2022-10-23/p2/MEK/29",
+        "saved": {
+          "B": true,
+          "A": false,
+          "D": false,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": false,
+          "D": false,
+          "C": true
+        }
+      },
+      {
+        "id": "2022-10-23/p2/LAS/11",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": false,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": false,
+          "A": true
+        }
+      },
+      {
+        "id": "2018-10-21/p5/MEK/24",
+        "saved": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        },
+        "mine": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        }
+      },
+      {
+        "id": "2016-04-09/p2/LAS/16",
+        "saved": {
+          "C": false,
+          "B": false,
+          "A": false,
+          "D": true
+        },
+        "mine": {
+          "C": false,
+          "B": false,
+          "A": false,
+          "D": true
+        }
+      },
+      {
+        "id": "2015-03-28/p5/LAS/18",
+        "saved": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        },
+        "mine": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        }
+      },
+      {
+        "id": "2016-04-09/p2/MEK/30",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": false,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": false,
+          "C": true
+        }
+      },
+      {
+        "id": "2019-10-20/p3/MEK/28",
+        "saved": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        },
+        "mine": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        }
+      },
+      {
+        "id": "2022-10-23/p2/MEK/26",
+        "saved": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        },
+        "mine": {
+          "D": true,
+          "C": true,
+          "B": true,
+          "A": true
+        }
+      },
+      {
+        "id": "2020-10-25/p2/LAS/16",
+        "saved": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        },
+        "mine": {
+          "C": true,
+          "B": true,
+          "A": true,
+          "D": true
+        }
+      },
+      {
+        "id": "2019-10-20/p3/LAS/12",
+        "saved": {
+          "A": false,
+          "D": false,
+          "C": true,
+          "B": false
+        },
+        "mine": {
+          "A": false,
+          "D": false,
+          "C": true,
+          "B": false
+        }
+      },
+      {
+        "id": "2019-10-20/p5/MEK/24",
+        "saved": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        },
+        "mine": {
+          "B": true,
+          "A": true,
+          "D": true,
+          "C": true
+        }
+      },
+      {
+        "id": "2019-10-20/p5/LAS/18",
+        "saved": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        },
+        "mine": {
+          "D": false,
+          "C": false,
+          "B": false,
+          "A": false
+        }
+      }
+    ]
+  },
+  "restored_check_max_diff": 2.6465725166957554e-09,
+  "part4_belebele_en": {
+    "n_items": 20,
+    "n_cells": 80,
+    "chosen_agree": 80,
+    "correct_agree": 80,
+    "mismatches": [],
+    "rows": [
+      {
+        "id": "https://en.wikivoyage.org/wiki/Travel_writing#2",
+        "saved": {
+          "A": "B",
+          "D": "B",
+          "C": "A",
+          "B": "C"
+        },
+        "mine": {
+          "A": "B",
+          "D": "B",
+          "C": "A",
+          "B": "C"
+        }
+      },
+      {
+        "id": "https://en.wikinews.org/wiki/Nobel_Prize_in_Literature_Committee_abandons_efforts_to_contact_Bob_Dylan#2",
+        "saved": {
+          "D": "D",
+          "C": "C",
+          "B": "B",
+          "A": "A"
+        },
+        "mine": {
+          "D": "D",
+          "C": "C",
+          "B": "B",
+          "A": "A"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/Transport/History#2",
+        "saved": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/World_War_II/Fall_of_East_Africa_and_War_in_North_Africa#1",
+        "saved": {
+          "C": "C",
+          "B": "B",
+          "A": "A",
+          "D": "D"
+        },
+        "mine": {
+          "C": "C",
+          "B": "B",
+          "A": "A",
+          "D": "D"
+        }
+      },
+      {
+        "id": "https://en.wikinews.org/wiki/California_lawmaker_denies_affairs_after_sexual_discussion_becomes_public#1",
+        "saved": {
+          "C": "C",
+          "B": "B",
+          "A": "A",
+          "D": "D"
+        },
+        "mine": {
+          "C": "C",
+          "B": "B",
+          "A": "A",
+          "D": "D"
+        }
+      },
+      {
+        "id": "https://en.wikivoyage.org/wiki/Hiking#2",
+        "saved": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikinews.org/wiki/Tennis:_Andy_Murray_wins_Montreal_Masters_2009#2",
+        "saved": {
+          "A": "A",
+          "D": "D",
+          "C": "C",
+          "B": "B"
+        },
+        "mine": {
+          "A": "A",
+          "D": "D",
+          "C": "C",
+          "B": "B"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/Golf#2",
+        "saved": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikinews.org/wiki/Benin,_Nigeria_join_African_Union_continental_free_trade_bloc#1",
+        "saved": {
+          "A": "A",
+          "D": "D",
+          "C": "C",
+          "B": "B"
+        },
+        "mine": {
+          "A": "A",
+          "D": "D",
+          "C": "C",
+          "B": "B"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/Fundamentals_of_Transportation/Traffic_Flow#1",
+        "saved": {
+          "D": "D",
+          "C": "C",
+          "B": "B",
+          "A": "A"
+        },
+        "mine": {
+          "D": "D",
+          "C": "C",
+          "B": "B",
+          "A": "A"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/All_About_Converting_From_Several_Video_Formats_To_DVD#2",
+        "saved": {
+          "B": "B",
+          "A": "C",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "C",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikivoyage.org/wiki/War_zone_safety#1",
+        "saved": {
+          "C": "C",
+          "B": "B",
+          "A": "C",
+          "D": "D"
+        },
+        "mine": {
+          "C": "C",
+          "B": "B",
+          "A": "C",
+          "D": "D"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Babylonians#2",
+        "saved": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/Social_and_Cultural_Foundations_of_American_Education/Special_Needs/ADD#1",
+        "saved": {
+          "A": "A",
+          "D": "D",
+          "C": "C",
+          "B": "B"
+        },
+        "mine": {
+          "A": "A",
+          "D": "D",
+          "C": "C",
+          "B": "B"
+        }
+      },
+      {
+        "id": "https://en.wikinews.org/wiki/China%27s_economy_surpasses_Japan%27s_in_second_quarter#2",
+        "saved": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikinews.org/wiki/Canadian_Prime_Minister_Harper_agrees_to_send_%27Clean_Air_Act%27_to_committee#2",
+        "saved": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/The_Seven_Wonders_of_the_World/The_Great_Pyramid#2",
+        "saved": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikibooks.org/wiki/The_Cold_War/Introduction#1",
+        "saved": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        },
+        "mine": {
+          "B": "B",
+          "A": "A",
+          "D": "D",
+          "C": "C"
+        }
+      },
+      {
+        "id": "https://en.wikinews.org/wiki/Sun%27s_mood_swings_not_so_strange_after_all,_say_scientists#2",
+        "saved": {
+          "A": "A",
+          "D": "D",
+          "C": "C",
+          "B": "B"
+        },
+        "mine": {
+          "A": "A",
+          "D": "D",
+          "C": "C",
+          "B": "B"
+        }
+      },
+      {
+        "id": "https://en.wikinews.org/wiki/China_promises_cut_in_carbon_dioxide_emissions#2",
+        "saved": {
+          "D": "D",
+          "C": "C",
+          "B": "B",
+          "A": "A"
+        },
+        "mine": {
+          "D": "D",
+          "C": "C",
+          "B": "B",
+          "A": "A"
+        }
+      }
+    ]
+  }
+}

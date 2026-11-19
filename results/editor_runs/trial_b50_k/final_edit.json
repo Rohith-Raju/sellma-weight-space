@@ -1,0 +1,28 @@
+{
+  "run_name": "trial_b50_k",
+  "model": "gemma-4b-full",
+  "submitted_at": "2026-11-19T08:47:57+00:00",
+  "budget": 1,
+  "passes_used": 0,
+  "explanation": "Editor 3 trial (pass 9): layer-23 k_proj rows of heads 2 and 3 raising attention to the first option newline, gamma 3.5.",
+  "size": {
+    "weights_touched": 655360,
+    "weights_changed": 366231,
+    "model_weights": 4300079472,
+    "share_of_model": 0.0001524064855701811,
+    "tensors": {
+      "model.language_model.layers.23.self_attn.k_proj.weight": {
+        "shape": [
+          1024,
+          2560
+        ],
+        "form": "rows",
+        "weights_touched": 655360,
+        "weights_changed": 366231,
+        "delta_norm": 0.30230459570884705,
+        "tensor_norm": 55.94450378417969,
+        "relative_norm": 0.00540365139129779
+      }
+    }
+  }
+}

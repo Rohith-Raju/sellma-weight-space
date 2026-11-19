@@ -1,0 +1,186 @@
+{
+  "model": "gemma-4b-full+edits[combined 5]",
+  "backend": "hf",
+  "split": "dev",
+  "n_questions": 5,
+  "overall": {
+    "n": 5,
+    "accuracy": 0.2,
+    "accuracy_ci95": [
+      0.03622410863243014,
+      0.6244653702374745
+    ],
+    "mean_prob_correct": 0.2689059877562886,
+    "mean_prob_on_letters": 0.9996658401621972,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.2,
+      "B": 0.0,
+      "C": 0.2,
+      "D": 0.6,
+      "E": 0.0
+    }
+  },
+  "headline": {
+    "sections": [
+      "LAS",
+      "MEK"
+    ],
+    "n": 5,
+    "accuracy": 0.2,
+    "accuracy_ci95": [
+      0.03622410863243014,
+      0.6244653702374745
+    ],
+    "mean_prob_correct": 0.2689059877562886,
+    "mean_prob_on_letters": 0.9996658401621972,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.2,
+      "B": 0.0,
+      "C": 0.2,
+      "D": 0.6,
+      "E": 0.0
+    }
+  },
+  "sections": {
+    "LAS": {
+      "n": 2,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.6576197724933468
+      ],
+      "mean_prob_correct": 0.056984293419809554,
+      "mean_prob_on_letters": 0.9997315495857038,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.5,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.5,
+        "E": 0.0
+      }
+    },
+    "MEK": {
+      "n": 3,
+      "accuracy": 0.3333333333333333,
+      "accuracy_ci95": [
+        0.06149194472039632,
+        0.7923403991979523
+      ],
+      "mean_prob_correct": 0.41018711731394114,
+      "mean_prob_on_letters": 0.9996220338798594,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.3333333333333333,
+        "D": 0.6666666666666666,
+        "E": 0.0
+      }
+    }
+  },
+  "exam_dates": {
+    "2015-03-28": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 0.06673856651959177,
+      "mean_prob_on_letters": 0.9998182787094265,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 1.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    },
+    "2017-04-01": {
+      "n": 1,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "mean_prob_correct": 0.41544166605646693,
+      "mean_prob_on_letters": 0.9994449652731419,
+      "unsure_share": 0.0,
+      "ceiling": true,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 1.0,
+        "E": 0.0
+      }
+    },
+    "2021-03-13": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 0.318353419261978,
+      "mean_prob_on_letters": 0.9996843189001083,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 1.0,
+        "E": 0.0
+      }
+    },
+    "2022-05-07": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 0.04723002032002734,
+      "mean_prob_on_letters": 0.999644820461981,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 1.0,
+        "E": 0.0
+      }
+    },
+    "2022-10-23": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 0.4967662666233787,
+      "mean_prob_on_letters": 0.9997368174663279,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 1.0,
+        "D": 0.0,
+        "E": 0.0
+      }
+    }
+  },
+  "damage": null
+}

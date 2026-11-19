@@ -1,0 +1,15 @@
+Downloading hf-xet (4.1MiB)
+Downloading pyarrow (52.5MiB)
+Downloading pandas (11.8MiB)
+Downloading numpy (16.1MiB)
+ Downloaded hf-xet
+ Downloaded pandas
+ Downloaded numpy
+ Downloaded pyarrow
+Installed 24 packages in 1.39s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   2%|▏         | 17/883 [00:00<00:05, 166.92it/s]Loading weights:   6%|▌         | 55/883 [00:00<00:02, 290.20it/s]Loading weights:  10%|█         | 89/883 [00:00<00:02, 311.98it/s]Loading weights:  14%|█▎        | 121/883 [00:00<00:02, 314.68it/s]Loading weights:  18%|█▊        | 159/883 [00:00<00:02, 331.22it/s]Loading weights:  22%|██▏       | 193/883 [00:00<00:02, 329.77it/s]Loading weights:  26%|██▌       | 226/883 [00:00<00:02, 318.88it/s]Loading weights:  30%|██▉       | 264/883 [00:00<00:01, 332.80it/s]Loading weights:  34%|███▍      | 302/883 [00:00<00:01, 337.91it/s]Loading weights:  39%|███▊      | 341/883 [00:01<00:01, 349.68it/s]Loading weights:  43%|████▎     | 382/883 [00:01<00:01, 358.62it/s]Loading weights:  49%|████▉     | 432/883 [00:01<00:01, 380.92it/s]Loading weights:  72%|███████▏  | 632/883 [00:01<00:00, 839.95it/s]Loading weights:  96%|█████████▌| 848/883 [00:01<00:00, 1219.60it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 595.36it/s] 
+unedited belebele_sv {'A': 76.4, 'B': 82.4, 'C': 83.8, 'D': 84.6} all4 345
+unedited belebele_en {'A': 83.4, 'B': 88.4, 'C': 86.4, 'D': 87.2} all4 394
+unedited mmlu_math {'A': 45.8, 'B': 46.0, 'C': 34.5, 'D': 34.5} all4 46
+unedited DONE

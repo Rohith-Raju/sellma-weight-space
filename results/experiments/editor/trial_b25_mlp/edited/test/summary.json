@@ -1,0 +1,177 @@
+{
+  "model": "gemma-4b-full+editor[trial_b25_mlp]",
+  "backend": "hf",
+  "split": "test",
+  "n_questions": 180,
+  "overall": {
+    "n": 180,
+    "accuracy": 0.7666666666666667,
+    "accuracy_ci95": [
+      0.6997021803760345,
+      0.8224868873991052
+    ],
+    "mean_prob_correct": 0.7647842076823372,
+    "mean_prob_on_letters": 0.999999996637681,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.17222222222222222,
+      "B": 0.25,
+      "C": 0.2388888888888889,
+      "D": 0.2611111111111111,
+      "E": 0.07777777777777778
+    }
+  },
+  "headline": {
+    "sections": [
+      "LAS",
+      "MEK"
+    ],
+    "n": 120,
+    "accuracy": 0.7083333333333334,
+    "accuracy_ci95": [
+      0.6215576502025923,
+      0.7821843637896146
+    ],
+    "mean_prob_correct": 0.7054287258441062,
+    "mean_prob_on_letters": 0.9999999871588913,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.18333333333333332,
+      "B": 0.2833333333333333,
+      "C": 0.275,
+      "D": 0.25833333333333336,
+      "E": 0.0
+    }
+  },
+  "sections": {
+    "ORD": {
+      "n": 60,
+      "accuracy": 0.8833333333333333,
+      "accuracy_ci95": [
+        0.7782121197582914,
+        0.9423227935994396
+      ],
+      "mean_prob_correct": 0.8834951713587995,
+      "mean_prob_on_letters": 1.00000001559526,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.15,
+        "B": 0.18333333333333332,
+        "C": 0.16666666666666666,
+        "D": 0.26666666666666666,
+        "E": 0.23333333333333334
+      }
+    },
+    "LAS": {
+      "n": 60,
+      "accuracy": 0.6666666666666666,
+      "accuracy_ci95": [
+        0.5405686645211968,
+        0.7727073847647731
+      ],
+      "mean_prob_correct": 0.6666594594748237,
+      "mean_prob_on_letters": 1.0000000109180538,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.13333333333333333,
+        "B": 0.2833333333333333,
+        "C": 0.31666666666666665,
+        "D": 0.26666666666666666,
+        "E": 0.0
+      }
+    },
+    "MEK": {
+      "n": 60,
+      "accuracy": 0.75,
+      "accuracy_ci95": [
+        0.6276792992295219,
+        0.8422347746994332
+      ],
+      "mean_prob_correct": 0.7441979922133888,
+      "mean_prob_on_letters": 0.9999999633997291,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.23333333333333334,
+        "B": 0.2833333333333333,
+        "C": 0.23333333333333334,
+        "D": 0.25,
+        "E": 0.0
+      }
+    }
+  },
+  "exam_dates": {
+    "2025-10-19": {
+      "n": 60,
+      "accuracy": 0.75,
+      "accuracy_ci95": [
+        0.6276792992295219,
+        0.8422347746994332
+      ],
+      "mean_prob_correct": 0.749927466660555,
+      "mean_prob_on_letters": 0.9999999959508321,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.15,
+        "B": 0.23333333333333334,
+        "C": 0.18333333333333332,
+        "D": 0.31666666666666665,
+        "E": 0.11666666666666667
+      }
+    },
+    "2026-04-18": {
+      "n": 60,
+      "accuracy": 0.7666666666666667,
+      "accuracy_ci95": [
+        0.6456372962239805,
+        0.8556043826335717
+      ],
+      "mean_prob_correct": 0.7646921015399265,
+      "mean_prob_on_letters": 0.9999999904703549,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.16666666666666666,
+        "B": 0.25,
+        "C": 0.3,
+        "D": 0.21666666666666667,
+        "E": 0.06666666666666667
+      }
+    },
+    "2026-10-18": {
+      "n": 60,
+      "accuracy": 0.7833333333333333,
+      "accuracy_ci95": [
+        0.6637997242680522,
+        0.8687695595180969
+      ],
+      "mean_prob_correct": 0.7797330548465305,
+      "mean_prob_on_letters": 1.000000003491856,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.2,
+        "B": 0.26666666666666666,
+        "C": 0.23333333333333334,
+        "D": 0.25,
+        "E": 0.05
+      }
+    }
+  },
+  "damage": {
+    "perplexity": 20.30606059736501,
+    "n_perplexity_docs": 75,
+    "loop_rate_percent": 14.0,
+    "n_prompts": 50,
+    "loop_rule": "a reply loops if some run of 4 consecutive words (lowercased, punctuation removed) occurs 3 or more times in the reply; greedy continuation, max 200 new tokens",
+    "data_sha256": {
+      "sv_text.jsonl": "6f13e43de548fd58397c600b38b417e92071fcdd01b9e8ae337f11d7c137e912",
+      "sv_prompts.jsonl": "81b231ffb94673e9b05422cc111c32f58881d06326f1f3abfbb137ab5695277a"
+    }
+  }
+}

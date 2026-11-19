@@ -1,0 +1,5 @@
+full  MEK: right when key=A 55/117 (47%), key=B/C/D 71% | A chosen 71 times, A is key 117 times
+full  LAS: right when key=A 57/102 (56%), key=B/C/D 76% | A chosen 69 times, A is key 102 times
+4-bit MEK: right when key=A 46/117 (39%), key=B/C/D 72% | A chosen 53 times, A is key 117 times
+4-bit LAS: right when key=A 49/102 (48%), key=B/C/D 73% | A chosen 65 times, A is key 102 times
+same letter chosen by full and 4-bit: 1156/1350

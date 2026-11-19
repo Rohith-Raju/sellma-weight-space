@@ -1,0 +1,1904 @@
+{
+  "run": "trial_b10_q_half",
+  "model": "gemma-4b-full",
+  "created_at": "2026-11-19T09:09:33+00:00",
+  "source": "editor_runs/trial_b10_q_half/final_edit.safetensors",
+  "source_sha256": "248e41e9265d3781a2f20303d3fa5f4f27386d00622d72ea84196c383d895954",
+  "editor": {
+    "explanation": "Editor 1 trial (pass 4): the same change at half strength.",
+    "budget": 1,
+    "budget_from_run_name": false,
+    "passes_used": 0,
+    "format": null,
+    "size": {
+      "weights_touched": 1254160,
+      "weights_changed": 438051,
+      "model_weights": 4300079472,
+      "share_of_model": 0.00029165972586471306
+    }
+  },
+  "editor_record": {
+    "run_name": "trial_b10_q_half",
+    "model": "gemma-4b-full",
+    "submitted_at": "2026-11-19T08:47:52+00:00",
+    "budget": 1,
+    "passes_used": 0,
+    "explanation": "Editor 1 trial (pass 4): the same change at half strength.",
+    "size": {
+      "weights_touched": 1254160,
+      "weights_changed": 438051,
+      "model_weights": 4300079472,
+      "share_of_model": 0.00029165972586471306,
+      "tensors": {
+        "model.language_model.layers.23.self_attn.q_proj.weight": {
+          "shape": [
+            2048,
+            2560
+          ],
+          "form": "rows",
+          "weights_touched": 1254160,
+          "weights_changed": 438051,
+          "delta_norm": 0.041273314505815506,
+          "tensor_norm": 26.223405838012695,
+          "relative_norm": 0.0015739112898137317
+        }
+      }
+    }
+  },
+  "edit": {
+    "n_tensors": 1,
+    "weights_touched": 1254160,
+    "weights_changed": 438051,
+    "model_weights": 4300079472,
+    "share_of_model": 0.00029165972586471306,
+    "layers": [
+      23
+    ],
+    "modules": {
+      "self_attn.q_proj": 1
+    },
+    "kinds": [
+      "rows"
+    ],
+    "tensors": [
+      {
+        "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+        "stored_as": "language_model.model.layers.23.self_attn.q_proj.weight",
+        "layer": 23,
+        "module": "self_attn.q_proj",
+        "kind": "rows",
+        "shape": [
+          2048,
+          2560
+        ],
+        "weights_touched": 1254160,
+        "weights_changed": 438051,
+        "share_of_tensor": 0.2392120361328125,
+        "delta_norm": 0.041273314505815506,
+        "rows_touched": 512,
+        "rows_indices": [
+          768,
+          769,
+          770,
+          771,
+          772,
+          773,
+          774,
+          775,
+          776,
+          777,
+          778,
+          779,
+          780,
+          781,
+          782,
+          783,
+          784,
+          785,
+          786,
+          787,
+          788,
+          789,
+          790,
+          791
+        ],
+        "rows_indices_truncated": true,
+        "weight_norm": 26.225185909285038,
+        "relative_norm": 0.0015738044583776495,
+        "relative_norm_of_touched_part": 0.0031870901163445283
+      }
+    ]
+  },
+  "control": {
+    "seed": 1,
+    "control_for": "editor_runs/trial_b10_q_half/final_edit.safetensors",
+    "file": "experiments/editor/trial_b10_q_half/control/control_edit.safetensors",
+    "rule": "same tensors, same rows/columns and nonzero pattern; Gaussian values scaled to the same Frobenius norm per tensor",
+    "norms": [
+      {
+        "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+        "edit_norm": 0.041273314505815506,
+        "control_norm": 0.041273437440395355
+      }
+    ]
+  },
+  "applied_change": {
+    "edited": [
+      {
+        "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+        "intended_norm": 0.041273314505815506,
+        "realized_norm": 0.04182761162519455,
+        "realized_fraction": 1.0134299153343,
+        "entries_changed": 438051
+      }
+    ],
+    "control": [
+      {
+        "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+        "intended_norm": 0.041273437440395355,
+        "realized_norm": 0.04273819178342819,
+        "realized_fraction": 1.0354890320232752,
+        "entries_changed": 788657
+      }
+    ]
+  },
+  "confidence": 0.95,
+  "full": {
+    "baselines": {
+      "hidden": "experiments/group/gemma-4b-full/baseline/hidden",
+      "drill": "experiments/group/gemma-4b-full/baseline/drill",
+      "validation": "experiments/group/gemma-4b-full/baseline/validation",
+      "test": "experiments/group/gemma-4b-full/baseline/test",
+      "gemma_extra": "experiments/group/gemma-4b-full/baseline/gemma_extra"
+    },
+    "hidden": {
+      "edited": {
+        "n": 480,
+        "accuracy_before": 0.75625,
+        "accuracy_after": 0.7458333333333333,
+        "n_wrong": 117,
+        "fixed": 7,
+        "fixed_share": 0.05982905982905983,
+        "n_right": 363,
+        "kept": 351,
+        "broken": 12,
+        "broken_share": 0.03305785123966942,
+        "net_questions": -5,
+        "net": {
+          "accuracy_change": -0.010416666666666666,
+          "ci": [
+            -0.029166666666666667,
+            0.00625
+          ]
+        },
+        "prob_correct": {
+          "change": -0.008614795930385393,
+          "ci": [
+            -0.02389579272178163,
+            0.00606075361822624
+          ]
+        },
+        "fixed_ids": [
+          "2015-03-28/p3/MEK/24",
+          "2015-03-28/p5/LAS/16",
+          "2016-04-09/p2/MEK/23",
+          "2017-10-21/p1/ORD/7",
+          "2018-10-21/p3/LAS/11",
+          "2021-05-08/p4/LAS/11",
+          "2021-05-08/p4/MEK/24"
+        ],
+        "broken_ids": [
+          "2015-03-28/p3/LAS/18",
+          "2015-03-28/p5/LAS/11",
+          "2015-03-28/p5/MEK/27",
+          "2017-10-21/p1/MEK/29",
+          "2017-10-21/p4/MEK/25",
+          "2019-10-20/p5/ORD/1",
+          "2019-10-20/p5/LAS/18",
+          "2019-10-20/p5/MEK/28",
+          "2021-05-08/p4/MEK/23",
+          "2021-05-08/p4/MEK/26",
+          "2021-05-08/p4/MEK/28",
+          "2022-10-23/p5/MEK/23"
+        ]
+      },
+      "edited_by_section": {
+        "ORD": {
+          "n": 160,
+          "n_wrong": 29,
+          "fixed": 1,
+          "n_right": 131,
+          "broken": 1,
+          "net_questions": 0,
+          "accuracy_before": 0.81875,
+          "accuracy_after": 0.81875
+        },
+        "LAS": {
+          "n": 160,
+          "n_wrong": 42,
+          "fixed": 3,
+          "n_right": 118,
+          "broken": 3,
+          "net_questions": 0,
+          "accuracy_before": 0.7375,
+          "accuracy_after": 0.7375
+        },
+        "MEK": {
+          "n": 160,
+          "n_wrong": 46,
+          "fixed": 3,
+          "n_right": 114,
+          "broken": 8,
+          "net_questions": -5,
+          "accuracy_before": 0.7125,
+          "accuracy_after": 0.68125
+        }
+      },
+      "control": {
+        "n": 480,
+        "accuracy_before": 0.75625,
+        "accuracy_after": 0.75625,
+        "n_wrong": 117,
+        "fixed": 0,
+        "fixed_share": 0.0,
+        "n_right": 363,
+        "kept": 363,
+        "broken": 0,
+        "broken_share": 0.0,
+        "net_questions": 0,
+        "net": {
+          "accuracy_change": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "prob_correct": {
+          "change": -0.0003099293511802364,
+          "ci": [
+            -0.0008162672821792748,
+            1.0041928148447872e-05
+          ]
+        },
+        "fixed_ids": [],
+        "broken_ids": []
+      },
+      "control_by_section": {
+        "ORD": {
+          "n": 160,
+          "n_wrong": 29,
+          "fixed": 0,
+          "n_right": 131,
+          "broken": 0,
+          "net_questions": 0,
+          "accuracy_before": 0.81875,
+          "accuracy_after": 0.81875
+        },
+        "LAS": {
+          "n": 160,
+          "n_wrong": 42,
+          "fixed": 0,
+          "n_right": 118,
+          "broken": 0,
+          "net_questions": 0,
+          "accuracy_before": 0.7375,
+          "accuracy_after": 0.7375
+        },
+        "MEK": {
+          "n": 160,
+          "n_wrong": 46,
+          "fixed": 0,
+          "n_right": 114,
+          "broken": 0,
+          "net_questions": 0,
+          "accuracy_before": 0.7125,
+          "accuracy_after": 0.7125
+        }
+      },
+      "edited_vs_control": {
+        "wrong_fixed": {
+          "n": 117,
+          "first": 7,
+          "second": 0,
+          "change": 0.05982905982905983,
+          "ci": [
+            0.017094017094017096,
+            0.10256410256410256
+          ]
+        },
+        "right_kept": {
+          "n": 363,
+          "first": 351,
+          "second": 363,
+          "change": -0.03305785123966942,
+          "ci": [
+            -0.05234159779614325,
+            -0.01652892561983471
+          ]
+        },
+        "net": {
+          "n": 480,
+          "first": 358,
+          "second": 363,
+          "change": -0.010416666666666666,
+          "ci": [
+            -0.029166666666666667,
+            0.00625
+          ]
+        },
+        "prob_correct": {
+          "change": -0.008304866579205159,
+          "ci": [
+            -0.023701100954336293,
+            0.006535496739032481
+          ]
+        }
+      }
+    },
+    "hidden_check": {
+      "split_from": "runs/20261119T060704Z_gemma-4b-full_dev",
+      "disagreements": 0,
+      "question_ids": []
+    },
+    "practice": {
+      "edited": {
+        "n": 870,
+        "accuracy_before": 0.7172413793103448,
+        "accuracy_after": 0.7206896551724138,
+        "n_wrong": 246,
+        "fixed": 13,
+        "fixed_share": 0.052845528455284556,
+        "n_right": 624,
+        "kept": 614,
+        "broken": 10,
+        "broken_share": 0.016025641025641024,
+        "net_questions": 3,
+        "net": {
+          "accuracy_change": 0.0034482758620689655,
+          "ci": [
+            -0.006896551724137931,
+            0.013793103448275862
+          ]
+        },
+        "prob_correct": {
+          "change": 0.0036735640087236354,
+          "ci": [
+            -0.005060826977962971,
+            0.012368001787456168
+          ]
+        },
+        "fixed_ids": [
+          "2013-10-26/p1/MEK/26",
+          "2015-10-24/p4/LAS/11",
+          "2017-04-01/p5/MEK/29",
+          "2019-04-06/p1/LAS/18",
+          "2021-03-13/p1/MEK/30",
+          "2021-03-13/p4/LAS/16",
+          "2021-10-24/p5/LAS/17",
+          "2023-03-25/p5/LAS/12",
+          "2023-03-25/p5/MEK/28",
+          "2024-04-13/p1/MEK/26",
+          "2024-04-13/p1/MEK/28",
+          "2023-10-22/p5/LAS/19",
+          "2023-10-22/p5/MEK/29"
+        ],
+        "broken_ids": [
+          "2014-10-25/p1/MEK/21",
+          "2015-10-24/p1/LAS/16",
+          "2015-10-24/p1/LAS/19",
+          "2017-04-01/p5/MEK/28",
+          "2022-05-07/p3/MEK/29",
+          "2024-04-13/p4/MEK/24",
+          "2018-04-14/p2/MEK/30",
+          "2022-03-12/p4/LAS/17",
+          "2023-10-22/p3/ORD/4",
+          "2023-10-22/p3/MEK/26"
+        ]
+      },
+      "edited_by_section": {
+        "ORD": {
+          "n": 290,
+          "n_wrong": 49,
+          "fixed": 0,
+          "n_right": 241,
+          "broken": 1,
+          "net_questions": -1,
+          "accuracy_before": 0.8310344827586207,
+          "accuracy_after": 0.8275862068965517
+        },
+        "LAS": {
+          "n": 290,
+          "n_wrong": 86,
+          "fixed": 6,
+          "n_right": 204,
+          "broken": 3,
+          "net_questions": 3,
+          "accuracy_before": 0.7034482758620689,
+          "accuracy_after": 0.7137931034482758
+        },
+        "MEK": {
+          "n": 290,
+          "n_wrong": 111,
+          "fixed": 7,
+          "n_right": 179,
+          "broken": 6,
+          "net_questions": 1,
+          "accuracy_before": 0.6172413793103448,
+          "accuracy_after": 0.6206896551724138
+        }
+      },
+      "control": {
+        "n": 870,
+        "accuracy_before": 0.7172413793103448,
+        "accuracy_after": 0.7160919540229885,
+        "n_wrong": 246,
+        "fixed": 1,
+        "fixed_share": 0.0040650406504065045,
+        "n_right": 624,
+        "kept": 622,
+        "broken": 2,
+        "broken_share": 0.003205128205128205,
+        "net_questions": -1,
+        "net": {
+          "accuracy_change": -0.0011494252873563218,
+          "ci": [
+            -0.005747126436781609,
+            0.0022988505747126436
+          ]
+        },
+        "prob_correct": {
+          "change": 3.526634483485465e-05,
+          "ci": [
+            -0.0003284516736669326,
+            0.0003892291867171804
+          ]
+        },
+        "fixed_ids": [
+          "2017-04-01/p5/MEK/29"
+        ],
+        "broken_ids": [
+          "2021-03-13/p1/LAS/20",
+          "2021-10-24/p5/MEK/24"
+        ]
+      },
+      "control_by_section": {
+        "ORD": {
+          "n": 290,
+          "n_wrong": 49,
+          "fixed": 0,
+          "n_right": 241,
+          "broken": 0,
+          "net_questions": 0,
+          "accuracy_before": 0.8310344827586207,
+          "accuracy_after": 0.8310344827586207
+        },
+        "LAS": {
+          "n": 290,
+          "n_wrong": 86,
+          "fixed": 0,
+          "n_right": 204,
+          "broken": 1,
+          "net_questions": -1,
+          "accuracy_before": 0.7034482758620689,
+          "accuracy_after": 0.7
+        },
+        "MEK": {
+          "n": 290,
+          "n_wrong": 111,
+          "fixed": 1,
+          "n_right": 179,
+          "broken": 1,
+          "net_questions": 0,
+          "accuracy_before": 0.6172413793103448,
+          "accuracy_after": 0.6172413793103448
+        }
+      },
+      "edited_vs_control": {
+        "wrong_fixed": {
+          "n": 246,
+          "first": 13,
+          "second": 1,
+          "change": 0.04878048780487805,
+          "ci": [
+            0.024390243902439025,
+            0.07723577235772358
+          ]
+        },
+        "right_kept": {
+          "n": 624,
+          "first": 614,
+          "second": 622,
+          "change": -0.01282051282051282,
+          "ci": [
+            -0.02403846153846154,
+            -0.003205128205128205
+          ]
+        },
+        "net": {
+          "n": 870,
+          "first": 627,
+          "second": 623,
+          "change": 0.004597701149425287,
+          "ci": [
+            -0.006896551724137931,
+            0.016091954022988506
+          ]
+        },
+        "prob_correct": {
+          "change": 0.00363829766388878,
+          "ci": [
+            -0.005141421275299378,
+            0.012355303062324732
+          ]
+        }
+      }
+    },
+    "test": {
+      "edited_vs_baseline": {
+        "comparison": "experiments/editor/trial_b10_q_half/comparisons/full_edited_vs_baseline_test/test__vs__test/comparison.json",
+        "baseline": "test",
+        "control": "test",
+        "verdict": "NO IMPROVEMENT",
+        "indicative_only": false,
+        "rules": {
+          "1_metric_improves": {
+            "passed": false,
+            "detail": "headline change in prob_correct -0.0092, 95% CI [-0.0296, +0.0057] (must be above zero)"
+          },
+          "2_beats_control": {
+            "passed": false,
+            "detail": "headline edited minus control -0.0093, 95% CI [-0.0296, +0.0057] (must be above zero)"
+          },
+          "3a_perplexity": {
+            "passed": true,
+            "detail": "perplexity change -0.02% (limit +5%)"
+          },
+          "3b_loop_rate": {
+            "passed": false,
+            "detail": "loop rate change +4.0 points (limit +2.0)"
+          }
+        },
+        "headline": {
+          "n": 120,
+          "accuracy_baseline": 0.7,
+          "accuracy_edited": 0.6833333333333333,
+          "accuracy_change": -0.016666666666666666,
+          "accuracy_ci": [
+            -0.041666666666666664,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.696871816619563,
+          "metric_edited": 0.687622607509963,
+          "metric_change": -0.009249209109600084,
+          "metric_ci": [
+            -0.029567577555693215,
+            0.005698644597276936
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 2
+        },
+        "overall": {
+          "n": 180,
+          "accuracy_baseline": 0.7611111111111111,
+          "accuracy_edited": 0.75,
+          "accuracy_change": -0.011111111111111112,
+          "accuracy_ci": [
+            -0.027777777777777776,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7590251248823416,
+          "metric_edited": 0.7528590363948532,
+          "metric_change": -0.006166088487488402,
+          "metric_ci": [
+            -0.01965861941663794,
+            0.0037928748231425735
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 2
+        },
+        "sections": {
+          "ORD": {
+            "n": 60,
+            "accuracy_baseline": 0.8833333333333333,
+            "accuracy_edited": 0.8833333333333333,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.8833317414078989,
+            "metric_edited": 0.883331894164634,
+            "metric_change": 1.5275673496702063e-07,
+            "metric_ci": [
+              -2.5280507451506366e-07,
+              7.368965736086042e-07
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "LAS": {
+            "n": 60,
+            "accuracy_baseline": 0.6833333333333333,
+            "accuracy_edited": 0.6833333333333333,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.6832646401495243,
+            "metric_edited": 0.6833270954119902,
+            "metric_change": 6.245526246601286e-05,
+            "metric_ci": [
+              1.3547817380273928e-06,
+              0.00017565367841841748
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "MEK": {
+            "n": 60,
+            "accuracy_baseline": 0.7166666666666667,
+            "accuracy_edited": 0.6833333333333333,
+            "accuracy_change": -0.03333333333333333,
+            "accuracy_ci": [
+              -0.08333333333333333,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.7104789930896017,
+            "metric_edited": 0.6919181196079356,
+            "metric_change": -0.01856087348166618,
+            "metric_ci": [
+              -0.05980344111824103,
+              0.01132897083495172
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 2
+          }
+        },
+        "edited_minus_control": {
+          "change": -0.009287405556743107,
+          "ci": [
+            -0.029611386508200926,
+            0.005660448823884955
+          ]
+        },
+        "damage": {
+          "n_perplexity_docs": 75,
+          "n_prompts": 50,
+          "perplexity": {
+            "edited": 20.824028879367514,
+            "baseline": 20.82816481447877,
+            "relative_change": -0.0001985741493836475
+          },
+          "loop_rate_percent": {
+            "edited": 14.0,
+            "baseline": 10.0,
+            "change_points": 4.0
+          }
+        },
+        "letter_shift": {
+          "headline": {
+            "A": 0.008333333333333331,
+            "B": 0.00833333333333336,
+            "C": 0.0,
+            "D": -0.016666666666666663,
+            "E": 0.0
+          },
+          "overall": {
+            "A": 0.005555555555555564,
+            "B": 0.005555555555555536,
+            "C": 0.0,
+            "D": -0.0111111111111111,
+            "E": 0.0
+          },
+          "largest_overall": 0.0111111111111111
+        }
+      },
+      "control_vs_baseline": {
+        "comparison": "experiments/editor/trial_b10_q_half/comparisons/full_control_vs_baseline_test/test__vs__test/comparison.json",
+        "baseline": "test",
+        "control": null,
+        "verdict": "NO IMPROVEMENT",
+        "indicative_only": false,
+        "rules": {
+          "1_metric_improves": {
+            "passed": false,
+            "detail": "headline change in prob_correct +0.0000, 95% CI [-0.0000, +0.0001] (must be above zero)"
+          },
+          "2_beats_control": {
+            "passed": false,
+            "detail": "no control run given, so not checked (counts as failed)"
+          },
+          "3a_perplexity": {
+            "passed": true,
+            "detail": "perplexity change -0.06% (limit +5%)"
+          },
+          "3b_loop_rate": {
+            "passed": false,
+            "detail": "loop rate change +4.0 points (limit +2.0)"
+          }
+        },
+        "headline": {
+          "n": 120,
+          "accuracy_baseline": 0.7,
+          "accuracy_edited": 0.7,
+          "accuracy_change": 0.0,
+          "accuracy_ci": [
+            0.0,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.696871816619563,
+          "metric_edited": 0.696910013066706,
+          "metric_change": 3.8196447143022503e-05,
+          "metric_ci": [
+            -6.587112701385187e-07,
+            0.00010988137269655278
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 0
+        },
+        "overall": {
+          "n": 180,
+          "accuracy_baseline": 0.7611111111111111,
+          "accuracy_edited": 0.7611111111111111,
+          "accuracy_change": 0.0,
+          "accuracy_ci": [
+            0.0,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7590251248823416,
+          "metric_edited": 0.7590505672042782,
+          "metric_change": 2.5442321936657835e-05,
+          "metric_ci": [
+            -4.2110773531943977e-07,
+            7.293337006521879e-05
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 0
+        },
+        "sections": {
+          "ORD": {
+            "n": 60,
+            "accuracy_baseline": 0.8833333333333333,
+            "accuracy_edited": 0.8833333333333333,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.8833317414078989,
+            "metric_edited": 0.8833316754794229,
+            "metric_change": -6.592847607150503e-08,
+            "metric_ci": [
+              -2.1592285400800281e-07,
+              2.7094046849294174e-08
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "LAS": {
+            "n": 60,
+            "accuracy_baseline": 0.6833333333333333,
+            "accuracy_edited": 0.6833333333333333,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.6832646401495243,
+            "metric_edited": 0.6832762406558543,
+            "metric_change": 1.160050633000747e-05,
+            "metric_ci": [
+              -2.6663413254004286e-07,
+              3.509169565873848e-05
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "MEK": {
+            "n": 60,
+            "accuracy_baseline": 0.7166666666666667,
+            "accuracy_edited": 0.7166666666666667,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.7104789930896017,
+            "metric_edited": 0.7105437854775578,
+            "metric_change": 6.479238795603755e-05,
+            "metric_ci": [
+              -1.7268731905674592e-06,
+              0.000196225048974578
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          }
+        },
+        "edited_minus_control": null,
+        "damage": {
+          "n_perplexity_docs": 75,
+          "n_prompts": 50,
+          "perplexity": {
+            "edited": 20.81631111721573,
+            "baseline": 20.82816481447877,
+            "relative_change": -0.0005691186606513775
+          },
+          "loop_rate_percent": {
+            "edited": 14.0,
+            "baseline": 10.0,
+            "change_points": 4.0
+          }
+        },
+        "letter_shift": {
+          "headline": {
+            "A": 0.0,
+            "B": 0.0,
+            "C": 0.0,
+            "D": 0.0,
+            "E": 0.0
+          },
+          "overall": {
+            "A": 0.0,
+            "B": 0.0,
+            "C": 0.0,
+            "D": 0.0,
+            "E": 0.0
+          },
+          "largest_overall": 0.0
+        }
+      },
+      "edited_vs_control": {
+        "comparison": "experiments/editor/trial_b10_q_half/comparisons/full_edited_vs_control_test/test__vs__test/comparison.json",
+        "baseline": "test",
+        "control": null,
+        "verdict": "NO IMPROVEMENT",
+        "indicative_only": false,
+        "rules": {
+          "1_metric_improves": {
+            "passed": false,
+            "detail": "headline change in prob_correct -0.0093, 95% CI [-0.0296, +0.0057] (must be above zero)"
+          },
+          "2_beats_control": {
+            "passed": false,
+            "detail": "no control run given, so not checked (counts as failed)"
+          },
+          "3a_perplexity": {
+            "passed": true,
+            "detail": "perplexity change +0.04% (limit +5%)"
+          },
+          "3b_loop_rate": {
+            "passed": true,
+            "detail": "loop rate change +0.0 points (limit +2.0)"
+          }
+        },
+        "headline": {
+          "n": 120,
+          "accuracy_baseline": 0.7,
+          "accuracy_edited": 0.6833333333333333,
+          "accuracy_change": -0.016666666666666666,
+          "accuracy_ci": [
+            -0.041666666666666664,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.696910013066706,
+          "metric_edited": 0.687622607509963,
+          "metric_change": -0.009287405556743107,
+          "metric_ci": [
+            -0.029611386508200926,
+            0.005660448823884955
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 2
+        },
+        "overall": {
+          "n": 180,
+          "accuracy_baseline": 0.7611111111111111,
+          "accuracy_edited": 0.75,
+          "accuracy_change": -0.011111111111111112,
+          "accuracy_ci": [
+            -0.027777777777777776,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7590505672042782,
+          "metric_edited": 0.7528590363948532,
+          "metric_change": -0.00619153080942506,
+          "metric_ci": [
+            -0.019667555935927814,
+            0.0037631812055412793
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 2
+        },
+        "sections": {
+          "ORD": {
+            "n": 60,
+            "accuracy_baseline": 0.8833333333333333,
+            "accuracy_edited": 0.8833333333333333,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.8833316754794229,
+            "metric_edited": 0.883331894164634,
+            "metric_change": 2.1868521103852563e-07,
+            "metric_ci": [
+              -2.1829332551482194e-07,
+              8.295587667313505e-07
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "LAS": {
+            "n": 60,
+            "accuracy_baseline": 0.6833333333333333,
+            "accuracy_edited": 0.6833333333333333,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.6832762406558543,
+            "metric_edited": 0.6833270954119902,
+            "metric_change": 5.085475613600539e-05,
+            "metric_ci": [
+              1.3919978327485255e-06,
+              0.00014052631381300494
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "MEK": {
+            "n": 60,
+            "accuracy_baseline": 0.7166666666666667,
+            "accuracy_edited": 0.6833333333333333,
+            "accuracy_change": -0.03333333333333333,
+            "accuracy_ci": [
+              -0.08333333333333333,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.7105437854775578,
+            "metric_edited": 0.6919181196079356,
+            "metric_change": -0.01862566586962222,
+            "metric_ci": [
+              -0.059999411694833686,
+              0.011263869123003286
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 2
+          }
+        },
+        "edited_minus_control": null,
+        "damage": {
+          "n_perplexity_docs": 75,
+          "n_prompts": 50,
+          "perplexity": {
+            "edited": 20.824028879367514,
+            "baseline": 20.81631111721573,
+            "relative_change": 0.0003707555151499413
+          },
+          "loop_rate_percent": {
+            "edited": 14.0,
+            "baseline": 14.0,
+            "change_points": 0.0
+          }
+        },
+        "letter_shift": {
+          "headline": {
+            "A": 0.008333333333333331,
+            "B": 0.00833333333333336,
+            "C": 0.0,
+            "D": -0.016666666666666663,
+            "E": 0.0
+          },
+          "overall": {
+            "A": 0.005555555555555564,
+            "B": 0.005555555555555536,
+            "C": 0.0,
+            "D": -0.0111111111111111,
+            "E": 0.0
+          },
+          "largest_overall": 0.0111111111111111
+        }
+      }
+    },
+    "gemma_extra": {
+      "edited_vs_baseline": {
+        "comparison": "experiments/editor/trial_b10_q_half/comparisons/full_edited_vs_baseline_gemma_extra/gemma_extra__vs__gemma_extra/comparison.json",
+        "baseline": "gemma_extra",
+        "control": "gemma_extra",
+        "verdict": "NO IMPROVEMENT",
+        "indicative_only": true,
+        "rules": {
+          "1_metric_improves": {
+            "passed": false,
+            "detail": "headline change in prob_correct -0.0218, 95% CI [-0.0612, +0.0069] (must be above zero)"
+          },
+          "2_beats_control": {
+            "passed": false,
+            "detail": "headline edited minus control -0.0217, 95% CI [-0.0610, +0.0069] (must be above zero)"
+          },
+          "3a_perplexity": {
+            "passed": false,
+            "detail": "not measured: damage is only checked on the test papers, and one of these runs has no damage.json (no IMPROVEMENT verdict without it)",
+            "measured": false
+          },
+          "3b_loop_rate": {
+            "passed": false,
+            "detail": "not measured: damage is only checked on the test papers, and one of these runs has no damage.json (no IMPROVEMENT verdict without it)",
+            "measured": false
+          }
+        },
+        "headline": {
+          "n": 80,
+          "accuracy_baseline": 0.725,
+          "accuracy_edited": 0.7,
+          "accuracy_change": -0.025,
+          "accuracy_ci": [
+            -0.0625,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7260722366163975,
+          "metric_edited": 0.7042498343008916,
+          "metric_change": -0.021822402315505803,
+          "metric_ci": [
+            -0.06124585486504906,
+            0.006948124772842966
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 2
+        },
+        "overall": {
+          "n": 120,
+          "accuracy_baseline": 0.775,
+          "accuracy_edited": 0.7583333333333333,
+          "accuracy_change": -0.016666666666666666,
+          "accuracy_ci": [
+            -0.041666666666666664,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7767704392026846,
+          "metric_edited": 0.7613600036463779,
+          "metric_change": -0.015410435556306801,
+          "metric_ci": [
+            -0.04200378882686869,
+            0.0034926411930272443
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 2
+        },
+        "sections": {
+          "ORD": {
+            "n": 40,
+            "accuracy_baseline": 0.875,
+            "accuracy_edited": 0.875,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.8781668443752594,
+            "metric_edited": 0.8755803423373505,
+            "metric_change": -0.002586502037908792,
+            "metric_ci": [
+              -0.007756306427994224,
+              1.6677859858109716e-08
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "LAS": {
+            "n": 40,
+            "accuracy_baseline": 0.675,
+            "accuracy_edited": 0.65,
+            "accuracy_change": -0.025,
+            "accuracy_ci": [
+              -0.075,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.6751877988951109,
+            "metric_edited": 0.6582246027288556,
+            "metric_change": -0.016963196166255336,
+            "metric_ci": [
+              -0.07359943413023191,
+              0.01915485143567877
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 1
+          },
+          "MEK": {
+            "n": 40,
+            "accuracy_baseline": 0.775,
+            "accuracy_edited": 0.75,
+            "accuracy_change": -0.025,
+            "accuracy_ci": [
+              -0.075,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.776956674337684,
+            "metric_edited": 0.7502750658729277,
+            "metric_change": -0.026681608464756267,
+            "metric_ci": [
+              -0.08295329389608098,
+              0.0070922284205568965
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 1
+          }
+        },
+        "edited_minus_control": {
+          "change": -0.021673075933986992,
+          "ci": [
+            -0.06099191429247609,
+            0.006949615231176153
+          ]
+        },
+        "damage": null,
+        "letter_shift": {
+          "headline": {
+            "A": 0.012500000000000011,
+            "B": 0.012500000000000011,
+            "C": 0.012500000000000011,
+            "D": -0.03749999999999998,
+            "E": 0.0
+          },
+          "overall": {
+            "A": 0.008333333333333331,
+            "B": 0.008333333333333304,
+            "C": 0.008333333333333331,
+            "D": -0.024999999999999967,
+            "E": 0.0
+          },
+          "largest_overall": 0.024999999999999967
+        }
+      },
+      "control_vs_baseline": {
+        "comparison": "experiments/editor/trial_b10_q_half/comparisons/full_control_vs_baseline_gemma_extra/gemma_extra__vs__gemma_extra/comparison.json",
+        "baseline": "gemma_extra",
+        "control": null,
+        "verdict": "NO IMPROVEMENT",
+        "indicative_only": true,
+        "rules": {
+          "1_metric_improves": {
+            "passed": false,
+            "detail": "headline change in prob_correct -0.0001, 95% CI [-0.0010, +0.0005] (must be above zero)"
+          },
+          "2_beats_control": {
+            "passed": false,
+            "detail": "no control run given, so not checked (counts as failed)"
+          },
+          "3a_perplexity": {
+            "passed": false,
+            "detail": "not measured: damage is only checked on the test papers, and one of these runs has no damage.json (no IMPROVEMENT verdict without it)",
+            "measured": false
+          },
+          "3b_loop_rate": {
+            "passed": false,
+            "detail": "not measured: damage is only checked on the test papers, and one of these runs has no damage.json (no IMPROVEMENT verdict without it)",
+            "measured": false
+          }
+        },
+        "headline": {
+          "n": 80,
+          "accuracy_baseline": 0.725,
+          "accuracy_edited": 0.725,
+          "accuracy_change": 0.0,
+          "accuracy_ci": [
+            0.0,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7260722366163975,
+          "metric_edited": 0.7259229102348786,
+          "metric_change": -0.00014932638151880632,
+          "metric_ci": [
+            -0.000992479680313426,
+            0.0005417318332832789
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 0
+        },
+        "overall": {
+          "n": 120,
+          "accuracy_baseline": 0.775,
+          "accuracy_edited": 0.775,
+          "accuracy_change": 0.0,
+          "accuracy_ci": [
+            0.0,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7767704392026846,
+          "metric_edited": 0.7766745635364771,
+          "metric_change": -9.587566620759647e-05,
+          "metric_ci": [
+            -0.0006737519808965361,
+            0.000354491108129123
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 0
+        },
+        "sections": {
+          "ORD": {
+            "n": 40,
+            "accuracy_baseline": 0.875,
+            "accuracy_edited": 0.875,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.8781668443752594,
+            "metric_edited": 0.8781778701396741,
+            "metric_change": 1.1025764414823229e-05,
+            "metric_ci": [
+              -2.8621697362435192e-06,
+              3.607326075832435e-05
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "LAS": {
+            "n": 40,
+            "accuracy_baseline": 0.675,
+            "accuracy_edited": 0.675,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.6751877988951109,
+            "metric_edited": 0.6753668940813464,
+            "metric_change": 0.00017909518623545,
+            "metric_ci": [
+              -0.00013670748541322916,
+              0.0006731681440656388
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "MEK": {
+            "n": 40,
+            "accuracy_baseline": 0.775,
+            "accuracy_edited": 0.775,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.776956674337684,
+            "metric_edited": 0.7764789263884111,
+            "metric_change": -0.0004777479492730625,
+            "metric_ci": [
+              -0.0021066420577916544,
+              0.0008351639995138339
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          }
+        },
+        "edited_minus_control": null,
+        "damage": null,
+        "letter_shift": {
+          "headline": {
+            "A": 0.0,
+            "B": 0.0,
+            "C": 0.0,
+            "D": 0.0,
+            "E": 0.0
+          },
+          "overall": {
+            "A": 0.0,
+            "B": 0.0,
+            "C": 0.0,
+            "D": 0.0,
+            "E": 0.0
+          },
+          "largest_overall": 0.0
+        }
+      },
+      "edited_vs_control": {
+        "comparison": "experiments/editor/trial_b10_q_half/comparisons/full_edited_vs_control_gemma_extra/gemma_extra__vs__gemma_extra/comparison.json",
+        "baseline": "gemma_extra",
+        "control": null,
+        "verdict": "NO IMPROVEMENT",
+        "indicative_only": true,
+        "rules": {
+          "1_metric_improves": {
+            "passed": false,
+            "detail": "headline change in prob_correct -0.0217, 95% CI [-0.0610, +0.0069] (must be above zero)"
+          },
+          "2_beats_control": {
+            "passed": false,
+            "detail": "no control run given, so not checked (counts as failed)"
+          },
+          "3a_perplexity": {
+            "passed": false,
+            "detail": "not measured: damage is only checked on the test papers, and one of these runs has no damage.json (no IMPROVEMENT verdict without it)",
+            "measured": false
+          },
+          "3b_loop_rate": {
+            "passed": false,
+            "detail": "not measured: damage is only checked on the test papers, and one of these runs has no damage.json (no IMPROVEMENT verdict without it)",
+            "measured": false
+          }
+        },
+        "headline": {
+          "n": 80,
+          "accuracy_baseline": 0.725,
+          "accuracy_edited": 0.7,
+          "accuracy_change": -0.025,
+          "accuracy_ci": [
+            -0.0625,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7259229102348786,
+          "metric_edited": 0.7042498343008916,
+          "metric_change": -0.021673075933986992,
+          "metric_ci": [
+            -0.06099191429247609,
+            0.006949615231176153
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 2
+        },
+        "overall": {
+          "n": 120,
+          "accuracy_baseline": 0.775,
+          "accuracy_edited": 0.7583333333333333,
+          "accuracy_change": -0.016666666666666666,
+          "accuracy_ci": [
+            -0.041666666666666664,
+            0.0
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7766745635364771,
+          "metric_edited": 0.7613600036463779,
+          "metric_change": -0.015314559890099201,
+          "metric_ci": [
+            -0.04188259627640489,
+            0.0034644153016455915
+          ],
+          "wrong_to_right": 0,
+          "right_to_wrong": 2
+        },
+        "sections": {
+          "ORD": {
+            "n": 40,
+            "accuracy_baseline": 0.875,
+            "accuracy_edited": 0.875,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.8781778701396741,
+            "metric_edited": 0.8755803423373505,
+            "metric_change": -0.002597527802323615,
+            "metric_ci": [
+              -0.0077904460343346275,
+              -5.6628796476412336e-08
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "LAS": {
+            "n": 40,
+            "accuracy_baseline": 0.675,
+            "accuracy_edited": 0.65,
+            "accuracy_change": -0.025,
+            "accuracy_ci": [
+              -0.075,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.6753668940813464,
+            "metric_edited": 0.6582246027288556,
+            "metric_change": -0.017142291352490784,
+            "metric_ci": [
+              -0.07346458126230335,
+              0.01848247144029055
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 1
+          },
+          "MEK": {
+            "n": 40,
+            "accuracy_baseline": 0.775,
+            "accuracy_edited": 0.75,
+            "accuracy_change": -0.025,
+            "accuracy_ci": [
+              -0.075,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.7764789263884111,
+            "metric_edited": 0.7502750658729277,
+            "metric_change": -0.0262038605154832,
+            "metric_ci": [
+              -0.08245912566793566,
+              0.0074579611867434765
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 1
+          }
+        },
+        "edited_minus_control": null,
+        "damage": null,
+        "letter_shift": {
+          "headline": {
+            "A": 0.012500000000000011,
+            "B": 0.012500000000000011,
+            "C": 0.012500000000000011,
+            "D": -0.03749999999999998,
+            "E": 0.0
+          },
+          "overall": {
+            "A": 0.008333333333333331,
+            "B": 0.008333333333333304,
+            "C": 0.008333333333333331,
+            "D": -0.024999999999999967,
+            "E": 0.0
+          },
+          "largest_overall": 0.024999999999999967
+        }
+      }
+    }
+  },
+  "q4": {
+    "baselines": {
+      "hidden": "experiments/group/gemma-4b-full/baseline/q4_hidden",
+      "test": "runs/20261119T061642Z_gemma-4b-q4_test",
+      "gemma_extra": "runs/20261119T061922Z_gemma-4b-q4_gemma_extra"
+    },
+    "hidden": {
+      "edited": {
+        "n": 480,
+        "accuracy_before": 0.7333333333333333,
+        "accuracy_after": 0.7229166666666667,
+        "n_wrong": 128,
+        "fixed": 5,
+        "fixed_share": 0.0390625,
+        "n_right": 352,
+        "kept": 342,
+        "broken": 10,
+        "broken_share": 0.028409090909090908,
+        "net_questions": -5,
+        "net": {
+          "accuracy_change": -0.010416666666666666,
+          "ci": [
+            -0.027083333333333334,
+            0.004166666666666667
+          ]
+        },
+        "prob_correct": {
+          "change": -0.0046567211643938015,
+          "ci": [
+            -0.016847676688715542,
+            0.007825269233055616
+          ]
+        },
+        "fixed_ids": [
+          "2015-03-28/p5/LAS/20",
+          "2017-10-21/p1/MEK/22",
+          "2019-10-20/p5/MEK/29",
+          "2022-10-23/p5/MEK/22",
+          "2022-10-23/p5/MEK/28"
+        ],
+        "broken_ids": [
+          "2016-04-09/p2/ORD/3",
+          "2019-10-20/p3/MEK/28",
+          "2015-03-28/p3/LAS/18",
+          "2015-03-28/p5/LAS/11",
+          "2016-04-09/p4/MEK/29",
+          "2017-10-21/p4/LAS/12",
+          "2019-10-20/p3/LAS/15",
+          "2019-10-20/p5/LAS/18",
+          "2020-10-25/p2/MEK/21",
+          "2021-05-08/p4/MEK/26"
+        ]
+      },
+      "edited_by_section": {
+        "ORD": {
+          "n": 160,
+          "n_wrong": 28,
+          "fixed": 0,
+          "n_right": 132,
+          "broken": 1,
+          "net_questions": -1,
+          "accuracy_before": 0.825,
+          "accuracy_after": 0.81875
+        },
+        "LAS": {
+          "n": 160,
+          "n_wrong": 47,
+          "fixed": 1,
+          "n_right": 113,
+          "broken": 5,
+          "net_questions": -4,
+          "accuracy_before": 0.70625,
+          "accuracy_after": 0.68125
+        },
+        "MEK": {
+          "n": 160,
+          "n_wrong": 53,
+          "fixed": 4,
+          "n_right": 107,
+          "broken": 4,
+          "net_questions": 0,
+          "accuracy_before": 0.66875,
+          "accuracy_after": 0.66875
+        }
+      },
+      "control": null,
+      "control_by_section": null,
+      "edited_vs_control": null
+    },
+    "test": {
+      "edited_vs_baseline": {
+        "comparison": "experiments/editor/trial_b10_q_half/comparisons/q4_edited_vs_baseline_test/q4_test__vs__20261119T061642Z_gemma-4b-q4_test/comparison.json",
+        "baseline": "20261119T061642Z_gemma-4b-q4_test",
+        "control": null,
+        "verdict": "NO IMPROVEMENT",
+        "indicative_only": false,
+        "rules": {
+          "1_metric_improves": {
+            "passed": false,
+            "detail": "headline change in prob_correct -0.0009, 95% CI [-0.0377, +0.0374] (must be above zero)"
+          },
+          "2_beats_control": {
+            "passed": false,
+            "detail": "no control run given, so not checked (counts as failed)"
+          },
+          "3a_perplexity": {
+            "passed": true,
+            "detail": "perplexity change +0.01% (limit +5%)"
+          },
+          "3b_loop_rate": {
+            "passed": false,
+            "detail": "loop rate change +4.0 points (limit +2.0)"
+          }
+        },
+        "headline": {
+          "n": 120,
+          "accuracy_baseline": 0.6583333333333333,
+          "accuracy_edited": 0.6583333333333333,
+          "accuracy_change": 0.0,
+          "accuracy_ci": [
+            -0.041666666666666664,
+            0.041666666666666664
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.6582065129095374,
+          "metric_edited": 0.6573374147438387,
+          "metric_change": -0.0008690981656988822,
+          "metric_ci": [
+            -0.03771401721845152,
+            0.03744768187951866
+          ],
+          "wrong_to_right": 4,
+          "right_to_wrong": 4
+        },
+        "overall": {
+          "n": 180,
+          "accuracy_baseline": 0.7388888888888889,
+          "accuracy_edited": 0.7388888888888889,
+          "accuracy_change": 0.0,
+          "accuracy_ci": [
+            -0.027777777777777776,
+            0.03333333333333333
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.7389089491008608,
+          "metric_edited": 0.7384116017246314,
+          "metric_change": -0.000497347376229411,
+          "metric_ci": [
+            -0.025370512888882892,
+            0.024998237092832505
+          ],
+          "wrong_to_right": 4,
+          "right_to_wrong": 4
+        },
+        "sections": {
+          "ORD": {
+            "n": 60,
+            "accuracy_baseline": 0.9,
+            "accuracy_edited": 0.9,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.9003138214835075,
+            "metric_edited": 0.9005599756862169,
+            "metric_change": 0.0002461542027095264,
+            "metric_ci": [
+              -0.00042369752728422036,
+              0.0011650953478220599
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "LAS": {
+            "n": 60,
+            "accuracy_baseline": 0.6333333333333333,
+            "accuracy_edited": 0.6666666666666666,
+            "accuracy_change": 0.03333333333333333,
+            "accuracy_ci": [
+              0.0,
+              0.08333333333333333
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.634616566011798,
+            "metric_edited": 0.6656212771325906,
+            "metric_change": 0.031004711120792942,
+            "metric_ci": [
+              -0.0018317461866392685,
+              0.0790944392923025
+            ],
+            "wrong_to_right": 2,
+            "right_to_wrong": 0
+          },
+          "MEK": {
+            "n": 60,
+            "accuracy_baseline": 0.6833333333333333,
+            "accuracy_edited": 0.65,
+            "accuracy_change": -0.03333333333333333,
+            "accuracy_ci": [
+              -0.11666666666666667,
+              0.05
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.681796459807277,
+            "metric_edited": 0.6490535523550863,
+            "metric_change": -0.03274290745219069,
+            "metric_ci": [
+              -0.09587943624763383,
+              0.025579761323849322
+            ],
+            "wrong_to_right": 2,
+            "right_to_wrong": 4
+          }
+        },
+        "edited_minus_control": null,
+        "damage": {
+          "n_perplexity_docs": 75,
+          "n_prompts": 50,
+          "perplexity": {
+            "edited": 15.1013,
+            "baseline": 15.1003,
+            "relative_change": 6.62238498572509e-05
+          },
+          "loop_rate_percent": {
+            "edited": 24.0,
+            "baseline": 20.0,
+            "change_points": 4.0
+          }
+        },
+        "letter_shift": {
+          "headline": {
+            "A": 0.016666666666666663,
+            "B": 0.025000000000000022,
+            "C": 0.025000000000000022,
+            "D": -0.06666666666666665,
+            "E": 0.0
+          },
+          "overall": {
+            "A": 0.0111111111111111,
+            "B": 0.016666666666666663,
+            "C": 0.0222222222222222,
+            "D": -0.04444444444444445,
+            "E": -0.00555555555555555
+          },
+          "largest_overall": 0.04444444444444445
+        }
+      },
+      "control_vs_baseline": null,
+      "edited_vs_control": null
+    },
+    "gemma_extra": {
+      "edited_vs_baseline": {
+        "comparison": "experiments/editor/trial_b10_q_half/comparisons/q4_edited_vs_baseline_gemma_extra/q4_gemma_extra__vs__20261119T061922Z_gemma-4b-q4_gemma_extra/comparison.json",
+        "baseline": "20261119T061922Z_gemma-4b-q4_gemma_extra",
+        "control": null,
+        "verdict": "NO IMPROVEMENT",
+        "indicative_only": true,
+        "rules": {
+          "1_metric_improves": {
+            "passed": false,
+            "detail": "headline change in prob_correct +0.0133, 95% CI [-0.0134, +0.0427] (must be above zero)"
+          },
+          "2_beats_control": {
+            "passed": false,
+            "detail": "no control run given, so not checked (counts as failed)"
+          },
+          "3a_perplexity": {
+            "passed": false,
+            "detail": "not measured: damage is only checked on the test papers, and one of these runs has no damage.json (no IMPROVEMENT verdict without it)",
+            "measured": false
+          },
+          "3b_loop_rate": {
+            "passed": false,
+            "detail": "not measured: damage is only checked on the test papers, and one of these runs has no damage.json (no IMPROVEMENT verdict without it)",
+            "measured": false
+          }
+        },
+        "headline": {
+          "n": 80,
+          "accuracy_baseline": 0.6,
+          "accuracy_edited": 0.6,
+          "accuracy_change": 0.0,
+          "accuracy_ci": [
+            -0.0375,
+            0.0375
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.6000920980396043,
+          "metric_edited": 0.6134213517952342,
+          "metric_change": 0.01332925375562983,
+          "metric_ci": [
+            -0.01336190196929671,
+            0.04273345426126247
+          ],
+          "wrong_to_right": 1,
+          "right_to_wrong": 1
+        },
+        "overall": {
+          "n": 120,
+          "accuracy_baseline": 0.6833333333333333,
+          "accuracy_edited": 0.6833333333333333,
+          "accuracy_change": 0.0,
+          "accuracy_ci": [
+            -0.025,
+            0.025
+          ],
+          "metric": "prob_correct",
+          "metric_baseline": 0.6837751835032773,
+          "metric_edited": 0.6923908564314245,
+          "metric_change": 0.008615672928147189,
+          "metric_ci": [
+            -0.008794534537619018,
+            0.027012435173626403
+          ],
+          "wrong_to_right": 1,
+          "right_to_wrong": 1
+        },
+        "sections": {
+          "ORD": {
+            "n": 40,
+            "accuracy_baseline": 0.85,
+            "accuracy_edited": 0.85,
+            "accuracy_change": 0.0,
+            "accuracy_ci": [
+              0.0,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.8511413544306233,
+            "metric_edited": 0.850329865703805,
+            "metric_change": -0.0008114887268180976,
+            "metric_ci": [
+              -0.0024372846131249237,
+              2.7973356051659386e-06
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 0
+          },
+          "LAS": {
+            "n": 40,
+            "accuracy_baseline": 0.575,
+            "accuracy_edited": 0.6,
+            "accuracy_change": 0.025,
+            "accuracy_ci": [
+              0.0,
+              0.075
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.5839886135157017,
+            "metric_edited": 0.6067565670026124,
+            "metric_change": 0.022767953486910526,
+            "metric_ci": [
+              -0.005136888602415756,
+              0.06766367525503275
+            ],
+            "wrong_to_right": 1,
+            "right_to_wrong": 0
+          },
+          "MEK": {
+            "n": 40,
+            "accuracy_baseline": 0.625,
+            "accuracy_edited": 0.6,
+            "accuracy_change": -0.025,
+            "accuracy_ci": [
+              -0.075,
+              0.0
+            ],
+            "metric": "prob_correct",
+            "metric_baseline": 0.6161955825635068,
+            "metric_edited": 0.6200861365878559,
+            "metric_change": 0.0038905540243491382,
+            "metric_ci": [
+              -0.03775603923811691,
+              0.041755957721087866
+            ],
+            "wrong_to_right": 0,
+            "right_to_wrong": 1
+          }
+        },
+        "edited_minus_control": null,
+        "damage": null,
+        "letter_shift": {
+          "headline": {
+            "A": 0.0,
+            "B": 0.0,
+            "C": 0.025000000000000022,
+            "D": -0.024999999999999994,
+            "E": 0.0
+          },
+          "overall": {
+            "A": 0.0,
+            "B": 0.0,
+            "C": 0.01666666666666669,
+            "D": -0.016666666666666663,
+            "E": 0.0
+          },
+          "largest_overall": 0.01666666666666669
+        }
+      },
+      "control_vs_baseline": null,
+      "edited_vs_control": null
+    }
+  },
+  "survival": {
+    "status": "no_full_precision_gain",
+    "full_net": {
+      "accuracy_change": -0.010416666666666666,
+      "ci": [
+        -0.029166666666666667,
+        0.00625
+      ]
+    },
+    "q4_net": {
+      "accuracy_change": -0.010416666666666666,
+      "ci": [
+        -0.027083333333333334,
+        0.004166666666666667
+      ]
+    },
+    "full_net_questions": -5,
+    "q4_net_questions": -5,
+    "fixed_at_full_also_fixed_at_q4": 0,
+    "n_fixed_at_full": 7
+  },
+  "verdict": {
+    "label": "harm",
+    "paragraph": "The editor with a budget of 1 forward passes (used 0) changed 1,254,160 weights in 1 tensors (0.0292% of the model), in layers 23. On the practice papers (870 questions the editor could use) accuracy goes from 71.7% to 72.1%, +0.3 percentage points (95% CI -0.7 to +1.4); the random edit: -0.1 percentage points. This is what the editor optimised, so it only shows how well the edit fits those questions.\n\nOn the hidden papers (480 questions the editor never saw) the edit fixes 7 of 117 wrong answers and breaks 12 of 363 right ones: net -5 questions, -1.0 percentage points accuracy (95% CI -2.9 to +0.6). The interval includes zero, so the net change cannot be told apart from no change. The random edit of the same shape and size nets +0 questions; edited minus random is -1.0 percentage points (95% CI -2.9 to +0.6). The interval includes zero, so the edit does no better than a random edit might by chance.\n\nOn the test split the decision rule says NO IMPROVEMENT (headline change -0.0092, 95% CI -0.0296 to +0.0057; rules not passed: 1_metric_improves, 2_beats_control, 3b_loop_rate). Damage checks: perplexity -0.02%, loop rate +4.0 points: outside the limits, so the edit damages the model. On gemma_extra (indicative only) accuracy changes by -1.7 percentage points (95% CI -4.2 to +0.0); the interval includes zero, so it cannot be told apart from no change.\n\nAfter compression to 4-bit, against the unedited 4-bit model, the hidden-paper net change is -5 questions, -1.0 percentage points (95% CI -2.7 to +0.4); the interval includes zero, so it cannot be told apart from no change. There was no full-precision gain to carry over.\n\nOverall: the edit does harm (it damages the model); it is not an improvement."
+  }
+}

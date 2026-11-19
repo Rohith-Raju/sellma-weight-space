@@ -1,0 +1,934 @@
+{
+  "files": [
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2013-10-26/facit13b.pdf",
+      "path": "exams/raw/2013-10-26/facit13b.pdf",
+      "sha256": "3ab664935d8214448f2791b40dd902dca3134ef6eae53c8a5263f13dc7b7ebcd",
+      "size": 7550,
+      "fetched_at": "2026-11-19T00:07:05+00:00",
+      "kind": "answer_key",
+      "exam_date": "2013-10-26",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2013-10-26/provpass1verbutanelf.pdf",
+      "path": "exams/raw/2013-10-26/provpass1verbutanelf.pdf",
+      "sha256": "4ba4431a1550e8e0a8cb57d42691d122ae945c9cc6fe51c7a8db8e77be7314f2",
+      "size": 1999004,
+      "fetched_at": "2026-11-19T00:07:07+00:00",
+      "kind": "booklet",
+      "exam_date": "2013-10-26",
+      "exam_pass": 1
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2013-10-26/provpass4verbutanelf.pdf",
+      "path": "exams/raw/2013-10-26/provpass4verbutanelf.pdf",
+      "sha256": "bf663767fe649076b5330f99fded59c13a6b6b340c125e108a1bb495545e1999",
+      "size": 277585,
+      "fetched_at": "2026-11-19T00:07:09+00:00",
+      "kind": "booklet",
+      "exam_date": "2013-10-26",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2014-04-05/facit.pdf",
+      "path": "exams/raw/2014-04-05/facit.pdf",
+      "sha256": "7979b965bf6adffaff7845dd8106c7faaa3b1988f9b97ac406fd67c5d7f8ba25",
+      "size": 7647,
+      "fetched_at": "2026-11-19T00:07:10+00:00",
+      "kind": "answer_key",
+      "exam_date": "2014-04-05",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2014-04-05/provpass3verb14auelf.pdf",
+      "path": "exams/raw/2014-04-05/provpass3verb14auelf.pdf",
+      "sha256": "9d5883c4a768fb65d4f8feade899e1ee9c9a1a7cc066f61cd1e3e5c27ec3570d",
+      "size": 161406,
+      "fetched_at": "2026-11-19T00:07:11+00:00",
+      "kind": "booklet",
+      "exam_date": "2014-04-05",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2014-04-05/provpass5verb14auelf.pdf",
+      "path": "exams/raw/2014-04-05/provpass5verb14auelf.pdf",
+      "sha256": "da71d59db8803c42b6a041985ffe54185c8b324cbf96899452c3e62a5e04d2ec",
+      "size": 140818,
+      "fetched_at": "2026-11-19T00:07:12+00:00",
+      "kind": "booklet",
+      "exam_date": "2014-04-05",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2014-10-25/facit14b.pdf",
+      "path": "exams/raw/2014-10-25/facit14b.pdf",
+      "sha256": "e0e32c8271809db1fafb3cbd85d143a10a514f3b7e32f124997be478e16169b4",
+      "size": 8098,
+      "fetched_at": "2026-11-19T00:07:13+00:00",
+      "kind": "answer_key",
+      "exam_date": "2014-10-25",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2014-10-25/provpass1verbej-elf.pdf",
+      "path": "exams/raw/2014-10-25/provpass1verbej-elf.pdf",
+      "sha256": "837add4785ae55a879e065b709277b2996af4f411356c2a1b3239c41293b3e3d",
+      "size": 171191,
+      "fetched_at": "2026-11-19T00:07:15+00:00",
+      "kind": "booklet",
+      "exam_date": "2014-10-25",
+      "exam_pass": 1
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2014-10-25/provpass4verbej-elf.pdf",
+      "path": "exams/raw/2014-10-25/provpass4verbej-elf.pdf",
+      "sha256": "5bcb8d359884cd0f679d4b8a0100f58bddf0175638e35cdd16724aef59c4e1df",
+      "size": 165836,
+      "fetched_at": "2026-11-19T00:07:18+00:00",
+      "kind": "booklet",
+      "exam_date": "2014-10-25",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2015-03-28/facit-.pdf",
+      "path": "exams/raw/2015-03-28/facit-.pdf",
+      "sha256": "819b9e7e5a93dd85d311c07ac6325e0db06379f6ded3dd154d9c5053a4430887",
+      "size": 7571,
+      "fetched_at": "2026-11-19T00:07:19+00:00",
+      "kind": "answer_key",
+      "exam_date": "2015-03-28",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2015-03-28/provpass3verbuelf.pdf",
+      "path": "exams/raw/2015-03-28/provpass3verbuelf.pdf",
+      "sha256": "1413c0004f8e9c8fae5ec11738b700bc7ec0c2a1ce43b96711b254c5ddfd8c3d",
+      "size": 137148,
+      "fetched_at": "2026-11-19T00:07:20+00:00",
+      "kind": "booklet",
+      "exam_date": "2015-03-28",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2015-03-28/provpass5verbuelf.pdf",
+      "path": "exams/raw/2015-03-28/provpass5verbuelf.pdf",
+      "sha256": "bb5c6d27e8eb68dbdc35a2030f3c1d3ce275aab18516ded9c52c52d0a2e3cfed",
+      "size": 149752,
+      "fetched_at": "2026-11-19T00:07:22+00:00",
+      "kind": "booklet",
+      "exam_date": "2015-03-28",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2015-10-24/facit.pdf",
+      "path": "exams/raw/2015-10-24/facit.pdf",
+      "sha256": "cbc41eea3e4a0710ad33858c5b3f02612b4a2654f81208434d079fd5a5208c76",
+      "size": 7579,
+      "fetched_at": "2026-11-19T00:07:24+00:00",
+      "kind": "answer_key",
+      "exam_date": "2015-10-24",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2015-10-24/provpass1verb-ej-elf.pdf",
+      "path": "exams/raw/2015-10-24/provpass1verb-ej-elf.pdf",
+      "sha256": "12677b85268d7fd0a23ca00dd791aa31a3c5d1e01affe17b70db9125f26e4a49",
+      "size": 159198,
+      "fetched_at": "2026-11-19T00:07:25+00:00",
+      "kind": "booklet",
+      "exam_date": "2015-10-24",
+      "exam_pass": 1
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2015-10-24/provpass4verb-ej-elf.pdf",
+      "path": "exams/raw/2015-10-24/provpass4verb-ej-elf.pdf",
+      "sha256": "3debf4bf2cc6adca77a97755cedad48209e62ee762f08347e5fe1dd6feefe96c",
+      "size": 143998,
+      "fetched_at": "2026-11-19T00:07:27+00:00",
+      "kind": "booklet",
+      "exam_date": "2015-10-24",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2016-04-09/facit-varen-2016/facit-vt2016.pdf",
+      "path": "exams/raw/2016-04-09/facit-vt2016.pdf",
+      "sha256": "7b8cf0e50073c5fd3c84599d05e8df779f67e7709107f751d27a5405fce9f3dc",
+      "size": 60971,
+      "fetched_at": "2026-11-19T00:07:28+00:00",
+      "kind": "answer_key",
+      "exam_date": "2016-04-09",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2016-04-09/fragor/provpass-2-verbal.pdf",
+      "path": "exams/raw/2016-04-09/provpass-2-verbal.pdf",
+      "sha256": "c0e47048768d7a2075d05a2ce952ae6071d068a6ecaddd65ddecb05a90a8448f",
+      "size": 204704,
+      "fetched_at": "2026-11-19T00:07:29+00:00",
+      "kind": "booklet",
+      "exam_date": "2016-04-09",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2016-04-09/fragor/provpass-4-verbal.pdf",
+      "path": "exams/raw/2016-04-09/provpass-4-verbal.pdf",
+      "sha256": "67b7925a930028d820aca71290ee66eeceedb7a03fc1596ae1cbf93cb3cb562e",
+      "size": 210170,
+      "fetched_at": "2026-11-19T00:07:31+00:00",
+      "kind": "booklet",
+      "exam_date": "2016-04-09",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2016-10-29/facit-version-1-16b.pdf",
+      "path": "exams/raw/2016-10-29/facit-version-1-16b.pdf",
+      "sha256": "7b9f311d040b9ab1d7296f30f09fe660ec70aa639852e42067999ac8920adb68",
+      "size": 60963,
+      "fetched_at": "2026-11-19T00:07:32+00:00",
+      "kind": "answer_key",
+      "exam_date": "2016-10-29",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2016-10-29/provpass-2/provpass-2-verbal_2016-11-05.pdf",
+      "path": "exams/raw/2016-10-29/provpass-2-verbal_2016-11-05.pdf",
+      "sha256": "83ad4ceda30c41568cf36626334c1bedf641bb4975bf4db05ce0513d0776b034",
+      "size": 215052,
+      "fetched_at": "2026-11-19T00:07:33+00:00",
+      "kind": "booklet",
+      "exam_date": "2016-10-29",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2016-10-29/provpass-4/provpass-4-verbal_2016-11-05.pdf",
+      "path": "exams/raw/2016-10-29/provpass-4-verbal_2016-11-05.pdf",
+      "sha256": "dd00e4486a3c110ac79025bb3be49a590256ef1a0d49c42d4407a58150ff303d",
+      "size": 195447,
+      "fetched_at": "2026-11-19T00:07:35+00:00",
+      "kind": "booklet",
+      "exam_date": "2016-10-29",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2017-04-01/facit-a.pdf",
+      "path": "exams/raw/2017-04-01/facit-a.pdf",
+      "sha256": "c9cec64dce770925c6aceea8d85300d170a90da4af8c3cca5ebd0b7c5c9a2833",
+      "size": 16048,
+      "fetched_at": "2026-11-19T00:07:36+00:00",
+      "kind": "answer_key",
+      "exam_date": "2017-04-01",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2017-04-01/provpass-3-verbal-a-utan-elf.pdf",
+      "path": "exams/raw/2017-04-01/provpass-3-verbal-a-utan-elf.pdf",
+      "sha256": "2fbe827f37b0bab4a389884438669ea04fc4437d6183e8c824ee93ad11eb9cfa",
+      "size": 209000,
+      "fetched_at": "2026-11-19T00:07:37+00:00",
+      "kind": "booklet",
+      "exam_date": "2017-04-01",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2017-04-01/provpass-5-verbal-a-utan-elf.pdf",
+      "path": "exams/raw/2017-04-01/provpass-5-verbal-a-utan-elf.pdf",
+      "sha256": "af064cec69cff31ccc7b7c61c2502f61ffca0f282ca94b1192c717b90eb76300",
+      "size": 205196,
+      "fetched_at": "2026-11-19T00:07:40+00:00",
+      "kind": "booklet",
+      "exam_date": "2017-04-01",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2017-10-21/facit-version-1.pdf",
+      "path": "exams/raw/2017-10-21/facit-version-1.pdf",
+      "sha256": "35ec93fc14f135c1608cff90ed5b40dca4c51e22b715b2f2c2a8a8e284692405",
+      "size": 60635,
+      "fetched_at": "2026-11-19T00:07:42+00:00",
+      "kind": "answer_key",
+      "exam_date": "2017-10-21",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2017-10-21/provpass-1-verbal-utan-elf.pdf",
+      "path": "exams/raw/2017-10-21/provpass-1-verbal-utan-elf.pdf",
+      "sha256": "733181cb69456b6c767cb868947138bef84b75878d5ec28e52cccbd4569bbd3e",
+      "size": 181013,
+      "fetched_at": "2026-11-19T00:07:44+00:00",
+      "kind": "booklet",
+      "exam_date": "2017-10-21",
+      "exam_pass": 1
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2017-10-21/provpass-4-verbal-utan-elf.pdf",
+      "path": "exams/raw/2017-10-21/provpass-4-verbal-utan-elf.pdf",
+      "sha256": "512ae3d0285144481683c802f6d05ab8c642a411d91a9796b6b131e74f930031",
+      "size": 184922,
+      "fetched_at": "2026-11-19T00:07:45+00:00",
+      "kind": "booklet",
+      "exam_date": "2017-10-21",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/nyare-facit/facit-version-1-18a-111.pdf",
+      "path": "exams/raw/2018-04-14/facit-version-1-18a-111.pdf",
+      "sha256": "b36082d887c18e44fc1ab57b1858dd5f242f4e025054170a94e5a17aa20d7b22",
+      "size": 61021,
+      "fetched_at": "2026-11-19T00:07:46+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-04-14",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/nyare-facit/facit-version-2-18a-112.pdf",
+      "path": "exams/raw/2018-04-14/facit-version-2-18a-112.pdf",
+      "sha256": "4ef694b529dcbb5d29297e4d872b52d3d7bcc89b4b7bb0af16c7e0076d4331f3",
+      "size": 61054,
+      "fetched_at": "2026-11-19T00:07:48+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-04-14",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/nyare-facit/facit-version-3-18a-121.pdf",
+      "path": "exams/raw/2018-04-14/facit-version-3-18a-121.pdf",
+      "sha256": "5db8afea4898822712bc3b43b7fcf6e30e3442cd304192e1b275fc6911b64cc6",
+      "size": 61244,
+      "fetched_at": "2026-11-19T00:07:49+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-04-14",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/nyare-facit/facit-version-4-18a-122.pdf",
+      "path": "exams/raw/2018-04-14/facit-version-4-18a-122.pdf",
+      "sha256": "3db8b501dee3e7b1b675cbceef8a048a57d48523110b1a1b385c66528fdd48a2",
+      "size": 61253,
+      "fetched_at": "2026-11-19T00:07:50+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-04-14",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/nyare-facit/facit-version-5-18a-211.pdf",
+      "path": "exams/raw/2018-04-14/facit-version-5-18a-211.pdf",
+      "sha256": "ad2bbf73b97448711dff88af5e697d788126e0145e9aea4523f8d128f654ca05",
+      "size": 61354,
+      "fetched_at": "2026-11-19T00:07:51+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-04-14",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/nyare-facit/facit-version-6-18a-212.pdf",
+      "path": "exams/raw/2018-04-14/facit-version-6-18a-212.pdf",
+      "sha256": "63cb32f5f92e8f52c95240575cf98e1e5dcfbf1d678d26349d42a876809bb592",
+      "size": 61603,
+      "fetched_at": "2026-11-19T00:07:52+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-04-14",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/nyare-facit/facit-version-7-18a-221.pdf",
+      "path": "exams/raw/2018-04-14/facit-version-7-18a-221.pdf",
+      "sha256": "00ed9349cc1d953f08ef62a88ab87fc25faab54d04fc7b694114e166ff494930",
+      "size": 61702,
+      "fetched_at": "2026-11-19T00:07:53+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-04-14",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/nyare-facit/facit-version-8-18a-222.pdf",
+      "path": "exams/raw/2018-04-14/facit-version-8-18a-222.pdf",
+      "sha256": "aafb1b9d1e3a59d9fc29601665d604fe027488a8f0cdb64d2a3564c8fc9cb50b",
+      "size": 61567,
+      "fetched_at": "2026-11-19T00:07:55+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-04-14",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/provpass-2-verbal-utan-elf.pdf",
+      "path": "exams/raw/2018-04-14/provpass-2-verbal-utan-elf.pdf",
+      "sha256": "11c5e21e8b911eac5c1a8fd2bd745309d2a1c733a7be833713b7e4ac3b4f3c87",
+      "size": 320767,
+      "fetched_at": "2026-11-19T00:07:56+00:00",
+      "kind": "booklet",
+      "exam_date": "2018-04-14",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/provpass-5-verbal-version-1-utan-elf.pdf",
+      "path": "exams/raw/2018-04-14/provpass-5-verbal-version-1-utan-elf.pdf",
+      "sha256": "46a929c3753c00ef8ec9552f09c33602a9956782f836a323612b7da07c25c36d",
+      "size": 351912,
+      "fetched_at": "2026-11-19T00:07:58+00:00",
+      "kind": "booklet",
+      "exam_date": "2018-04-14",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-04-14/provpass-5-verbal-version-2-utan-elf.pdf",
+      "path": "exams/raw/2018-04-14/provpass-5-verbal-version-2-utan-elf.pdf",
+      "sha256": "6b4457922d3af69f649910b33b87e2631c26c20761cb373dc595b45ad2f565ce",
+      "size": 346207,
+      "fetched_at": "2026-11-19T00:07:59+00:00",
+      "kind": "booklet",
+      "exam_date": "2018-04-14",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-10-21/facit-ht18.pdf",
+      "path": "exams/raw/2018-10-21/facit-ht18.pdf",
+      "sha256": "f494710728d204f61f4eba75126f475bd526699ec9eea4f0366c53a7b394155e",
+      "size": 321674,
+      "fetched_at": "2026-11-19T00:08:01+00:00",
+      "kind": "answer_key",
+      "exam_date": "2018-10-21",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-10-21/hogskoleprovet-2018-10-21-del-3_verbal-del-utan-elf.pdf",
+      "path": "exams/raw/2018-10-21/hogskoleprovet-2018-10-21-del-3_verbal-del-utan-elf.pdf",
+      "sha256": "d12af12a124cc6213fafbfc9788002207a0ab3a04686473f5b68ce0016f82981",
+      "size": 305619,
+      "fetched_at": "2026-11-19T00:08:03+00:00",
+      "kind": "booklet",
+      "exam_date": "2018-10-21",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2018-10-21/hogskoleprovet-2018-10-21-del-5_verbal-del-utan-elf.pdf",
+      "path": "exams/raw/2018-10-21/hogskoleprovet-2018-10-21-del-5_verbal-del-utan-elf.pdf",
+      "sha256": "92c497b245a84256964e4b1fe1dc5465bc58d57bc0366b2d07cd20ade911b9d6",
+      "size": 346678,
+      "fetched_at": "2026-11-19T00:08:06+00:00",
+      "kind": "booklet",
+      "exam_date": "2018-10-21",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2019-04-06/facit-hogskoleprovet-vt-2019.pdf",
+      "path": "exams/raw/2019-04-06/facit-hogskoleprovet-vt-2019.pdf",
+      "sha256": "d62985487ea970521b62a511830ec13130bebd88a65a3a9c49135d420ffa3262",
+      "size": 281313,
+      "fetched_at": "2026-11-19T00:08:08+00:00",
+      "kind": "answer_key",
+      "exam_date": "2019-04-06",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2019-04-06/provpass-1-verb-utan-elf.pdf",
+      "path": "exams/raw/2019-04-06/provpass-1-verb-utan-elf.pdf",
+      "sha256": "58c44dbd9b3d2ea129f81a5383859c0a1c76f7377c1c529b9c66c978e1834c8e",
+      "size": 499728,
+      "fetched_at": "2026-11-19T00:08:09+00:00",
+      "kind": "booklet",
+      "exam_date": "2019-04-06",
+      "exam_pass": 1
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2019-04-06/provpass-4-verb-utan-elf.pdf",
+      "path": "exams/raw/2019-04-06/provpass-4-verb-utan-elf.pdf",
+      "sha256": "f2f615cffa65f54be3b3ffef698b0530480c72b9a65867980575b09370b1fc31",
+      "size": 949937,
+      "fetched_at": "2026-11-19T00:08:11+00:00",
+      "kind": "booklet",
+      "exam_date": "2019-04-06",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2019-10-20/hogskoleprovet-2019-10-20-del-3_verbal-del-utan-elf.pdf",
+      "path": "exams/raw/2019-10-20/hogskoleprovet-2019-10-20-del-3_verbal-del-utan-elf.pdf",
+      "sha256": "1a7cec6f626d89895379d2b5b03c063e6ca6c8d5e8ba778d07b020c69749b4a3",
+      "size": 411429,
+      "fetched_at": "2026-11-19T00:08:16+00:00",
+      "kind": "booklet",
+      "exam_date": "2019-10-20",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2019-10-20/hogskoleprovet-facit-19b---version-1.pdf",
+      "path": "exams/raw/2019-10-20/hogskoleprovet-facit-19b---version-1.pdf",
+      "sha256": "a65ed59f1f7568ba98da0bc0349f3284db4a79d4d5757db89e575a4cc7db438e",
+      "size": 248607,
+      "fetched_at": "2026-11-19T00:08:13+00:00",
+      "kind": "answer_key",
+      "exam_date": "2019-10-20",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2019-10-20/hogskoleprovet-facit-19b---version-2.pdf",
+      "path": "exams/raw/2019-10-20/hogskoleprovet-facit-19b---version-2.pdf",
+      "sha256": "841647d1c5c8ba0b7978b2e1953905ff723b0313ac404e4d835813c78fc7d58d",
+      "size": 173741,
+      "fetched_at": "2026-11-19T00:08:14+00:00",
+      "kind": "answer_key",
+      "exam_date": "2019-10-20",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2019-10-20/provpass-5-verb-utan-elf.pdf",
+      "path": "exams/raw/2019-10-20/provpass-5-verb-utan-elf.pdf",
+      "sha256": "e56ac8cc02e14be496159bf182a179e0af91b7b9248f95a78fb33a4a1239273f",
+      "size": 424261,
+      "fetched_at": "2026-11-19T00:08:17+00:00",
+      "kind": "booklet",
+      "exam_date": "2019-10-20",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2020-10-25/facit-hp-2020-10-25.pdf",
+      "path": "exams/raw/2020-10-25/facit-hp-2020-10-25.pdf",
+      "sha256": "d35a6b56d91016c4498b3b0198798f9650b87e3477e300804adc7bd25947105b",
+      "size": 221367,
+      "fetched_at": "2026-11-19T00:08:18+00:00",
+      "kind": "answer_key",
+      "exam_date": "2020-10-25",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2020-10-25/hogskoleprovet-2020-10-25-del-2_verbal-del-utan-elf.pdf",
+      "path": "exams/raw/2020-10-25/hogskoleprovet-2020-10-25-del-2_verbal-del-utan-elf.pdf",
+      "sha256": "d97c7b2bc81af883f2cdc8b64eca869999d71e693a78f7cb9c37ac933e362200",
+      "size": 491335,
+      "fetched_at": "2026-11-19T00:08:20+00:00",
+      "kind": "booklet",
+      "exam_date": "2020-10-25",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2020-10-25/hogskoleprovet-2020-10-25-del-4_verbal-del-utan-elf.pdf",
+      "path": "exams/raw/2020-10-25/hogskoleprovet-2020-10-25-del-4_verbal-del-utan-elf.pdf",
+      "sha256": "2dbc9766529d8bba26b7d640c44f846e9768a2d2d83cc72c7253659c2eae4d42",
+      "size": 547830,
+      "fetched_at": "2026-11-19T00:08:22+00:00",
+      "kind": "booklet",
+      "exam_date": "2020-10-25",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-03-13/hogskoleprovet-facit-21a1.pdf",
+      "path": "exams/raw/2021-03-13/hogskoleprovet-facit-21a1.pdf",
+      "sha256": "1555923ccfba931cb017e3e653bce4d7fb125b66c88143c0b19bca2b37112e98",
+      "size": 224761,
+      "fetched_at": "2026-11-19T00:08:23+00:00",
+      "kind": "answer_key",
+      "exam_date": "2021-03-13",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-03-13/provpass-1-verb-utan-elf.pdf",
+      "path": "exams/raw/2021-03-13/provpass-1-verb-utan-elf.pdf",
+      "sha256": "398df336c7f2e9a556a1aa9efcff4a2d7192e079090c903271b13fc1547a0dab",
+      "size": 437638,
+      "fetched_at": "2026-11-19T00:08:25+00:00",
+      "kind": "booklet",
+      "exam_date": "2021-03-13",
+      "exam_pass": 1
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-03-13/provpass-4-verb-utan-elf.pdf",
+      "path": "exams/raw/2021-03-13/provpass-4-verb-utan-elf.pdf",
+      "sha256": "25bbc91105d21ab031cd1a32114af9c65b039b8ca6616eeb690fde241b7291ca",
+      "size": 403824,
+      "fetched_at": "2026-11-19T00:08:29+00:00",
+      "kind": "booklet",
+      "exam_date": "2021-03-13",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-05-08/hogskoleprovet-facit-21a2.pdf",
+      "path": "exams/raw/2021-05-08/hogskoleprovet-facit-21a2.pdf",
+      "sha256": "486d601cf2034f4453a516b94f387f661eb395f3cbf518c1ff48a6503e5c721a",
+      "size": 210780,
+      "fetched_at": "2026-11-19T00:08:30+00:00",
+      "kind": "answer_key",
+      "exam_date": "2021-05-08",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-05-08/provpass-1-verb-utan-elf.pdf",
+      "path": "exams/raw/2021-05-08/provpass-1-verb-utan-elf.pdf",
+      "sha256": "e61a698cce5eb3ee94c348ff39c01323c380c13e42c2a1de56ba4d5733cb6db6",
+      "size": 374659,
+      "fetched_at": "2026-11-19T00:08:32+00:00",
+      "kind": "booklet",
+      "exam_date": "2021-05-08",
+      "exam_pass": 1
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-05-08/provpass-4-verb-utan-elf.pdf",
+      "path": "exams/raw/2021-05-08/provpass-4-verb-utan-elf.pdf",
+      "sha256": "3a7f3d431ed7174007be5d9c6d8f42f199f6236fd78ade947f31751eb39863a4",
+      "size": 346932,
+      "fetched_at": "2026-11-19T00:08:34+00:00",
+      "kind": "booklet",
+      "exam_date": "2021-05-08",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-10-24/211024-provpass-2-verb-utan-elf.pdf",
+      "path": "exams/raw/2021-10-24/211024-provpass-2-verb-utan-elf.pdf",
+      "sha256": "74bdc9330613f873bf86f73058d8da92c37161caf151d3dc22d994e72f71f289",
+      "size": 687513,
+      "fetched_at": "2026-11-19T00:08:37+00:00",
+      "kind": "booklet",
+      "exam_date": "2021-10-24",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-10-24/211024-provpass-5-verb-utan-elf.pdf",
+      "path": "exams/raw/2021-10-24/211024-provpass-5-verb-utan-elf.pdf",
+      "sha256": "8b7dfc2f469ed458a2a2ac6c1de608a92b4438c2fad1e9ca84a81b30be7506cb",
+      "size": 672497,
+      "fetched_at": "2026-11-19T00:08:39+00:00",
+      "kind": "booklet",
+      "exam_date": "2021-10-24",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2021-10-24/hogskoleprovet-facit-21-b.pdf",
+      "path": "exams/raw/2021-10-24/hogskoleprovet-facit-21-b.pdf",
+      "sha256": "53bc0a8975ac1233927bf054d3527a558bc136bbc7cb13191dca981a382b69ed",
+      "size": 279298,
+      "fetched_at": "2026-11-19T00:08:35+00:00",
+      "kind": "answer_key",
+      "exam_date": "2021-10-24",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-03-12/hogskoleprovet-facit-22a1.pdf",
+      "path": "exams/raw/2022-03-12/hogskoleprovet-facit-22a1.pdf",
+      "sha256": "8779070658f82201beb94ea2af721aebe6177fdb6b360e1643bb5947eb611e21",
+      "size": 98955,
+      "fetched_at": "2026-11-19T00:08:40+00:00",
+      "kind": "answer_key",
+      "exam_date": "2022-03-12",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-03-12/provpass-2-verb-utan-elf.pdf",
+      "path": "exams/raw/2022-03-12/provpass-2-verb-utan-elf.pdf",
+      "sha256": "464d7eeb2fabf453db8aeffa7f897771d198b6580884a5c660322baa6e864fb7",
+      "size": 342515,
+      "fetched_at": "2026-11-19T00:08:41+00:00",
+      "kind": "booklet",
+      "exam_date": "2022-03-12",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-03-12/provpass-4-verb-utan-elf.pdf",
+      "path": "exams/raw/2022-03-12/provpass-4-verb-utan-elf.pdf",
+      "sha256": "4ee8f9603ff652ff3c570c3dce2ce1b0297432976e0feb0ec941bd3f0435b4fb",
+      "size": 343286,
+      "fetched_at": "2026-11-19T00:08:43+00:00",
+      "kind": "booklet",
+      "exam_date": "2022-03-12",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-05-07/hogskoleprovet-facit-22a2-7-maj.pdf",
+      "path": "exams/raw/2022-05-07/hogskoleprovet-facit-22a2-7-maj.pdf",
+      "sha256": "92e981cd000cc63c1f2428b4740c78fa6ae9b3780c24a9714115f3588dc671f6",
+      "size": 216877,
+      "fetched_at": "2026-11-19T00:08:44+00:00",
+      "kind": "answer_key",
+      "exam_date": "2022-05-07",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-05-07/provpass-3-verb-utan-elf.pdf",
+      "path": "exams/raw/2022-05-07/provpass-3-verb-utan-elf.pdf",
+      "sha256": "33bedca5a82444568ec671aeed61cff507d7f3f5eda7e429b81622e4ade651b3",
+      "size": 399485,
+      "fetched_at": "2026-11-19T00:08:46+00:00",
+      "kind": "booklet",
+      "exam_date": "2022-05-07",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-05-07/provpass-5-verb-utan-elf.pdf",
+      "path": "exams/raw/2022-05-07/provpass-5-verb-utan-elf.pdf",
+      "sha256": "b53bbc1045a294951a8b19d3fcc8bee0956442c0113b064a60be28386fa18417",
+      "size": 396757,
+      "fetched_at": "2026-11-19T00:08:47+00:00",
+      "kind": "booklet",
+      "exam_date": "2022-05-07",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-10-23/hogskoleprovet-facit-22b.pdf",
+      "path": "exams/raw/2022-10-23/hogskoleprovet-facit-22b.pdf",
+      "sha256": "b7f22f0995b823106c69c8d2e7333a004638eec88efc9db9a226ff9c68771432",
+      "size": 385901,
+      "fetched_at": "2026-11-19T00:08:52+00:00",
+      "kind": "answer_key",
+      "exam_date": "2022-10-23",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-10-23/provpass-2-verb-utan-elf.pdf",
+      "path": "exams/raw/2022-10-23/provpass-2-verb-utan-elf.pdf",
+      "sha256": "420028fb94bed0979413567219a3bce83e548206ce172f45d72ed0d6cd0ccdc3",
+      "size": 438632,
+      "fetched_at": "2026-11-19T00:08:54+00:00",
+      "kind": "booklet",
+      "exam_date": "2022-10-23",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2022-10-23/provpass-5-verb-utan-elf.pdf",
+      "path": "exams/raw/2022-10-23/provpass-5-verb-utan-elf.pdf",
+      "sha256": "947f1c865251069c1ba62ef20d7da92c4647e4d048619625ea5b6ca3b1edad4a",
+      "size": 1023516,
+      "fetched_at": "2026-11-19T00:08:56+00:00",
+      "kind": "booklet",
+      "exam_date": "2022-10-23",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2023-03-25/hogskoleprovet-facit-23a.pdf",
+      "path": "exams/raw/2023-03-25/hogskoleprovet-facit-23a.pdf",
+      "sha256": "ddaf4111ab6c97d1599b43aafeddb2a81a3c251d4d44f7c044a6801662895383",
+      "size": 236141,
+      "fetched_at": "2026-11-19T00:08:57+00:00",
+      "kind": "answer_key",
+      "exam_date": "2023-03-25",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2023-03-25/provpass-3-verb-utan-elf.pdf",
+      "path": "exams/raw/2023-03-25/provpass-3-verb-utan-elf.pdf",
+      "sha256": "a2c81b842d0b86d8365137bc7a6e9d35f301d8166eb97b8298d0a5592baa3dd1",
+      "size": 1788362,
+      "fetched_at": "2026-11-19T00:09:00+00:00",
+      "kind": "booklet",
+      "exam_date": "2023-03-25",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2023-03-25/provpass-5-verb-utan-elf.pdf",
+      "path": "exams/raw/2023-03-25/provpass-5-verb-utan-elf.pdf",
+      "sha256": "f12dccbbce7e4721d93efc071f335b8eb6045ae77106abeef04ff99945fae843",
+      "size": 990155,
+      "fetched_at": "2026-11-19T00:09:02+00:00",
+      "kind": "booklet",
+      "exam_date": "2023-03-25",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2023-10-22/hogskoleprovet-facit-23b.pdf",
+      "path": "exams/raw/2023-10-22/hogskoleprovet-facit-23b.pdf",
+      "sha256": "e5b496ca4e239fa6bc4a00c1d1a7c0eae0526fd0beddee348e2c01669ab32330",
+      "size": 539848,
+      "fetched_at": "2026-11-19T00:09:03+00:00",
+      "kind": "answer_key",
+      "exam_date": "2023-10-22",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2023-10-22/provpass-3-verb-utan-elf.pdf",
+      "path": "exams/raw/2023-10-22/provpass-3-verb-utan-elf.pdf",
+      "sha256": "e6f3bf509797ba6452e34358ff1387269ff9e7e7e816b6acb3077bf69f1978a5",
+      "size": 406355,
+      "fetched_at": "2026-11-19T00:09:05+00:00",
+      "kind": "booklet",
+      "exam_date": "2023-10-22",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2023-10-22/provpass-5-verb_utan-elf.pdf",
+      "path": "exams/raw/2023-10-22/provpass-5-verb_utan-elf.pdf",
+      "sha256": "7be1252f8275ac65048583991bcda320c070d9913cce711b5600ba10f1a82672",
+      "size": 435831,
+      "fetched_at": "2026-11-19T00:09:06+00:00",
+      "kind": "booklet",
+      "exam_date": "2023-10-22",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2024-04-13/hogskoleprovet-facit-24a.pdf",
+      "path": "exams/raw/2024-04-13/hogskoleprovet-facit-24a.pdf",
+      "sha256": "a6194c451b4bff7026de9c2b54b008c897ce68386871669b58c2def6367e3443",
+      "size": 27719,
+      "fetched_at": "2026-11-19T00:09:08+00:00",
+      "kind": "answer_key",
+      "exam_date": "2024-04-13",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2024-04-13/provpass-1-verb-utan-elf.pdf",
+      "path": "exams/raw/2024-04-13/provpass-1-verb-utan-elf.pdf",
+      "sha256": "6a7f51f7adda6b8a0068f9efd9892cab10159645b04a5190b007eff4a02436ca",
+      "size": 523598,
+      "fetched_at": "2026-11-19T00:09:09+00:00",
+      "kind": "booklet",
+      "exam_date": "2024-04-13",
+      "exam_pass": 1
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2024-04-13/provpass-4-verb-utan-elf.pdf",
+      "path": "exams/raw/2024-04-13/provpass-4-verb-utan-elf.pdf",
+      "sha256": "d813e4a251489d40967d0339a182e6dc254049f0f205f9014054bd521960c4b5",
+      "size": 591573,
+      "fetched_at": "2026-11-19T00:09:11+00:00",
+      "kind": "booklet",
+      "exam_date": "2024-04-13",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2024-10-20/hogskoleprovet-facit-24b.pdf",
+      "path": "exams/raw/2024-10-20/hogskoleprovet-facit-24b.pdf",
+      "sha256": "711d4864e17e3252b2d483dddbe6cc673876a52c9aa65a6622c0109bcf9612f8",
+      "size": 27721,
+      "fetched_at": "2026-11-19T00:09:12+00:00",
+      "kind": "answer_key",
+      "exam_date": "2024-10-20",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2024-10-20/provpass-3-verb-utan-elf.pdf",
+      "path": "exams/raw/2024-10-20/provpass-3-verb-utan-elf.pdf",
+      "sha256": "bd46c8cfa0e2ab869528534cc0bd48d4adc5857cb25a40788e6d9a58484f7a2b",
+      "size": 337968,
+      "fetched_at": "2026-11-19T00:09:16+00:00",
+      "kind": "booklet",
+      "exam_date": "2024-10-20",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2024-10-20/provpass-5-verb-utan-elf.pdf",
+      "path": "exams/raw/2024-10-20/provpass-5-verb-utan-elf.pdf",
+      "sha256": "c8293aff9a73730b0fd5d62f77876cac7bf6b213f928924ebacefc3fd01a2071",
+      "size": 357283,
+      "fetched_at": "2026-11-19T00:09:18+00:00",
+      "kind": "booklet",
+      "exam_date": "2024-10-20",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2025-04-05/hogskoleprovet-facit-25a.pdf",
+      "path": "exams/raw/2025-04-05/hogskoleprovet-facit-25a.pdf",
+      "sha256": "bf71fb9a25bc733468d233073a490504be16feefd0fe3658c948da1fd9ca0fd1",
+      "size": 27734,
+      "fetched_at": "2026-11-19T00:09:19+00:00",
+      "kind": "answer_key",
+      "exam_date": "2025-04-05",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2025-04-05/provpass-2-verb-utan-elf.pdf",
+      "path": "exams/raw/2025-04-05/provpass-2-verb-utan-elf.pdf",
+      "sha256": "c8dc220436670f8b1c4791a1ea12c7f55b2020bcb39d3e30f8c66a904751639d",
+      "size": 351630,
+      "fetched_at": "2026-11-19T00:09:20+00:00",
+      "kind": "booklet",
+      "exam_date": "2025-04-05",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2025-04-05/provpass-4-verb-utan-elf.pdf",
+      "path": "exams/raw/2025-04-05/provpass-4-verb-utan-elf.pdf",
+      "sha256": "1696c2a55fb0fc9a534c5009b28f7e7685bf9a753eaa65d53dee29a9d3827876",
+      "size": 362702,
+      "fetched_at": "2026-11-19T00:09:22+00:00",
+      "kind": "booklet",
+      "exam_date": "2025-04-05",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2025-10-19/hp-25b.pdf",
+      "path": "exams/raw/2025-10-19/hp-25b.pdf",
+      "sha256": "8afb1c28528dfea37657fc72780a3f0155f4b13dc3ed962fe2933ae5d597f18f",
+      "size": 27664,
+      "fetched_at": "2026-11-19T00:09:23+00:00",
+      "kind": "answer_key",
+      "exam_date": "2025-10-19",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2025-10-19/provpass-3-verb-utan-elf.pdf",
+      "path": "exams/raw/2025-10-19/provpass-3-verb-utan-elf.pdf",
+      "sha256": "2f89bebe24525efcda73a51793eeca3b07b6224a5b0160288f99df1b24397e50",
+      "size": 396561,
+      "fetched_at": "2026-11-19T00:09:25+00:00",
+      "kind": "booklet",
+      "exam_date": "2025-10-19",
+      "exam_pass": 3
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2025-10-19/provpass-5-verb-utan-elf.pdf",
+      "path": "exams/raw/2025-10-19/provpass-5-verb-utan-elf.pdf",
+      "sha256": "1e69b3c9a8c6f2ade98997b20ecbca5f28ec43eee9efff5d3b0a7aafc7752721",
+      "size": 363302,
+      "fetched_at": "2026-11-19T00:09:26+00:00",
+      "kind": "booklet",
+      "exam_date": "2025-10-19",
+      "exam_pass": 5
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2026-04-18/hogskoleprovet-facit-26a.pdf",
+      "path": "exams/raw/2026-04-18/hogskoleprovet-facit-26a.pdf",
+      "sha256": "4d150081150f4b4c5c68a6715c3c4763fe2e201fe25d3b666de4b3306f6b834e",
+      "size": 39427,
+      "fetched_at": "2026-11-19T00:09:27+00:00",
+      "kind": "answer_key",
+      "exam_date": "2026-04-18",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2026-04-18/provpass-2-verb-utan-elf.pdf",
+      "path": "exams/raw/2026-04-18/provpass-2-verb-utan-elf.pdf",
+      "sha256": "68b86a12769ac68f1990572b7edad16ff91aadc2ee40a83687e5a1cafc609f24",
+      "size": 407018,
+      "fetched_at": "2026-11-19T00:09:29+00:00",
+      "kind": "booklet",
+      "exam_date": "2026-04-18",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2026-04-18/provpass-4-verb-utan-elf.pdf",
+      "path": "exams/raw/2026-04-18/provpass-4-verb-utan-elf.pdf",
+      "sha256": "0db6c21e54c6a99fb251f09559a245ccf69d881faf2741c675ebbdcb63e8cbb2",
+      "size": 374364,
+      "fetched_at": "2026-11-19T00:09:30+00:00",
+      "kind": "booklet",
+      "exam_date": "2026-04-18",
+      "exam_pass": 4
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2026-10-18/hogskoleprovet-facit-26b.pdf",
+      "path": "exams/raw/2026-10-18/hogskoleprovet-facit-26b.pdf",
+      "sha256": "bb162120d00ffec57f5364d01bfe26cb8bf08ea72d89fb531d4a893e65600870",
+      "size": 39427,
+      "fetched_at": "2026-11-19T00:09:31+00:00",
+      "kind": "answer_key",
+      "exam_date": "2026-10-18",
+      "exam_pass": null
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2026-10-18/provpass-2-verb-utan-elf.pdf",
+      "path": "exams/raw/2026-10-18/provpass-2-verb-utan-elf.pdf",
+      "sha256": "966e9b513260078d0fe5e77cb9e6348b0cc1fb55cc7c846f81e4e4f8b473b9eb",
+      "size": 390312,
+      "fetched_at": "2026-11-19T00:09:33+00:00",
+      "kind": "booklet",
+      "exam_date": "2026-10-18",
+      "exam_pass": 2
+    },
+    {
+      "url": "https://www.studera.nu/globalassets/05-hogskoleprovet/hp-2026-10-18/provpass-5-verb-utan-elf.pdf",
+      "path": "exams/raw/2026-10-18/provpass-5-verb-utan-elf.pdf",
+      "sha256": "e6d5ee77c2fbe92af5fc51c43dc66ff3772c292ccc6613bc1f31527112b592b8",
+      "size": 427395,
+      "fetched_at": "2026-11-19T00:09:35+00:00",
+      "kind": "booklet",
+      "exam_date": "2026-10-18",
+      "exam_pass": 5
+    }
+  ]
+}

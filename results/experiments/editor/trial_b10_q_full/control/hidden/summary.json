@@ -1,0 +1,262 @@
+{
+  "model": "gemma-4b-full+editor[trial_b10_q_full:random]",
+  "backend": "hf",
+  "split": "dev",
+  "n_questions": 480,
+  "overall": {
+    "n": 480,
+    "accuracy": 0.75625,
+    "accuracy_ci95": [
+      0.7159052673361654,
+      0.7925257393816045
+    ],
+    "mean_prob_correct": 0.7569155508598329,
+    "mean_prob_on_letters": 0.999999949680192,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.15625,
+      "B": 0.25833333333333336,
+      "C": 0.27708333333333335,
+      "D": 0.23541666666666666,
+      "E": 0.07291666666666667
+    }
+  },
+  "headline": {
+    "sections": [
+      "LAS",
+      "MEK"
+    ],
+    "n": 320,
+    "accuracy": 0.725,
+    "accuracy_ci95": [
+      0.6736263799674704,
+      0.7710356485584402
+    ],
+    "mean_prob_correct": 0.725015017050659,
+    "mean_prob_on_letters": 0.9999999608180218,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.146875,
+      "B": 0.278125,
+      "C": 0.309375,
+      "D": 0.265625,
+      "E": 0.0
+    }
+  },
+  "sections": {
+    "ORD": {
+      "n": 160,
+      "accuracy": 0.81875,
+      "accuracy_ci95": [
+        0.7518187120680591,
+        0.8707343385101063
+      ],
+      "mean_prob_correct": 0.8207166184781809,
+      "mean_prob_on_letters": 0.9999999274045319,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.175,
+        "B": 0.21875,
+        "C": 0.2125,
+        "D": 0.175,
+        "E": 0.21875
+      }
+    },
+    "LAS": {
+      "n": 160,
+      "accuracy": 0.7375,
+      "accuracy_ci95": [
+        0.6643294227646624,
+        0.7995336345288727
+      ],
+      "mean_prob_correct": 0.7383474892408965,
+      "mean_prob_on_letters": 1.0000000037627892,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.15,
+        "B": 0.25,
+        "C": 0.35625,
+        "D": 0.24375,
+        "E": 0.0
+      }
+    },
+    "MEK": {
+      "n": 160,
+      "accuracy": 0.7125,
+      "accuracy_ci95": [
+        0.6380365348624819,
+        0.7769988321896284
+      ],
+      "mean_prob_correct": 0.7116825448604214,
+      "mean_prob_on_letters": 0.9999999178732548,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.14375,
+        "B": 0.30625,
+        "C": 0.2625,
+        "D": 0.2875,
+        "E": 0.0
+      }
+    }
+  },
+  "exam_dates": {
+    "2015-03-28": {
+      "n": 60,
+      "accuracy": 0.75,
+      "accuracy_ci95": [
+        0.6276792992295219,
+        0.8422347746994332
+      ],
+      "mean_prob_correct": 0.7520004496453202,
+      "mean_prob_on_letters": 0.9999999622785819,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.23333333333333334,
+        "B": 0.2833333333333333,
+        "C": 0.21666666666666667,
+        "D": 0.18333333333333332,
+        "E": 0.08333333333333333
+      }
+    },
+    "2016-04-09": {
+      "n": 60,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.5749129205308552,
+        0.8010183386123089
+      ],
+      "mean_prob_correct": 0.7066370215825175,
+      "mean_prob_on_letters": 0.9999999527495563,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.11666666666666667,
+        "B": 0.31666666666666665,
+        "C": 0.21666666666666667,
+        "D": 0.3,
+        "E": 0.05
+      }
+    },
+    "2017-10-21": {
+      "n": 60,
+      "accuracy": 0.7666666666666667,
+      "accuracy_ci95": [
+        0.6456372962239805,
+        0.8556043826335717
+      ],
+      "mean_prob_correct": 0.7711829478036946,
+      "mean_prob_on_letters": 0.9999999340071395,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.2,
+        "B": 0.3,
+        "C": 0.2,
+        "D": 0.23333333333333334,
+        "E": 0.06666666666666667
+      }
+    },
+    "2018-10-21": {
+      "n": 60,
+      "accuracy": 0.8333333333333334,
+      "accuracy_ci95": [
+        0.7196838683638547,
+        0.9068682302080855
+      ],
+      "mean_prob_correct": 0.8330515086541681,
+      "mean_prob_on_letters": 0.9999999926178396,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.16666666666666666,
+        "B": 0.21666666666666667,
+        "C": 0.35,
+        "D": 0.2,
+        "E": 0.06666666666666667
+      }
+    },
+    "2019-10-20": {
+      "n": 60,
+      "accuracy": 0.7333333333333333,
+      "accuracy_ci95": [
+        0.6099128690331636,
+        0.8286735999671945
+      ],
+      "mean_prob_correct": 0.7284452947533384,
+      "mean_prob_on_letters": 0.9999999387855152,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.11666666666666667,
+        "B": 0.2833333333333333,
+        "C": 0.38333333333333336,
+        "D": 0.15,
+        "E": 0.06666666666666667
+      }
+    },
+    "2020-10-25": {
+      "n": 60,
+      "accuracy": 0.7666666666666667,
+      "accuracy_ci95": [
+        0.6456372962239805,
+        0.8556043826335717
+      ],
+      "mean_prob_correct": 0.7685385979451306,
+      "mean_prob_on_letters": 0.9999999655466153,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.15,
+        "B": 0.3,
+        "C": 0.21666666666666667,
+        "D": 0.25,
+        "E": 0.08333333333333333
+      }
+    },
+    "2021-05-08": {
+      "n": 60,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.5749129205308552,
+        0.8010183386123089
+      ],
+      "mean_prob_correct": 0.707691411439223,
+      "mean_prob_on_letters": 0.9999999780576447,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.15,
+        "B": 0.15,
+        "C": 0.35,
+        "D": 0.26666666666666666,
+        "E": 0.08333333333333333
+      }
+    },
+    "2022-10-23": {
+      "n": 60,
+      "accuracy": 0.8,
+      "accuracy_ci95": [
+        0.6821819419437212,
+        0.881714946771025
+      ],
+      "mean_prob_correct": 0.7877771750552711,
+      "mean_prob_on_letters": 0.9999998733986436,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.11666666666666667,
+        "B": 0.21666666666666667,
+        "C": 0.2833333333333333,
+        "D": 0.3,
+        "E": 0.08333333333333333
+      }
+    }
+  },
+  "damage": null
+}

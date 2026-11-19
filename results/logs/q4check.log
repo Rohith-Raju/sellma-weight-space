@@ -1,0 +1,39 @@
+symlink folder: tensors identical to baseline: True 444
+metadata differs: GGUF.kv_count
+metadata differs: general.name
+metadata differs: general.finetune
+metadata differs: general.basename
+metadata differs: general.size_label
+qwen-9b-q4: loaded in 7.3 s
+token ids 2013-10-26/p1/ORD/1: HF 108 tokens, llama-server 108 tokens -> same
+token ids 2019-04-06/p4/ORD/1: HF 97 tokens, llama-server 97 tokens -> same
+token ids 2013-10-26/p1/LAS/11: HF 893 tokens, llama-server 893 tokens -> same
+token ids 2019-04-06/p4/LAS/11: HF 1117 tokens, llama-server 1117 tokens -> same
+token ids 2013-10-26/p1/MEK/21: HF 139 tokens, llama-server 139 tokens -> same
+token ids 2019-04-06/p4/MEK/21: HF 205 tokens, llama-server 205 tokens -> same
+section     n  accuracy  prob_correct  on_letters  min_on_letters  s/question
+ORD        20     85.0%         0.810       0.999           0.997       0.156
+LAS        20     95.0%         0.891       0.999           0.998       0.352
+MEK        20     85.0%         0.761       0.999           0.998       0.161
+ALL        60     88.3%         0.821       0.999           0.997       0.223
+gemma-4b-q4: loaded in 6.7 s
+token ids 2013-10-26/p1/ORD/1: HF 104 tokens, llama-server 104 tokens -> same
+token ids 2019-04-06/p4/ORD/1: HF 92 tokens, llama-server 92 tokens -> same
+token ids 2013-10-26/p1/LAS/11: HF 873 tokens, llama-server 873 tokens -> same
+token ids 2019-04-06/p4/LAS/11: HF 1074 tokens, llama-server 1074 tokens -> same
+token ids 2013-10-26/p1/MEK/21: HF 133 tokens, llama-server 133 tokens -> same
+token ids 2019-04-06/p4/MEK/21: HF 194 tokens, llama-server 194 tokens -> same
+section     n  accuracy  prob_correct  on_letters  min_on_letters  s/question
+ORD        20     90.0%         0.893       1.000           1.000       0.064
+LAS        20     70.0%         0.700       1.000           1.000       0.575
+MEK        20     55.0%         0.550       1.000           1.000       0.100
+ALL        60     71.7%         0.714       1.000           1.000       0.246
+check_qwen-9b-full.jsonl: accuracy 54/60 = 90.0%
+check_qwen-9b-q4.jsonl: accuracy 53/60 = 88.3%
+same letter chosen: 57/60
+prob_correct difference: mean 0.079, largest 0.835
+check_gemma-4b-full.jsonl: accuracy 46/60 = 76.7%
+check_gemma-4b-q4.jsonl: accuracy 43/60 = 71.7%
+same letter chosen: 55/60
+prob_correct difference: mean 0.044, largest 1.000
+FINISHED

@@ -1,0 +1,15 @@
+Downloading numpy (16.1MiB)
+Downloading hf-xet (4.1MiB)
+Downloading pandas (11.8MiB)
+Downloading pyarrow (52.5MiB)
+ Downloaded hf-xet
+ Downloaded pandas
+ Downloaded numpy
+ Downloaded pyarrow
+Installed 24 packages in 1.46s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   6%|▌         | 55/883 [00:00<00:01, 541.75it/s]Loading weights:  12%|█▏        | 110/883 [00:00<00:01, 454.39it/s]Loading weights:  18%|█▊        | 158/883 [00:00<00:01, 456.58it/s]Loading weights:  23%|██▎       | 205/883 [00:00<00:01, 432.20it/s]Loading weights:  28%|██▊       | 249/883 [00:00<00:01, 428.40it/s]Loading weights:  33%|███▎      | 293/883 [00:00<00:01, 409.29it/s]Loading weights:  38%|███▊      | 335/883 [00:00<00:01, 410.10it/s]Loading weights:  43%|████▎     | 377/883 [00:00<00:01, 409.70it/s]Loading weights:  47%|████▋     | 419/883 [00:00<00:01, 398.77it/s]Loading weights:  59%|█████▉    | 525/883 [00:01<00:00, 589.09it/s]Loading weights:  80%|████████  | 708/883 [00:01<00:00, 952.26it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 686.56it/s]
+editor3 belebele_sv {'A': 80.6, 'B': 81.2, 'C': 83.8, 'D': 83.8} all4 358
+editor3 belebele_en {'A': 85.8, 'B': 87.8, 'C': 85.8, 'D': 86.0} all4 392
+editor3 mmlu_math {'A': 57.0, 'B': 40.0, 'C': 32.5, 'D': 30.2} all4 47
+editor3 DONE

@@ -1,0 +1,1 @@
+{"time": "2026-11-19T08:47:50+00:00", "kind": "submit", "cost": 0, "n_items": 0, "edit": {"model.language_model.layers.23.self_attn.q_proj.weight": {"form": "rows", "weights_touched": 1254160, "delta_norm": 0.08254662901163101}}, "passes_used": 0, "passes_left": 1}

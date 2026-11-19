@@ -1,0 +1,91 @@
+{
+  "model": "gemma-4b-full+random[2022-05-07/p5/LAS/16]",
+  "backend": "hf",
+  "split": "dev",
+  "n_questions": 1,
+  "overall": {
+    "n": 1,
+    "accuracy": 0.0,
+    "accuracy_ci95": [
+      0.0,
+      0.7934506856227626
+    ],
+    "mean_prob_correct": 1.4449796881200045e-07,
+    "mean_prob_on_letters": 0.9999999408423079,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 1.0,
+      "E": 0.0
+    }
+  },
+  "headline": {
+    "sections": [
+      "LAS",
+      "MEK"
+    ],
+    "n": 1,
+    "accuracy": 0.0,
+    "accuracy_ci95": [
+      0.0,
+      0.7934506856227626
+    ],
+    "mean_prob_correct": 1.4449796881200045e-07,
+    "mean_prob_on_letters": 0.9999999408423079,
+    "unsure_share": 0.0,
+    "ceiling": false,
+    "chosen_letter_share": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 1.0,
+      "E": 0.0
+    }
+  },
+  "sections": {
+    "LAS": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 1.4449796881200045e-07,
+      "mean_prob_on_letters": 0.9999999408423079,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 1.0,
+        "E": 0.0
+      }
+    }
+  },
+  "exam_dates": {
+    "2022-05-07": {
+      "n": 1,
+      "accuracy": 0.0,
+      "accuracy_ci95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "mean_prob_correct": 1.4449796881200045e-07,
+      "mean_prob_on_letters": 0.9999999408423079,
+      "unsure_share": 0.0,
+      "ceiling": false,
+      "chosen_letter_share": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "D": 1.0,
+        "E": 0.0
+      }
+    }
+  },
+  "damage": null
+}

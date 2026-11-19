@@ -1,0 +1,6 @@
+n = 900
+A: right answer 219 times | Gemma picked it 140 times | right when the answer is A: 112/219 = 51%
+B: right answer 221 times | Gemma picked it 252 times | right when the answer is B: 174/221 = 79%
+C: right answer 230 times | Gemma picked it 253 times | right when the answer is C: 167/230 = 73%
+D: right answer 230 times | Gemma picked it 255 times | right when the answer is D: 162/230 = 70%
+when the answer was A and Gemma got it wrong, it picked: {'C': 40, 'D': 37, 'B': 30}

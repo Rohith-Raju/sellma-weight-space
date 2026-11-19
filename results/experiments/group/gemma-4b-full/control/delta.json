@@ -1,0 +1,53 @@
+{
+  "layers": [
+    21,
+    22,
+    23,
+    24
+  ],
+  "param_names": [
+    "model.language_model.layers.21.mlp.down_proj.weight",
+    "model.language_model.layers.22.mlp.down_proj.weight",
+    "model.language_model.layers.23.mlp.down_proj.weight",
+    "model.language_model.layers.24.mlp.down_proj.weight"
+  ],
+  "rank": 8,
+  "kind": "random",
+  "seed": 1,
+  "info": {
+    "layers": [
+      {
+        "layer": 21,
+        "frobenius_norm": 0.21400086581707,
+        "spectral_norm": 0.08011528104543686,
+        "reference_spectral_norm": 3.023876190185547,
+        "relative_norm": 0.026494233231328476
+      },
+      {
+        "layer": 22,
+        "frobenius_norm": 0.21023719012737274,
+        "spectral_norm": 0.07789053022861481,
+        "reference_spectral_norm": 3.458239793777466,
+        "relative_norm": 0.022523172155026965
+      },
+      {
+        "layer": 23,
+        "frobenius_norm": 0.24070873856544495,
+        "spectral_norm": 0.08911747485399246,
+        "reference_spectral_norm": 3.3571715354919434,
+        "relative_norm": 0.02654540404380428
+      },
+      {
+        "layer": 24,
+        "frobenius_norm": 0.23568038642406464,
+        "spectral_norm": 0.08858330547809601,
+        "reference_spectral_norm": 2.192577838897705,
+        "relative_norm": 0.040401441584682944
+      }
+    ],
+    "control_for": {
+      "kind": "trained",
+      "seed": 0
+    }
+  }
+}

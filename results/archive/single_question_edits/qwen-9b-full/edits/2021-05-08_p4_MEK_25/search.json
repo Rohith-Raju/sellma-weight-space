@@ -1,0 +1,91 @@
+{
+  "question_id": "2021-05-08/p4/MEK/25",
+  "section": "MEK",
+  "fixed": true,
+  "status": "fixed",
+  "reference_norm": 3.2489428520202637,
+  "edit": {
+    "kind": "targeted",
+    "question_id": "2021-05-08/p4/MEK/25",
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "alpha": 0.6497885704040528,
+    "alpha_fraction": 0.2,
+    "seed": null
+  },
+  "tried": [
+    {
+      "alpha_fraction": 0.01,
+      "alpha": 0.03248942852020264,
+      "chosen_letter": "D",
+      "is_correct": false,
+      "margin": -2.1249979980340314,
+      "prob_correct": 0.0524039312187373,
+      "weight_changed": true,
+      "realized_fraction": 0.861799382225241,
+      "realized_cosine": 0.7430751114602023,
+      "entries_changed": 0.05301366373896599
+    },
+    {
+      "alpha_fraction": 0.02,
+      "alpha": 0.06497885704040528,
+      "chosen_letter": "D",
+      "is_correct": false,
+      "margin": -1.7499976542952664,
+      "prob_correct": 0.06984959471928233,
+      "weight_changed": true,
+      "realized_fraction": 0.937145133772127,
+      "realized_cosine": 0.8310344099802555,
+      "entries_changed": 0.0997801274061203
+    },
+    {
+      "alpha_fraction": 0.05,
+      "alpha": 0.1624471426010132,
+      "chosen_letter": "B",
+      "is_correct": false,
+      "margin": -0.6249966459359395,
+      "prob_correct": 0.14014745795951478,
+      "weight_changed": true,
+      "realized_fraction": 0.9977416982423346,
+      "realized_cosine": 0.9215905931622473,
+      "entries_changed": 0.21114391088485718
+    },
+    {
+      "alpha_fraction": 0.1,
+      "alpha": 0.3248942852020264,
+      "chosen_letter": "B",
+      "is_correct": false,
+      "margin": 0.500004380817265,
+      "prob_correct": 0.27607857553860055,
+      "weight_changed": true,
+      "realized_fraction": 1.0106534214952108,
+      "realized_cosine": 0.9648957508057655,
+      "entries_changed": 0.33611154556274414
+    },
+    {
+      "alpha_fraction": 0.2,
+      "alpha": 0.6497885704040528,
+      "chosen_letter": "A",
+      "is_correct": true,
+      "margin": 1.624986779442584,
+      "prob_correct": 0.43940824205511253,
+      "weight_changed": true,
+      "realized_fraction": 1.0075548060497888,
+      "realized_cosine": 0.9871281899686298,
+      "entries_changed": 0.4804360270500183
+    }
+  ],
+  "baseline": {
+    "chosen_letter": "D",
+    "prob_correct": 0.04394932488897378,
+    "margin": -2.374998146677757,
+    "layer": 21,
+    "param_name": "model.language_model.layers.21.mlp.down_proj.weight",
+    "reference_norm": 3.2489428520202637,
+    "reference_norm_kind": "spectral",
+    "x_norm": 25.348180770874023,
+    "g_norm": 0.39488351345062256,
+    "mlp_out_norm": 18.623241424560547,
+    "push_ratio_per_fraction": 4.422151270542957
+  }
+}

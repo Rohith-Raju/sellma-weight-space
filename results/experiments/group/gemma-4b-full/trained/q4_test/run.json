@@ -1,0 +1,142 @@
+{
+  "model": "gemma-4b-q4+group[trained]",
+  "backend": "llamacpp",
+  "split": "test",
+  "experiment": {
+    "base_model": "gemma-4b-full",
+    "condition": "trained",
+    "precision": "q4",
+    "delta_in_file": {
+      "kind": "trained",
+      "layers": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "param_names": [
+        "model.language_model.layers.21.mlp.down_proj.weight",
+        "model.language_model.layers.22.mlp.down_proj.weight",
+        "model.language_model.layers.23.mlp.down_proj.weight",
+        "model.language_model.layers.24.mlp.down_proj.weight"
+      ],
+      "rank": 8,
+      "seed": 0,
+      "info": {
+        "layers": [
+          {
+            "layer": 21,
+            "frobenius_norm": 0.2140008807182312,
+            "spectral_norm": 0.17168782651424408,
+            "reference_spectral_norm": 3.023876190185547,
+            "relative_norm": 0.05677739950844655,
+            "realized_fraction": 1.0317309173312046,
+            "entries_changed": 0.6982461214065552
+          },
+          {
+            "layer": 22,
+            "frobenius_norm": 0.21023720502853394,
+            "spectral_norm": 0.15534886717796326,
+            "reference_spectral_norm": 3.458239793777466,
+            "relative_norm": 0.04492136937915295,
+            "realized_fraction": 1.0367249329849924,
+            "entries_changed": 0.6657349467277527
+          },
+          {
+            "layer": 23,
+            "frobenius_norm": 0.24070875346660614,
+            "spectral_norm": 0.19940119981765747,
+            "reference_spectral_norm": 3.3571715354919434,
+            "relative_norm": 0.05939559468725157,
+            "realized_fraction": 1.0306817804054813,
+            "entries_changed": 0.7126553058624268
+          },
+          {
+            "layer": 24,
+            "frobenius_norm": 0.23568043112754822,
+            "spectral_norm": 0.18076825141906738,
+            "reference_spectral_norm": 2.192577838897705,
+            "relative_norm": 0.08244553429854362,
+            "realized_fraction": 1.0174708334708502,
+            "entries_changed": 0.7891408205032349
+          }
+        ],
+        "training": {
+          "layers": [
+            21,
+            22,
+            23,
+            24
+          ],
+          "rank": 8,
+          "lr": 3e-05,
+          "lam": 1.0,
+          "batch_size": 8,
+          "eval_every": 25,
+          "max_steps": 2000,
+          "target_fix_rate": null,
+          "patience": 10,
+          "min_right_kept": 0.95,
+          "right_kept_floor": 0.9,
+          "shuffle": true,
+          "seed": 0,
+          "n_wrong": 205,
+          "n_right": 515,
+          "n_validation": 150,
+          "steps_run": 300,
+          "stop_reason": "no_improvement",
+          "final": {
+            "step": 50,
+            "drill_wrong_fixed": 0.01951219512195122,
+            "drill_right_kept": 0.9883495145631068,
+            "n_wrong_fixed": 4,
+            "n_wrong": 205,
+            "n_right_kept": 509,
+            "n_right": 515,
+            "validation": {
+              "n": 150,
+              "accuracy": 0.7266666666666667,
+              "n_headline": 100,
+              "headline_accuracy": 0.68,
+              "mean_prob_correct": 0.7260224873991605,
+              "by_section": {
+                "LAS": 0.66,
+                "MEK": 0.7,
+                "ORD": 0.82
+              }
+            },
+            "kept_enough": true
+          },
+          "snapshots": {},
+          "seconds": 886.9
+        }
+      }
+    },
+    "gguf": "work/group/gemma-4b-full/trained/merged-Q4_K_M.gguf",
+    "quant": "Q4_K_M",
+    "question_set": "q4_test"
+  },
+  "describe": {
+    "backend": "llamacpp",
+    "path": "/root/sellma/work/group/gemma-4b-full/trained/merged-Q4_K_M.gguf",
+    "sha256": "6e91c75d5a4ce804ab606620e4c41e8bda1c97200ffa625f3d8685102e84170f",
+    "prompt_tokenizer": "/root/sellma/models/gemma-3-4b-it-official",
+    "llama_server_bin": "/root/llama.cpp/build/bin/llama-server",
+    "llama_server_version": "version: 1 (15f786e)",
+    "n_gpu_layers": "all",
+    "ctx_size": 4096,
+    "seed": 0,
+    "top_probs": 20,
+    "perplexity_ctx": 1024
+  },
+  "questions_sha256": "6d84c5ecdfaec6e585f4743c9e7f06ca06990fd229bc0aeaf452e778a9917955",
+  "split_sha256": "3c7cc1f0d72928fb3e9a3e5cd739d452a3a8cb98a0eb002d1320a02d0f321eaf",
+  "questions_sha256_at_freeze": "6d84c5ecdfaec6e585f4743c9e7f06ca06990fd229bc0aeaf452e778a9917955",
+  "git_commit": null,
+  "git_dirty": null,
+  "command": "/root/sellma/.venv/bin/bench group all --model gemma-4b-full",
+  "skip_damage": false,
+  "started_at": "2026-11-19T07:33:29+00:00",
+  "finished_at": "2026-11-19T07:34:54+00:00",
+  "n_questions": 180
+}
